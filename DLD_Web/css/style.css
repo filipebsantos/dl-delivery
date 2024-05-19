@@ -1,0 +1,61 @@
+/*
+    Templates styles
+*/
+
+#side-menu .nav-pills li a:hover {
+    background-color: rgb(63, 63, 240);
+}
+
+#navigation-bar {
+    background-color: #F7F8F8;
+}
+
+#nav-logo img {
+    width: 50px;
+    height: auto;
+}
+
+#nav-logo span {
+    font-weight: bold;
+}
+
+footer {
+    margin-bottom: 100px;
+}
+
+#footer-text {
+    margin: 0 auto;
+    color: #6c757d;
+}
+
+/*
+    index.php
+*/
+
+#alert-box {
+    max-width: 600px;
+    text-align: center;
+}
+
+#img-logo {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#login-box {
+    max-width: 400px;
+    padding: 30px;
+    background-color: #F7F8F8;
+}
+
+#login-box .center-submit {
+    margin: 0 auto;
+    display: block;
+}
+
+#actionMenu {
+    text-decoration: none;
+    color: black;
+}

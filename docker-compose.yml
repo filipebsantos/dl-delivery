@@ -1,0 +1,42 @@
+services:
+  database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    hostname: sqlserver
+    ports:
+      - "1433:1433"
+    networks:
+      - dldelivery
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=S3nh@F0rt3
+      - MSSQL_PID=Express
+      - TZ=America/Fortaleza
+    volumes:
+      - dld_mssql:/var/opt/mssql
+      
+  dldelivery:
+    image: filipebezerrasantos/dldelivery:v1.0-rc
+    container_name: dldelivery
+    hostname: dldelivery
+    ports:
+      - "80:80"
+    volumes:
+      - ./DLD_Web:/var/www/html
+    networks:
+      - dldelivery
+    environment:
+      - TZ=America/Fortaleza
+      - DB_HOST=sqlserver
+      - DB_PORT=1433
+      - DB_NAME=DLDELIVERY
+      - DB_USER=sa
+      - DB_PASS=S3nh@F0rt3
+      
+networks:
+  dldelivery:
+    external: true
+
+volumes:
+  dld_mssql:
+    name: dld_mssql
