@@ -151,7 +151,7 @@
             try{
                 $stmt = $this->dbConn->prepare("UPDATE users SET token = :token, tokenexpiration = :tokenexpiration WHERE id = :id");
                 $stmt->bindValue(":token", $user->getToken());
-                $stmt->bindValue(":tokenexpiration", date_format($user->getTokenExpiration(), "Y-m-d H:i:s"));
+                $stmt->bindValue(":tokenexpiration", date_format($user->getTokenExpiration(), "d-m-Y H:i:s"));
                 $stmt->bindValue(":id", $user->getId());
                 $stmt->execute();
 

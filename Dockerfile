@@ -22,3 +22,6 @@ COPY php.ini-production /usr/local/etc/php/php.ini
 
 # Copy project folder to container
 COPY /DLD_Web /var/www/html
+
+# Ajust permissions to upload picture's folder
+RUN chmod 777 -r /var/www/html/imgs/houses

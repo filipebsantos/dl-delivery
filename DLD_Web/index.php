@@ -26,15 +26,29 @@
             ];
             $_SESSION["activeUser"] = $sessionUser;
 
-            header("Location: " . $BASE_URL . "dashboard.php");
+            //Check if access is from mobile
+            $isMobile = str_contains(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile");
+
+            if($isMobile){
+                header("Location: " . $BASE_URL . "delivery/home.php");
+            } else {
+                header("Location: " . $BASE_URL . "dashboard.php");
+            }
         } else {
             $returnMessage = [
-                "msg" => "Sessão expirou. Faça o login novamente.",
-                "type" => "error"
+                "msg" => "Sua sessão expirou. Faça o login novamente.",
+                "type" => "danger"
             ];
         }
     } elseif (isset($_SESSION["activeUser"])) {
-        header("Location: " . $BASE_URL . "dashboard.php");
+        //Check if access is from mobile
+        $isMobile = str_contains(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile");
+
+        if($isMobile){
+            header("Location: " . $BASE_URL . "delivery/home.php");
+        } else {
+            header("Location: " . $BASE_URL . "dashboard.php");
+        }
     }
 
     if (!empty($returnMessage)) {
@@ -78,7 +92,6 @@
     <div class="container border rounded shadow" id="login-box">
         <img src="<?= $BASE_URL ?>imgs/favicon-dld.png" id="img-logo" alt="Logomarca DL Delivery">
         <form action="<?= $BASE_URL ?>login.php" method="post">
-            <input type="hidden" name="screenwidth" id="screenwidth">
             <input type="hidden" name="action" value="login">
 
             <div class="form-floating mt-3 mb-3">
@@ -100,8 +113,4 @@
         </form>
     </div>
 </div>
-<script type="text/javascript">
-    let width = screen.width;
-    document.getElementById("screenwidth").value = width;
-</script>
 <?php include(__DIR__ . "/includes/footer.php"); ?>

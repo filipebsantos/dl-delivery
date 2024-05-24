@@ -6,7 +6,7 @@
     <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?= $BASE_URL ?>delivery/home.php">Início</a>
+                <a class="nav-link active" aria-current="page" href="<?= $BASE_URL ?>delivery/home.php"><strong>Início</strong></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?= $BASE_URL ?>delivery/addlocation.php">Cadastrar Localização</a>
@@ -21,8 +21,8 @@
         <hr>
         <span class="d-flex justify-content-start fs-4">Abrir WhatsApp</span>
         <div class="input-group">
-            <input class="form-control" type="tel" placeholder="Insira o número do whatsapp..." aria-label="WhatsApp">
-            <button class="btn btn-success" type="submit"><i class="bi bi-whatsapp"></i></button>
+            <input class="form-control" type="tel" placeholder="DDD + Número" aria-label="WhatsApp" name="wppTel" id="wppTel">
+            <button class="btn btn-success" type="button" onclick="openWhatsApp()"><i class="bi bi-whatsapp"></i></button>
         </div>
     </div>
     <div class="offcanvas-footer text-center mb-5">

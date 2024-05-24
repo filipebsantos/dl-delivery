@@ -117,7 +117,7 @@ if (isset($_GET["clie"]) && $_GET["clie"] !== null) {
 
             <div class="d-grid gap-2">
                 <input class="btn btn-primary" type="submit" value="Salvar Localização">
-                <a href="<?= $BASE_URL ?>delivery/findclient.php" class="btn btn-secondary">Voltar</a>
+                <a href="<?= $_SERVER["HTTP_REFERER"] ?>" class="btn btn-secondary">Voltar</a>
             </div>
 
         </form>

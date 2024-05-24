@@ -49,7 +49,7 @@ if (isset($_GET["clientid"]) && $_GET["clientid"] !== null) {
         <h3><?= $clientData["id"] ?> - <?= $clientData["name"] ?></h3>
 
         <div class="d-grid gap-2">
-            <a href="<?= $BASE_URL ?>delivery/viewlocation.php" class="btn btn-success"><i class="bi bi-plus-circle-fill"></i> Nova localização</a>
+            <a href="<?= $BASE_URL ?>delivery/addlocation.php?clie=<?= $clientData["id"] ?>" class="btn btn-success"><i class="bi bi-plus-circle-fill"></i> Nova localização</a>
         </div>
 
         <table class="table align-middle table-striped mt-3">

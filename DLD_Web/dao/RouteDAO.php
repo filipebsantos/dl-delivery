@@ -49,13 +49,13 @@ class RouteDAO implements RouteInterface
     {
 
         if (is_null($dateFilter)) {
-            $date = date("Y-m-d");
+            $date = date("d-m-Y");
         } else {
 
             $checkDate = date_create($dateFilter);
 
             if ($checkDate !== false) {
-                $date = date_format($checkDate, "Y-m-d");
+                $date = date_format($checkDate, "d-m-Y");
             } else {
                 throw new Exception("Data inválida");
                 exit;
@@ -141,6 +141,7 @@ class RouteDAO implements RouteInterface
                                                    locations.longitude,
                                                    locations.housepicture,
                                                    locations.type,
+                                                   locations.neighborhood,
                                                    locations.obs,
                                                    clients.name AS clientName
                                             FROM routes_locations
@@ -249,7 +250,7 @@ class RouteDAO implements RouteInterface
         $stmt = $this->dbConn->prepare("UPDATE routes SET status = :status, $dateTime = :datetime WHERE id = :routeid");
         $stmt->bindValue(":status", $status);
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
-        $stmt->bindValue(":datetime", date("Y-m-d H:i:s"));
+        $stmt->bindValue(":datetime", date("d-m-Y H:i:s"));
 
         try {
             return $stmt->execute();

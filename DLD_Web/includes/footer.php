@@ -3,6 +3,7 @@
         <p id="footer-text">Desenvolvido por FilipeBezerra.Dev.BR</p>
         <p id="footer-text">Licenciado para Drogaria Litorânea Ltda</p>
     </footer>
+    <script src="<?= $BASE_URL ?>js/custom/custom.js"></script>
     <script src="<?= $BASE_URL ?>js/bootstrap.js"></script>
 </body>
 

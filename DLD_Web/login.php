@@ -58,7 +58,11 @@
                             // Save cookie with token for re-login
                             setcookie("_dld-SsID", $token, $expirationTimestamp);
                         }
-                        if($_POST["screenwidth"] < 500) {
+                        
+                        //Check if access is from mobile
+                        $isMobile = str_contains(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile");
+
+                        if($isMobile){
                             header("Location: " . $BASE_URL . "delivery/home.php");
                         } else {
                             header("Location: " . $BASE_URL . "dashboard.php");

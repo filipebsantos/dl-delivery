@@ -244,7 +244,7 @@ if (isset($_SESSION["locationReturn"])) {
                     </div>
                     <!-- Modal for Locations Lits -->
 
-                    <!-- Modals for maps -->
+                    <!-- Modals for house picture -->
                     <?php foreach ($client_locations as $location) : ?>
                         <div class="modal fade" id="picLoc<?= $location["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -267,9 +267,9 @@ if (isset($_SESSION["locationReturn"])) {
                             </div>
                         </div>
                     <?php endforeach; ?>
-                    <!-- Modals for maps -->
-
                     <!-- Modals for house picture -->
+
+                    <!-- Modals for maps -->
                     <?php foreach ($client_locations as $location) : ?>
                         <div class="modal fade" id="picLocMap<?= $location["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -287,7 +287,7 @@ if (isset($_SESSION["locationReturn"])) {
                             </div>
                         </div>
                     <?php endforeach; ?>
-                    <!-- Modals for house picture -->
+                    <!-- Modals for maps -->
                 <?php endif; ?>
             </div>
         </div>
