@@ -39,7 +39,7 @@ if (isset($_GET["clie"]) && $_GET["clie"] !== null) {
 
     <div class="container mt-2">
         <h3 class="mb-2">Localização</h3>
-        <form action="<?= $BASE_URL ?>locationprocess.php" method="post">
+        <form action="<?= $BASE_URL ?>locationprocess.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="action" value="create">
             <div class="input-group mb-2">
                 <span class="input-group-text" id="txtClientId">ID</span>

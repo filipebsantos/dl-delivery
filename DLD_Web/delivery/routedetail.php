@@ -61,7 +61,7 @@ if (isset($_SESSION["locationReturn"])) {
     </div>
 
     <div class="d-grid gap-2 mt-3">
-        <?php if (!empty($routeLocations) && $routeData["status"] == "PENDENTE") : ?>
+        <?php if ((!empty($routeLocations) || !empty($routeClients)) && $routeData["status"] == "PENDENTE") : ?>
             <form action="<?= $BASE_URL ?>routeprocess.php" method="post"><input type="hidden" name="action" value="updateRouteStatus"><input type="hidden" name="routeid" value="<?= $routeData["id"] ?>"><input type="hidden" name="routestatus" value="INICIADA"><button type="submit" class="btn btn-primary"><i class="bi bi-play-fill"></i> Iniciar rota</button></form>
         <?php elseif ($routeData["status"] == "INICIADA") : ?>
             <form action="<?= $BASE_URL ?>routeprocess.php" method="post"><input type="hidden" name="action" value="updateRouteStatus"><input type="hidden" name="routeid" value="<?= $routeData["id"] ?>"><input type="hidden" name="routestatus" value="FINALIZADA"><button type="submit" class="btn btn-danger"><i class="bi bi-stop-fill"></i> Finalizar rota</button></form>

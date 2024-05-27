@@ -64,7 +64,7 @@ if (isset($_GET["clientid"]) && $_GET["clientid"] !== null) {
                     <tr scope="row">
                         <td><?= $location["type"] ?></td>
                         <td><a class="btn btn-primary btn-sm" target="_blank" href="https://www.google.com/maps/search/?api=1&query=<?= $location["latitude"] ?>%2C<?= $location["longitude"] ?>"><i class="bi bi-map-fill"></a></td>
-                        <td><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#picture<?= $location["id"] ?>"><i class="bi bi-camera-fill"></button></td></td>
+                        <td><button type="button" class="btn btn-<?= $location["housepicture"] == null ? "secondary" : "primary" ?> btn-sm" data-bs-toggle="modal" data-bs-target="#picture<?= $location["id"] ?>"><i class="bi bi-camera-fill"></button></td></td>
                         <td><a class="btn btn-primary btn-sm" href="<?= $BASE_URL ?>delivery/viewlocation.php?locationid=<?= $location["id"] ?>"><i class="bi bi-pencil-fill"></i></a></td>
                     </tr>
                 <?php endforeach; ?>

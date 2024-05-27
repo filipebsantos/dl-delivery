@@ -2,7 +2,7 @@
 session_start();
 
 $APPNAME = "DL Delivery";
-$APPVERSION = "1.0-rc1";
+$APPVERSION = "1.0-rc1.1";
 
 // Default timezone
 date_default_timezone_set(getenv('TZ'));
