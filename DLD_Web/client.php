@@ -15,7 +15,7 @@
 
         case "GET":
             if (isset($_GET["page"])){
-                $actualPage = filter_input(INPUT_GET, "page", FILTER_SANITIZE_NUMBER_INT);
+                $actualPage = intval(filter_input(INPUT_GET, "page", FILTER_SANITIZE_NUMBER_INT));
 
                 if (isset($_COOKIE["_dld-filterPagination"])) {
 
@@ -87,11 +87,11 @@
             $actualPage = 1;
         }
 
-        // Number os pages for 10 itens per page
-        $totalPages = ceil($allClients["qty"] / 10);
+        $maxNumberOfPages = 10;
+        $totalPages = intval(ceil($allClients["qty"] / $maxNumberOfPages));
         
-        $initialPage = $actualPage - 5;
-        $finalPage = $actualPage + 9;
+        $initialPage = $actualPage - ($maxNumberOfPages / 2);
+        $finalPage = $actualPage + ($maxNumberOfPages / 2);
 
         if ($initialPage < 1) {
             $initialPage = 1;
@@ -99,6 +99,8 @@
 
         if ($finalPage > $totalPages) {
             $finalPage = $actualPage + ($totalPages - $actualPage);
+        } elseif ($finalPage < $maxNumberOfPages) {
+            $finalPage = $finalPage + ($maxNumberOfPages - $finalPage);
         }
     }
 
@@ -115,7 +117,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $APPNAME ?></title>
+    <title><?= APP_NAME ?></title>
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
@@ -127,7 +129,7 @@
             <div class="container-fluid">
                 <div id="nav-logo">
                     <img src="<?= $BASE_URL ?>imgs/favicon-dld.png" alt="DL Delivery WEB" class="navbar-brand">
-                    <span class="navbar-brand"><?= $APPNAME ?></span>
+                    <span class="navbar-brand"><?= APP_NAME ?></span>
                 </div>
             </div>
         </nav>
@@ -208,8 +210,8 @@
                     <?php if ($totalPages > 1) : ?>
                         <nav aria-label="Páginas">
                             <ul class="pagination">
-                                <li class="page-item <?= ($initalPage - 1) < 1 ? "disabled" : "" ?>">
-                                    <a class="page-link" href="<?= ($actualPage - 1) < 1 ? "#" : "client.php?page=" . $actualPage - 1; ?>" aria-label="Anterior"><span aria-hidden="true">&laquo;</span></a>
+                                <li class="page-item <?= ($initialPage - 1) < 1 ? "disabled" : "" ?>">
+                                    <a class="page-link" href="<?= ($initialPage - 1) < 1 ? "#" : "client.php?page=" . $initialPage - 1; ?>" aria-label="Anterior"><span aria-hidden="true">&laquo;</span></a>
                                 </li>
 
                                 <?php for ($page = $initialPage; $page <= $finalPage; $page++) : ?>

@@ -87,6 +87,7 @@ if (!isset($_SESSION["filteredRoutes"])) {
                     <table class="table align-middle table-striped">
                         <thead>
                             <th scope="col">Rota</th>
+                            <th scope="col">Data</th>
                             <th scope="col">Entregador</th>
                             <th scope="col">Hora Início</th>
                             <th scope="col">Hora Fim</th>
@@ -97,6 +98,7 @@ if (!isset($_SESSION["filteredRoutes"])) {
                             <?php foreach ($routeList as $route) : ?>
                                 <tr scope="row">
                                     <td><?= $route["id"] ?></td>
+                                    <td><?= date_format(date_create($route["datecreation"]), "d/m/Y") ?></td>
                                     <td><?= $route["fullname"] ?></td>
                                     <td><?= !empty($route["starttime"]) ? substr($route["starttime"], 0, 8) : "" ?></td>
                                     <td><?= !empty($route["endtime"]) ? substr($route["endtime"], 0, 8) : "" ?></td>

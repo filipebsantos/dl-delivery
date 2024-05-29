@@ -1,12 +1,19 @@
-FROM php:8.1.26-apache
+ARG baseImage="php:8.1.26-apache"
+FROM ${baseImage}
 
-LABEL "br.dev.filipebezerra.product"="DL Delivery"
-LABEL "br.dev.filipebezerra.version"="1.0-rc1.1"
-LABEL "org.opencontainers.image.title"="DL Delivery"
-LABEL "org.opencontainers.image.version"="1.0-rc1.1"
+ARG baseImage
+ARG appName="DL Delivery"
+ARG appVersion="1.0-rc2"
+ENV APP_NAME=${appName}
+ENV APP_VERSION=${appVersion}
+
+LABEL "br.dev.filipebezerra.product"="${APP_NAME}"
+LABEL "br.dev.filipebezerra.version"="${APP_VERSION}"
+LABEL "org.opencontainers.image.title"="${APP_NAME}"
+LABEL "org.opencontainers.image.version"="${APP_VERSION}"
 LABEL "org.opencontainers.image.authors"="Filipe Bezerra :: https://filipebezerra.dev.br"
-LABEL "org.opencontainers.image.description"="DL Delivery is an auxiliary delivery system developed for Drogaria Litorânea Inc. Due to poor quality map information in some countryside cities, this software is used as a GPS coordinates database for clients, improving delivery times."
-LABEL "org.opencontainers.image.ref.name"="php:8.1.26-apache"
+LABEL "org.opencontainers.image.description"="${APP_NAME} is an auxiliary delivery system developed for Drogaria Litorânea Inc. Due to poor quality map information in some countryside cities, this software is used as a GPS coordinates database for clients, improving delivery times."
+LABEL "org.opencontainers.image.ref.name"="${baseImage}"
 
 # Install dependencies to build PDO Drivers
 RUN apt update && apt install -y build-essential unixodbc-dev gnupg \
@@ -31,5 +38,5 @@ COPY php.ini-production /usr/local/etc/php/php.ini
 # Copy project folder to container
 COPY /DLD_Web /var/www/html
 
-# Ajust permissions to upload picture's folder
+# Adjust permissions to upload picture's folder
 RUN chmod -R 777 /var/www/html/imgs/houses

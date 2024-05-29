@@ -61,7 +61,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $APPNAME ?></title>
+    <title><?= APP_NAME ?></title>
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
@@ -73,7 +73,7 @@
             <div class="container-fluid">
                 <div id="nav-logo">
                     <img src="<?= $BASE_URL ?>imgs/favicon-dld.png" alt="DL Delivery WEB" class="navbar-brand">
-                    <span class="navbar-brand"><?= $APPNAME ?></span>
+                    <span class="navbar-brand"><?= APP_NAME ?></span>
                 </div>
             </div>
         </nav>

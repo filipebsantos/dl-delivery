@@ -48,9 +48,8 @@ class RouteDAO implements RouteInterface
     public function listRoutes($dateFilter = null, bool $onlyUnfinished = true, int $deliveryman = 0)
     {
 
-        if (is_null($dateFilter)) {
+        if (!is_null($dateFilter)) {
             $date = date("d-m-Y");
-        } else {
 
             $checkDate = date_create($dateFilter);
 
@@ -69,12 +68,14 @@ class RouteDAO implements RouteInterface
                                         CONCAT(users.firstname, ' ', users.lastname) AS fullname,
                                         routes.starttime,
                                         routes.endtime,
-                                        routes.status
+                                        routes.status,
+                                        routes.datecreation
                                 FROM routes
                                 LEFT JOIN users
                                 ON routes.deliveryman = users.id
-                                WHERE DATETRUNC(day, datecreation) = :date
-                                AND (status = 'PENDENTE' OR status = 'INICIADA')" . ($deliveryman == 0 ? "" : " AND routes.deliveryman = :deliverymanid");
+                                WHERE (status = 'PENDENTE' OR status = 'INICIADA')" . 
+                                ($deliveryman == 0 ? "" : " AND routes.deliveryman = :deliverymanid") . 
+                                (!isset($date) ? "" : " AND DATETRUNC(day, datecreation) = :date");
                 break;
 
             case false:
@@ -82,7 +83,8 @@ class RouteDAO implements RouteInterface
                                         CONCAT(users.firstname, ' ', users.lastname) AS fullname,
                                         routes.starttime,
                                         routes.endtime,
-                                        routes.status
+                                        routes.status,
+                                        routes.datecreation
                                 FROM routes
                                 LEFT JOIN users
                                 ON routes.deliveryman = users.id
@@ -91,7 +93,9 @@ class RouteDAO implements RouteInterface
         }
 
         $stmt = $this->dbConn->prepare($sqlQuery);
-        $stmt->bindValue(":date", $date);
+        if (isset($date)) {
+            $stmt->bindValue(":date", $date);
+        }
         if ($deliveryman <> 0) {
             $stmt->bindValue(":deliverymanid", $deliveryman, PDO::PARAM_INT);
         }
@@ -161,6 +165,23 @@ class RouteDAO implements RouteInterface
 
     public function addRouteLocation(int $routeid, int $locationid)
     {
+
+        //Check if route status is not finished
+        $stmt = $this->dbConn->prepare("SELECT status FROM routes WHERE id = :routeid");
+        $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+
+        try{
+            $stmt->execute();
+            $returnQuery = $stmt->fetch();
+
+            if ($returnQuery["status"] === "FINALIZADA") {
+
+                throw new Exception("Rota já finalizada! Inclusão não permitida.");
+                exit;
+            }
+        } catch (PDOException $pdoError) {
+            throw new Exception($pdoError->getMessage());
+        }
 
         //Check if selected location is already in route
         $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM routes_locations WHERE locationid = :locationid AND routeid = :routeid");
@@ -262,6 +283,24 @@ class RouteDAO implements RouteInterface
 
     public function addClientToRoute(int $routeid, int $clientid)
     {
+
+        //Check if route status is not finished
+        $stmt = $this->dbConn->prepare("SELECT status FROM routes WHERE id = :routeid");
+        $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+
+        try{
+            $stmt->execute();
+            $returnQuery = $stmt->fetch();
+
+            if ($returnQuery["status"] === "FINALIZADA") {
+                
+                throw new Exception("Rota já finalizada! Inclusão não permitida.");
+                exit;
+            }
+        } catch (PDOException $pdoError) {
+            throw new Exception($pdoError->getMessage());
+        }
+
         // Check if client is already add to route
         $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM routes_clients WHERE routeid = :routeid AND clientid = :clientid");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
@@ -294,12 +333,15 @@ class RouteDAO implements RouteInterface
     public function listRouteClients(int $routeid)
     {
         $stmt = $this->dbConn->prepare("SELECT routes_clients.clientid,
-                                               clients.name
+                                               clients.name,
+                                               COUNT(locations.id) AS location_qty
                                         FROM routes_clients
                                         JOIN clients ON routes_clients.clientid = clients.id
-                                        WHERE routes_clients.routeid = :routeid");
+                                        LEFT JOIN locations ON clients.id = locations.clientid
+                                        WHERE routes_clients.routeid = :routeid
+                                        GROUP BY routes_clients.clientid, clients.name");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
-
+    
         try{
             $stmt->execute();
             $returnQuery = $stmt->fetchAll();
@@ -308,6 +350,7 @@ class RouteDAO implements RouteInterface
             throw new Exception($pdoError->getMessage());
         }
     }
+    
 
     public function deleteRouteClient(int $routeid, int $clientid)
     {

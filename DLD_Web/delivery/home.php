@@ -19,6 +19,7 @@ if(!empty($routeList)) {
         <table class="table align-middle text-center table-striped">
             <thead>
                 <th scope="col">Rota</th>
+                <th scope="col">Data</th>
                 <th scope="col">Status</th>
                 <th scope="col">Detalhes</th>
             </thead>
@@ -26,6 +27,7 @@ if(!empty($routeList)) {
             <?php foreach($routeList as $routeItem) : ?>
                 <tr scope="row">
                     <td class="align-self-center"><?= $routeItem["id"] ?></td>
+                    <td class="align-self-center"><?= date_format(date_create($routeItem["datecreation"]), "d/m/Y") ?></td>
                     <td><span class="badge rounded-pill text-bg-secondary"><?= $routeItem["status"] ?></span></td>
                     <td><a class="btn btn-primary btn-sm" href="<?= $BASE_URL ?>delivery/routedetail.php?routeid=<?= $routeItem["id"] ?>"><i class="bi bi-eye-fill"></i></a></td>
                 </tr>
