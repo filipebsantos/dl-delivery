@@ -78,6 +78,12 @@ if (!empty($returnMessage)) {
                             </div>
                         </div>
 
+                        <div class="row mt-2">
+                            <div class="col-5">
+                                <input type="tel" class="form-control" name="txtPhoneNumber" id="txtPhoneNumber" placeholder="WhatsApp" aria-label="WhatsApp">
+                            </div>
+                        </div>
+
                         <div class="row mt-3">
                             <div class="col d-flex align-items-center justify-content-center">
                                 <input type="submit" class="btn btn-primary mt-2" value="Cadastrar">

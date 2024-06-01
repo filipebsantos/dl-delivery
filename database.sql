@@ -30,6 +30,7 @@ CREATE TABLE DLDELIVERY.dbo.users (
 	[role] tinyint DEFAULT 1 NOT NULL,
 	active bit DEFAULT 0 NOT NULL,
 	password varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AI NOT NULL,
+	phonenumber varchar(13) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
 	CONSTRAINT users_pk PRIMARY KEY (id)
 );
 
@@ -83,6 +84,7 @@ CREATE TABLE DLDELIVERY.dbo.routes_clients (
 	id int IDENTITY(1,1) NOT NULL,
 	routeid int NOT NULL,
 	clientid smallint NOT NULL,
+	phonenumber varchar(13) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
 	CONSTRAINT routes_clients_pk PRIMARY KEY (id)
 );
 

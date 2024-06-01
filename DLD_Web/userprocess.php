@@ -19,12 +19,13 @@
                 // Create new user
                 case "create":
 
-                    $Username  = filter_input(INPUT_POST, "txtUserName");
-                    $FirstName = filter_input(INPUT_POST, "txtFirstname");
-                    $LastName  = filter_input(INPUT_POST, "txtLastname");
-                    $Role      = filter_input(INPUT_POST, "optRole");
-                    $Password1 = filter_input(INPUT_POST, "txtPassword1");
-                    $Password2 = filter_input(INPUT_POST, "txtPassword2");
+                    $Username    = filter_input(INPUT_POST, "txtUserName");
+                    $FirstName   = filter_input(INPUT_POST, "txtFirstname");
+                    $LastName    = filter_input(INPUT_POST, "txtLastname");
+                    $Role        = filter_input(INPUT_POST, "optRole");
+                    $Password1   = filter_input(INPUT_POST, "txtPassword1");
+                    $Password2   = filter_input(INPUT_POST, "txtPassword2");
+                    $phoneNumber = filter_input(INPUT_POST, "txtPhoneNumber");
                     
                     if(isset($_POST["optUserActive"])) {
                         $activeUser = 1;
@@ -41,6 +42,7 @@
                         $user->setLastname($LastName);
                         $user->setRole($Role);
                         $user->setUserActive($activeUser);
+                        $user->setPhoneNumber($phoneNumber);
 
                         if ($Password1 === $Password2) {
 
@@ -78,6 +80,7 @@
                     $firstName = filter_input(INPUT_POST, "txtFirstname");
                     $lastName = filter_input(INPUT_POST, "txtLastname");
                     $userRole = filter_input(INPUT_POST, "optRole");
+                    $phoneNumber = filter_input(INPUT_POST, "txtPhoneNumber");
 
                     $user = new User();
                     $updateUser = new UserDAO($dbConn);
@@ -86,6 +89,7 @@
                     $user->setFirstname($firstName);
                     $user->setLastname($lastName);
                     $user->setRole($userRole);
+                    $user->setPhoneNumber($phoneNumber);
                     
                     if(isset($_POST["optUserActive"])) {
                         $user->setUserActive(1);

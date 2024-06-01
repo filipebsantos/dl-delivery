@@ -73,9 +73,9 @@ class RouteDAO implements RouteInterface
                                 FROM routes
                                 LEFT JOIN users
                                 ON routes.deliveryman = users.id
-                                WHERE (status = 'PENDENTE' OR status = 'INICIADA')" . 
-                                ($deliveryman == 0 ? "" : " AND routes.deliveryman = :deliverymanid") . 
-                                (!isset($date) ? "" : " AND DATETRUNC(day, datecreation) = :date");
+                                WHERE (status = 'PENDENTE' OR status = 'INICIADA')" .
+                    ($deliveryman == 0 ? "" : " AND routes.deliveryman = :deliverymanid") .
+                    (!isset($date) ? "" : " AND DATETRUNC(day, datecreation) = :date");
                 break;
 
             case false:
@@ -170,12 +170,11 @@ class RouteDAO implements RouteInterface
         $stmt = $this->dbConn->prepare("SELECT status FROM routes WHERE id = :routeid");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
 
-        try{
+        try {
             $stmt->execute();
             $returnQuery = $stmt->fetch();
 
             if ($returnQuery["status"] === "FINALIZADA") {
-
                 throw new Exception("Rota já finalizada! Inclusão não permitida.");
                 exit;
             }
@@ -190,26 +189,25 @@ class RouteDAO implements RouteInterface
 
         try {
             $stmt->execute();
-            $numRecords = $stmt->fetch();
-        } catch (PDOException $pdoError) {
+            $numRecords = $stmt->fetchColumn();
 
+            if ($numRecords > 0) {
+                throw new Exception("Essa localização já foi adicionada a rota " . $routeid);
+                exit;
+            }
+        } catch (PDOException $pdoError) {
             throw new Exception($pdoError->getMessage());
         }
 
-        if ($numRecords[""] == 0) {
+        // Add location to route
+        $stmt = $this->dbConn->prepare("INSERT INTO routes_locations (routeid, locationid) VALUES (:routeid, :locationid)");
+        $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+        $stmt->bindValue(":locationid", $locationid, PDO::PARAM_INT);
 
-            $stmt = $this->dbConn->prepare("INSERT INTO routes_locations (routeid, locationid) VALUES (:routeid, :locationid)");
-            $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
-            $stmt->bindValue(":locationid", $locationid, PDO::PARAM_INT);
-
-            try {
-                return $stmt->execute();
-            } catch (PDOException $pdoError) {
-
-                throw new Exception($pdoError->getMessage());
-            }
-        } else {
-            throw new Exception("Essa localização já foi adicionada a rota " . $routeid);
+        try {
+            return $stmt->execute();
+        } catch (PDOException $pdoError) {
+            throw new Exception($pdoError->getMessage());
         }
     }
 
@@ -288,13 +286,13 @@ class RouteDAO implements RouteInterface
         $stmt = $this->dbConn->prepare("SELECT status FROM routes WHERE id = :routeid");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
 
-        try{
+        try {
             $stmt->execute();
             $returnQuery = $stmt->fetch();
 
             if ($returnQuery["status"] === "FINALIZADA") {
-                
-                throw new Exception("Rota já finalizada! Inclusão não permitida.");
+
+                throw new Exception("Rota já finalizada! Inclusão não permitida");
                 exit;
             }
         } catch (PDOException $pdoError) {
@@ -305,25 +303,26 @@ class RouteDAO implements RouteInterface
         $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM routes_clients WHERE routeid = :routeid AND clientid = :clientid");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
         $stmt->bindValue(":clientid", $clientid, PDO::PARAM_INT);
-        
-        try{
-            $stmt->execute();
-            $numRecords = $stmt->fetch();
 
-            if ($numRecords[""] == 0) {
+        try {
+            $stmt->execute();
+            $numRecords = $stmt->fetchColumn();
+
+            if ($numRecords == 0) {
 
                 // Add client to route
                 $stmt = $this->dbConn->prepare("INSERT INTO routes_clients (routeid, clientid) VALUES (:routeid, :clientid)");
                 $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
                 $stmt->bindValue(":clientid", $clientid, PDO::PARAM_INT);
-                
-                try{
+
+                try {
                     return $stmt->execute();
                 } catch (PDOException $pdoError) {
                     throw new Exception($pdoError->getMessage());
                 }
             } else {
-                return false;
+                throw new Exception("Este cliente já foi adicionado a essa rota");
+                exit;
             }
         } catch (PDOException $pdoError) {
             throw new Exception($pdoError->getMessage());
@@ -334,15 +333,17 @@ class RouteDAO implements RouteInterface
     {
         $stmt = $this->dbConn->prepare("SELECT routes_clients.clientid,
                                                clients.name,
+                                               routes_clients.phonenumber,
+                                               routes_clients.status,
                                                COUNT(locations.id) AS location_qty
                                         FROM routes_clients
                                         JOIN clients ON routes_clients.clientid = clients.id
                                         LEFT JOIN locations ON clients.id = locations.clientid
                                         WHERE routes_clients.routeid = :routeid
-                                        GROUP BY routes_clients.clientid, clients.name");
+                                        GROUP BY routes_clients.clientid, clients.name, routes_clients.phonenumber, routes_clients.status");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
-    
-        try{
+
+        try {
             $stmt->execute();
             $returnQuery = $stmt->fetchAll();
             return $returnQuery;
@@ -350,7 +351,7 @@ class RouteDAO implements RouteInterface
             throw new Exception($pdoError->getMessage());
         }
     }
-    
+
 
     public function deleteRouteClient(int $routeid, int $clientid)
     {
@@ -358,7 +359,54 @@ class RouteDAO implements RouteInterface
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
         $stmt->bindValue(":clientid", $clientid, PDO::PARAM_INT);
 
-        try{
+        try {
+            return $stmt->execute();
+        } catch (PDOException $pdoError) {
+            throw new Exception($pdoError->getMessage());
+        }
+    }
+
+    public function changeRouteClientStatus(int $routeid, int $clientid, int $status)
+    {
+        // Check if routes is started
+        $stmt = $this->dbConn->prepare("SELECT status FROM routes WHERE id = :routeid");
+        $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+        try {
+            $stmt->execute();
+            $queryResult = $stmt->fetch();
+
+            if ($queryResult["status"] != "INICIADA") {
+                throw new Exception("Rota com status inválido");
+                exit;
+            }
+        } catch (PDOException $pdoError) {
+            throw new Exception($pdoError->getMessage());
+        }
+
+        // Check if alrady existis another client in same route with delivery status in progress before update another record
+        if ($status == 1) {
+            $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM routes_clients WHERE routeid = :routeid AND status = 1");
+            $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+            try {
+                $stmt->execute();
+                $queryResult = $stmt->fetchColumn();
+
+                if ($queryResult > 0) {
+                    throw new Exception("Já existe um cliente com entrega em andamento");
+                    exit;
+                }
+            } catch (PDOException $pdoError) {
+                throw new Exception($pdoError->getMessage());
+            }
+        }
+
+        // Update client route status
+        $stmt = $this->dbConn->prepare("UPDATE routes_clients SET status = :status WHERE routeid = :routeid AND clientid = :clientid");
+        $stmt->bindValue(":status", $status, PDO::PARAM_INT);
+        $stmt->bindValue(":clientid", $clientid, PDO::PARAM_INT);
+        $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+
+        try {
             return $stmt->execute();
         } catch (PDOException $pdoError) {
             throw new Exception($pdoError->getMessage());

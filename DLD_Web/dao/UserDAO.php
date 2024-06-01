@@ -14,7 +14,7 @@
         public function getUser(int $userid) {
             
 
-            $stmt = $this->dbConn->prepare("SELECT id, username, firstname, lastname, token, tokenexpiration, role, active FROM users WHERE id = :id");
+            $stmt = $this->dbConn->prepare("SELECT id, username, firstname, lastname, token, tokenexpiration, role, active, phonenumber FROM users WHERE id = :id");
             $stmt->bindParam(":id", $userid);
 
             try{
@@ -27,9 +27,15 @@
             }
         }
 
-        public function listUsers() {
+        public function listUsers(bool $onlyActive = false) {
 
-            $stmt = $this->dbConn->query("SELECT id, username, firstname, lastname, role, active FROM users");
+            if ($onlyActive == false) {
+                $query = "SELECT id, username, firstname, lastname, role, active FROM users";
+            } else {
+                $query = "SELECT id, username, firstname, lastname, role, active FROM users WHERE active = 1";
+            }
+
+            $stmt = $this->dbConn->query($query);
             
             try{
                 return $stmt->fetchAll();
@@ -66,6 +72,7 @@
             $stmt->bindValue(":password", $user->getPassword());
             $stmt->bindValue(":role", $user->getRole());
             $stmt->bindValue(":active", $user->getUserActive());
+            $stmt->bindValue(":phoneNumber", $user->getPhoneNumber());
             
             try {
                 return $stmt->execute();
@@ -79,11 +86,12 @@
             // Check user id and user role is set
             if (($user->getId() != null) && ($user->getFirstname() != null) && ($user->getLastname() != null) && ($user->getRole() != null)){
 
-                $stmt = $this->dbConn->prepare("UPDATE users SET firstname = :firstname, lastname = :lastname, role = :role, active = :active WHERE id = :id");
+                $stmt = $this->dbConn->prepare("UPDATE users SET firstname = :firstname, lastname = :lastname, role = :role, active = :active, phonenumber = :phoneNumber WHERE id = :id");
                 $stmt->bindValue(":firstname", $user->getFirstname());
                 $stmt->bindValue(":lastname", $user->getLastname());
                 $stmt->bindValue(":role", $user->getRole());
                 $stmt->bindValue(":active", $user->getUserActive());
+                $stmt->bindValue(":phoneNumber", $user->getPhoneNumber());
                 $stmt->bindValue(":id", $user->getId());
 
                 try{

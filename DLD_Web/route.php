@@ -11,7 +11,7 @@ if (!empty($returnMessage)) {
 }
 
 $users = new UserDAO($dbConn);
-$userList = $users->listUsers();
+$userList = $users->listUsers(true);
 
 if (!isset($_SESSION["filteredRoutes"])) {
     $routes = new RouteDAO($dbConn);
