@@ -2,7 +2,9 @@
     require_once("globals.php");
     require_once("includes/db.php");
     require_once("dao/RouteDAO.php");
+    require_once("dao/UserDAO.php");
     require_once("models/Messages.php");
+    require_once("models/Whatsapp.php");
 
     $message = new Message($BASE_URL);
     $routeDAO = new RouteDAO($dbConn);
@@ -23,12 +25,17 @@
 
                         if ($routeid != false && $locationid != false && $clientid != false) {
                             
+                            // Try to add client to route
                             try{
                                 $routeDAO->addClientToRoute($routeid, $clientid);
+                            } catch (Exception $error) {
+                                // Do nothing
+                            }
+
+                            try{
                                 $routeDAO->addRouteLocation($routeid, $locationid);
                                 $message->setMessage("Localização adicionada a rota", "success", "back");
                             } catch (Exception $error) {
-
                                 $message->setMessage($error->getMessage(), "danger", "back");
                             }
                         }
@@ -68,6 +75,24 @@
                         if ($routeid != false && $routeStatus != false && ($routeStatus == "INICIADA" || $routeStatus == "FINALIZADA")) {
                             try{
                                 $routeDAO->changeRouteStatus(intval($routeid), $routeStatus);
+
+                                if ($routeStatus == "INICIADA") {
+                                    $routeClients = $routeDAO->listRouteClients($routeid);
+
+                                    $listNumber = [];
+                                    foreach ($routeClients as $client) {
+                                        if (!is_null($client["phonenumber"]) || !empty($client["phonenumber"])) {
+                                            array_push($listNumber, $client["phonenumber"]);
+                                        }
+                                    }
+
+                                    if (count($listNumber) > 0){
+                                        $whastapp = new Whatsapp();
+                                        $whastappMessage = "Olá! 👋 \n\nSou o entregador da *Drogaria Litorânea*! Seu pedido está saindo para rota. 🛵 \n\nQuando eu estiver indo para seu endereço entro em contato novamente!\n\n_Mensagem Automática_";
+                                        $whastapp->sendMultipleWhatsAppMessage($listNumber, $whastappMessage);
+                                    }
+                                }
+
                                 $message->setMessage("Status da rota atualizado", "success", "back");
                             } catch (Exception $error) {
                                 $message->setMessage($error->getMessage(), "danger", "back");
@@ -81,7 +106,7 @@
                     }
                     break;
                 
-                case "create":
+                case "create":  
 
                     if (isset($_POST["optDeliveryman"]) && isset($_POST["createdBy"])) {
                         
@@ -96,12 +121,19 @@
 
                             try{
                                 $routeDAO->addNewRoute($route);
-                                $message->setMessage("Nova rota criada", "success", "back");
-
                             } catch (Exception $error) {
-
                                 $message->setMessage($error->getMessage(), "danger", "back");
                             }
+
+                            $deliverymanData = new UserDAO($dbConn);
+                            $dUser = $deliverymanData->getUser($deliveryman);
+
+                            if (!is_null($dUser["phonenumber"])){
+                                $whastapp = new Whatsapp();
+                                $whastapp->sendWhatsappMessage($dUser["phonenumber"], "🛵 *DL Delivery*\n\nUma nova rota está disponível para você!\n\n_Mensagem Automática_");
+                            }
+
+                            $message->setMessage("Nova rota criada", "success", "back");
                         }
                     }
 
@@ -131,8 +163,8 @@
                         $today = date_create();
                         $diff = date_diff(date_create($filterDate), $today);
                         
-                        if ($diff->invert == 1){
-                            $message->setMessage("A data não pode ser maior que o dia de hoje", "danger", "route.php");
+                        if ($diff->invert == 1) {
+                            $message->setMessage("A data não pode ser maior que o dia de hoje", "danger", "back");
                             exit;
                         }
 
@@ -194,6 +226,44 @@
                         }
                     }
 
+                    break;
+                
+                case "changeClientRouteStatus":
+                    
+                    if (isset($_POST["routeid"]) && isset($_POST["clientid"]) && isset($_POST["status"])) {
+
+                        $routeid = filter_input(INPUT_POST, "routeid", FILTER_SANITIZE_NUMBER_INT);
+                        $clientid = filter_input(INPUT_POST, "clientid", FILTER_SANITIZE_NUMBER_INT);
+                        $status = filter_input(INPUT_POST, "status", FILTER_SANITIZE_NUMBER_INT);
+
+                        if ($routeid != false && $clientid != false && $status != false) {
+
+                            try {
+                                $routeDAO->changeRouteClientStatus($routeid, $clientid, $status);
+
+                                $message->setMessage("Status atualizado", "success", "back");
+                            } catch (Exception $error) {
+                                $message->setMessage($error->getMessage(), "danger", "back");
+                            }
+                        }
+                    }
+
+                    if (isset($_POST["phoneNumber"])) {
+                        $phoneNumber = filter_input(INPUT_POST, "phoneNumber");
+                        $whastapp = new Whatsapp();
+                        
+                        switch (intval($status)) {
+                            case 1:
+                                $message = "🙋‍♂️ Olá! \n\nSou o entregador da *Drogaria Litorânea* e estou no caminho do seu endereço para fazer sua entrega. 🛵💨 \n\nPor favor fique atento para receber seu pedido!\n\n_Mensagem Automática_";
+                                break;
+                            
+                            case 2:
+                                $message = "📦 Seu pedido foi entregue!\n\nObrigado pela preferência e continuamos a disposição! 🤝\n\n_Mensagem Automática_";
+                                break;
+                        }
+
+                        $whastapp->sendWhatsappMessage($phoneNumber, $message);
+                    }
                     break;
             }
         }

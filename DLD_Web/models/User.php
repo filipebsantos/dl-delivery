@@ -12,6 +12,7 @@
         private $token;
         private $tokenExpiration;
         private $active;
+        private $phoneNumber;
 
         public function __construct() {
             
@@ -103,11 +104,19 @@
             $this->active = intval($active);
         }
 
+        public function setPhoneNumber(string $phone) {
+            $this->phoneNumber = $phone;
+        }
+
+        public function getPhoneNumber() {
+            return $this->phoneNumber;
+        }
+
     }
 
     interface UserInterface {
         // List user
-        public function listUsers();
+        public function listUsers(bool $onlyActive = false);
         
         // Create user
         public function createUser(User $user);

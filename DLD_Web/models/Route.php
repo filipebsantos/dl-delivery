@@ -96,4 +96,7 @@
 
         // Delete client from route
         public function deleteRouteClient(int $routeid, int $clientid);
+
+        // Client's route status
+        public function changeRouteClientStatus(int $routeid, int $clientid, int $status);
     }
