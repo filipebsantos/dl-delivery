@@ -59,3 +59,22 @@ footer {
     text-decoration: none;
     color: black;
 }
+
+/*
+    addlocations.php
+*/
+
+.video-container, .canvas-container {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+#player, #canvas {
+    width: 100%;
+    height: auto;
+}
+
+#canvasContainer {
+    display: none;
+}

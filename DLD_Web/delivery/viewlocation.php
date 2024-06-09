@@ -41,7 +41,8 @@ if (isset($_GET["locationid"]) && $_GET["locationid"] !== null) {
         <h3 class="mb-2">Localização</h3>
         <form action="<?= $BASE_URL ?>locationprocess.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="action" value="update">
-            <input type="hidden" name="txtLocationId" value="<?= $locationData["id"]?>">
+            <input type="hidden" name="capturedPhoto" id="capturedPhoto">
+            <input type="hidden" name="txtLocationId" value="<?= $locationData["id"] ?>">
 
             <div class="input-group mb-2">
                 <span class="input-group-text" id="txtClientId">ID</span>
@@ -112,18 +113,41 @@ if (isset($_GET["locationid"]) && $_GET["locationid"] !== null) {
                 <textarea class="form-control" name="txtObs" id="txtObs" maxlength="255" rows="3"><?= isset($loadedData) ? $locationData["obs"] : "" ?></textarea>
             </div>
 
-            <div class="input-group mb-2">
-                <label class="input-group-text" for="imgHousePic">Foto da casa</label>
-                <input type="file" class="form-control" name="imgHousePic" id="imgHousePic" accept="image/png, image/jpeg">
-            </div>
-
             <div class="d-grid gap-2">
+                <button type="button" id="openCameraModal" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cameraModal">
+                    <i class="bi bi-camera-fill"></i> Tirar foto
+                </button>
                 <input class="btn btn-primary" type="submit" value="Editar Localização">
                 <a href="<?= $_SERVER["HTTP_REFERER"] ?>" class="btn btn-secondary">Voltar</a>
             </div>
 
+            <!-- Camera Modal -->
+            <div class="modal fade" id="cameraModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cameraModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="cameraModalLabel">Foto da Casa</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="videoContainer" id="videoContainer">
+                                <video id="player" autoplay playsinline></video>
+                            </div>
+                            <div class="canvasContainer" id="canvasContainer">
+                                <canvas id="canvas" id="canvas" width="800" height="600"></canvas>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="captureButton" type="button" class="btn btn-primary"><i class="bi bi-camera-fill"></i> Tirar foto</button>
+                            <button id="closeModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Camera Modal -->
         </form>
     </div>
 </div>
+<script src="<?= $BASE_URL ?>js/custom/camera.js"></script>
 <?php
 require_once(__DIR__ . "/../includes/footer.php");

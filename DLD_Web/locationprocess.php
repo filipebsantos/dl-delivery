@@ -127,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     if (isset($_FILES["imgHousePic"]) && $_FILES["imgHousePic"]["error"] == 0) {
 
                         //Check file type
-                        if ($_FILES["imgHousePic"]["type"] == "image/png" || $_FILES["imgHousePic"]["type"] == "image/jpeg") {
+                        if ($_FILES["imgHousePic"]["type"] == "image/png" || $_FILES["imgHousePic"]["type"] == "image/jpeg" || $_FILES["imgHousePic"]["type"] == "image/wepb") {
 
                             // Check file size
                             if ($_FILES["imgHousePic"]["size"] <= 5242880) {
@@ -139,6 +139,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                                     case "image/jpeg":
                                         $fileExtension = ".jpg";
+                                        break;
+
+                                    case "image/webp":
+                                        $fileExtension = ".webp";
                                         break;
                                 }
 
@@ -156,6 +160,35 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             }
                         } else {
                             $message->setMessage("Tipo de imagem não permitido  ", "danger", "back");
+                            exit;
+                        }
+                    }
+
+                    // Check image uploaded from mobile version
+                    if (isset($_POST["capturedPhoto"]) && !empty($_POST["capturedPhoto"])) {
+                        $mobilePhoto = $_POST["capturedPhoto"];
+                        $photoData = explode(",", $mobilePhoto);
+
+                        // Check if uploaded image is a image/webp before decode
+                        if ($photoData[0] === "data:image/webp;base64") {
+                            $photoBase64 = base64_decode(end($photoData));
+                        } else {
+                            $message->setMessage("Formato de imagem inválido. Apenas WEBP é permitido.", "danger", "back");
+                            exit;
+                        }
+
+                        // Check if decoded file is a valid image/webp
+                        $webpInfo = new finfo(FILEINFO_MIME_TYPE);
+                        $mimeType = $webpInfo->buffer($photoBase64);
+
+                        if ($mimeType === "image/webp") {
+                            // Generate random name
+                            $fileName = bin2hex(random_bytes(16));
+                            file_put_contents("/var/www/html/imgs/houses/" . $fileName . ".webp", $photoBase64);
+
+                            $location->setHousePicture($fileName . ".webp");
+                        } else {
+                            $message->setMessage("A imagem enviada não é um formado WEBP válido.", "danger", "back");
                             exit;
                         }
                     }
@@ -295,6 +328,40 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                         if (!empty($getlocation["housepicture"])) {
                             $location->setHousePicture($getlocation["housepicture"]);
+                        }
+                    }
+
+                    // Check image uploaded from mobile version
+                    if (isset($_POST["capturedPhoto"]) && !empty($_POST["capturedPhoto"])) {
+                        $mobilePhoto = $_POST["capturedPhoto"];
+                        $photoData = explode(",", $mobilePhoto);
+                        
+                        // Check if uploaded image is a image/webp before decode
+                        if ($photoData[0] === "data:image/webp;base64") {
+                            $photoBase64 = base64_decode(end($photoData));
+                        } else {
+                            $message->setMessage("Formato de imagem inválido. Apenas WEBP é permitido.", "danger", "back");
+                            exit;
+                        }
+
+                        // Check if decoded file is a valid image/webp
+                        $webpInfo = new finfo(FILEINFO_MIME_TYPE);
+                        $mimeType = $webpInfo->buffer($photoBase64);
+
+                        if ($mimeType === "image/webp") {
+                            // Generate random name
+                            $fileName = bin2hex(random_bytes(16));
+                            file_put_contents("/var/www/html/imgs/houses/" . $fileName . ".webp", $photoBase64);
+
+                            $location->setHousePicture($fileName . ".webp");
+
+                            // Delete old image if exists
+                            if (!empty($getlocation["housepicture"])) {
+                                unlink("/var/www/html/imgs/houses/" . $getlocation["housepicture"]);
+                            }
+                        } else {
+                            $message->setMessage("A imagem enviada não é um formado WEBP válido.", "danger", "back");
+                            exit;
                         }
                     }
 
