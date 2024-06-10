@@ -26,6 +26,24 @@
         public function newLocation(Location $loc) {
 
             $coordinate = $loc->getCoordinates();
+
+            // Locations type "RESIDENCIA" and "TRABALHO" are unique, so, there is allowed just one record for "RESIDENCIA" and "TRABALHO" per client.
+            if ($loc->getLocationType() == "RESIDENCIA" || $loc->getLocationType() == "TRABALHO") {
+                $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM locations WHERE clientid = :clientid AND type = :type");
+                $stmt->bindValue(":clientid", $loc->getLocationClient(), PDO::PARAM_INT);
+                $stmt->bindValue(":type", $loc->getLocationType());
+
+                try{
+                    $stmt->execute();
+                    $numRecords = $stmt->fetchColumn();
+
+                    if ($numRecords == 1) {
+                        throw new Exception("Já existe uma localização cadastrada como ". $loc->getLocationType());
+                    }
+                } catch (PDOException $pdoError) {
+                    throw new Exception($pdoError->getMessage());
+                }
+            }
             
             $stmt = $this->dbConn->prepare("INSERT INTO locations (clientid, latitude, longitude, neighborhood, housepicture, obs, type) VALUES (:clientid, :latitude, :longitude, :neighborhood, :housepicture, :obs, :type)");
             $stmt->bindValue(":clientid", $loc->getLocationClient(), PDO::PARAM_INT);
