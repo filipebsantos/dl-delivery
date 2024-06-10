@@ -230,7 +230,7 @@ if (isset($_SESSION["locationReturn"])) {
                                 <?php else : ?>
                                     <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-play-fill"></i></button></td>
                                 <?php endif; ?>
-                                <td><?= intval($rClients["location_qty"]) == 0 ? "style='color: red; font-weight: bold;'" : "" ?><?= !empty($rClients["name"]) ? $rClients["name"] : "Não encontrado" ?></td>
+                                <td <?= intval($rClients["has_residence"]) == 0 ? "style='color: red; font-weight: bold;'" : "" ?>><?= !empty($rClients["name"]) ? $rClients["name"] : "Não encontrado" ?></td>
                                 <td>
                                     <a class="btn btn-<?= is_null($rClients["phonenumber"]) ? "secondary" : "success" ?> btn-sm" href="<?= is_null($rClients["phonenumber"]) ? "#" : "https://wa.me/55" . $rClients["phonenumber"] ?>" <?= is_null($rClients["phonenumber"]) ? "" : "target='_blank'" ?>>
                                         <i class="bi bi-whatsapp"></i>

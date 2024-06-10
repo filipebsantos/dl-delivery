@@ -184,7 +184,7 @@ if (isset($_SESSION["locationReturn"])) {
                             <tbody class="table-group-divider">
                                 <?php foreach ($routeClients as $rClients) : ?>
                                     <tr scope="row">
-                                        <td <?= intval($rClients["location_qty"]) == 0 ? "style='color: red; font-weight: bold;'" : "" ?>><?= !empty($rClients["name"]) ? $rClients["name"] : "Não encontrado" ?></td>
+                                        <td <?= intval($rClients["has_residence"]) == 0 ? "style='color: red; font-weight: bold;'" : "" ?>><?= !empty($rClients["name"]) ? $rClients["name"] : "Não encontrado" ?></td>
                                         <td><a class="btn btn-primary btn-sm" href="<?= $BASE_URL ?>addlocation.php?clie=<?= $rClients["clientid"] ?>">Cadastrar Localização</a></td>
                                         <td>
                                             <form action="locationprocess.php" method="post"><input type="hidden" name="action" value="find"><input type="hidden" name="origin" value="route"><input type="hidden" name="origin" value="route"><input type="hidden" name="routeid" value="<?= $route["id"] ?>"><input type="hidden" name="txtClientId" value="<?= $rClients["clientid"] ?>"><button type="submit" class="btn btn-primary btn-sm">Ver Localizações</button></form>

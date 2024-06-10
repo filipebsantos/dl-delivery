@@ -18,7 +18,7 @@ services:
       - DB_NAME=DLDELIVERY
       - DB_USER=sa
       - DB_PASS=S3nh@F0rt3
-      - HTTP_PROTOCOL=https # Options, http or https
+      - HTTP_PROTOCOL=http # Options, http or https
 #      - HTTP_SERVER_PORT=4443 # OPTIONAL - Use this variable only if your webserver is listening in a non-standard port.
 
   database:

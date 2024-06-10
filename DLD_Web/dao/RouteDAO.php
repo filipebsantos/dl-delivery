@@ -332,15 +332,25 @@ class RouteDAO implements RouteInterface
     public function listRouteClients(int $routeid)
     {
         $stmt = $this->dbConn->prepare("SELECT routes_clients.clientid,
+                                               clients.id,
                                                clients.name,
                                                routes_clients.phonenumber,
                                                routes_clients.status,
-                                               COUNT(locations.id) AS location_qty
+                                               CASE 
+                                                   WHEN EXISTS (
+                                                       SELECT 1
+                                                       FROM locations
+                                                       WHERE locations.clientid = clients.id
+                                                         AND locations.type = 'RESIDENCIA'
+                                                   ) 
+                                                   THEN 1
+                                                   ELSE 0
+                                               END AS has_residence
                                         FROM routes_clients
                                         JOIN clients ON routes_clients.clientid = clients.id
                                         LEFT JOIN locations ON clients.id = locations.clientid
                                         WHERE routes_clients.routeid = :routeid
-                                        GROUP BY routes_clients.clientid, clients.name, routes_clients.phonenumber, routes_clients.status");
+                                        GROUP BY routes_clients.clientid, clients.id, clients.name, routes_clients.phonenumber, routes_clients.status");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
 
         try {
