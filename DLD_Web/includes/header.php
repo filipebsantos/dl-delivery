@@ -19,8 +19,9 @@ if (!isset($_SESSION["activeUser"])) {
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
+    <link rel="shortcut icon" href="<?= $BASE_URL ?>static/favicon-64x64.png" type="image/png">
+    <link rel="manifest" href="<?= $BASE_URL ?>static/manifest.json">
     <script src="<?= $BASE_URL ?>js/jquery/jquery-3.7.1.min.js"></script>
-    <link rel="shortcut icon" href="<?= $BASE_URL ?>imgs/favicon-dld.png" type="image/png">
 </head>
 
 <body>
@@ -28,7 +29,7 @@ if (!isset($_SESSION["activeUser"])) {
         <nav class="navbar" id="navigation-bar">
             <div class="container-fluid">
                 <div id="nav-logo">
-                    <img src="<?= $BASE_URL ?>imgs/favicon-dld.png" alt="DL Delivery WEB" class="navbar-brand">
+                    <img src="<?= $BASE_URL ?>static/favicon-64x64.png" alt="DL Delivery WEB" class="navbar-brand">
                     <span class="navbar-brand"><?= APP_NAME ?></span>
                 </div>
                 <?php if (dirname($_SERVER["REQUEST_URI"]) == "/delivery") : ?>

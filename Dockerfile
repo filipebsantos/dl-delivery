@@ -3,7 +3,7 @@ FROM ${baseImage}
 
 ARG baseImage
 ARG appName="DL Delivery"
-ARG appVersion="1.0-rc2"
+ARG appVersion="1.0-rc3"
 ENV APP_NAME=${appName}
 ENV APP_VERSION=${appVersion}
 
@@ -16,7 +16,7 @@ LABEL "org.opencontainers.image.description"="${APP_NAME} is an auxiliary delive
 LABEL "org.opencontainers.image.ref.name"="${baseImage}"
 
 # Install dependencies to build PDO Drivers
-RUN apt update && apt install -y build-essential unixodbc-dev gnupg \
+RUN apt update && apt install -y nano build-essential unixodbc-dev gnupg \
     && docker-php-ext-install pdo \
     && docker-php-ext-enable pdo
 

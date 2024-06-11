@@ -85,7 +85,10 @@ CREATE TABLE DLDELIVERY.dbo.routes_clients (
 	routeid int NOT NULL,
 	clientid smallint NOT NULL,
 	phonenumber varchar(13) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
-	CONSTRAINT routes_clients_pk PRIMARY KEY (id)
+	status tinyint DEFAULT 0 NULL,
+	CONSTRAINT routes_clients_pk PRIMARY KEY (id),
+	CONSTRAINT routes_clients_clients_FK FOREIGN KEY (clientid) REFERENCES DLDELIVERY.dbo.clients(id) ON UPDATE CASCADE,
+	CONSTRAINT routes_clients_routes_FK FOREIGN KEY (routeid) REFERENCES DLDELIVERY.dbo.routes(id) ON DELETE CASCADE
 );
 
 

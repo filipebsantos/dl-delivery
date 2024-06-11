@@ -65,14 +65,15 @@
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
-    <link rel="shortcut icon" href="<?= $BASE_URL ?>imgs/favicon-dld.png" type="image/png">
+    <link rel="manifest" href="<?= $BASE_URL ?>static/manifest.json">
+    <link rel="shortcut icon" href="<?= $BASE_URL ?>static/favicon-64x64.png" type="image/png">
 </head>
 <body>
     <header>
         <nav class="navbar" id="navigation-bar">
             <div class="container-fluid">
                 <div id="nav-logo">
-                    <img src="<?= $BASE_URL ?>imgs/favicon-dld.png" alt="DL Delivery WEB" class="navbar-brand">
+                    <img src="<?= $BASE_URL ?>static/favicon-64x64.png" alt="DL Delivery WEB" class="navbar-brand">
                     <span class="navbar-brand"><?= APP_NAME ?></span>
                 </div>
             </div>
@@ -90,7 +91,7 @@
 <div class="container mt-5">
 
     <div class="container border rounded shadow" id="login-box">
-        <img src="<?= $BASE_URL ?>imgs/favicon-dld.png" id="img-logo" alt="Logomarca DL Delivery">
+        <img src="<?= $BASE_URL ?>static/chrome-android-196x196.png" id="img-logo" alt="Logomarca DL Delivery">
         <form action="<?= $BASE_URL ?>login.php" method="post">
             <input type="hidden" name="action" value="login">
 
