@@ -61,10 +61,10 @@ footer {
 }
 
 /*
-    addlocations.php
+    addlocation.php / viewlocation.php
 */
 
-.video-container, .canvas-container {
+.videoContainer, .canvasContainer {
     width: 320px;
     height: 240px;
     margin: 0 auto;
