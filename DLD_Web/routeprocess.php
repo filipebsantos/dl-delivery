@@ -239,7 +239,7 @@
                         if ($routeid != false && $clientid != false && $status != false) {
 
                             try {
-                                $routeDAO->changeRouteClientStatus($routeid, $clientid, $status);
+                                $changeStatus = $routeDAO->changeRouteClientStatus($routeid, $clientid, $status);
 
                                 $message->setMessage("Status atualizado", "success", "back");
                             } catch (Exception $error) {
@@ -248,13 +248,13 @@
                         }
                     }
 
-                    if (isset($_POST["phoneNumber"])) {
+                    if (isset($_POST["phoneNumber"]) && $changeStatus == true) {
                         $phoneNumber = filter_input(INPUT_POST, "phoneNumber");
                         $whastapp = new Whatsapp();
                         
                         switch (intval($status)) {
                             case 1:
-                                $message = "🙋‍♂️ Olá! \n\nSou o entregador da *Drogaria Litorânea* e estou no caminho do seu endereço para fazer sua entrega. 🛵💨 \n\nPor favor fique atento para receber seu pedido!\n\n_Mensagem Automática_";
+                                $message = "🛵💨 Estou no caminho do seu endereço para fazer sua entrega. \n\nPor favor fique atento para receber seu pedido!\n\n_Mensagem Automática_";
                                 break;
                             
                             case 2:

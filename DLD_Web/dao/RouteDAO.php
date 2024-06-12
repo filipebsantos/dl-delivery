@@ -381,43 +381,43 @@ class RouteDAO implements RouteInterface
         // Check if routes is started
         $stmt = $this->dbConn->prepare("SELECT status FROM routes WHERE id = :routeid");
         $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+
         try {
             $stmt->execute();
             $queryResult = $stmt->fetch();
 
-            if ($queryResult["status"] != "INICIADA") {
-                throw new Exception("Rota com status inválido");
-                exit;
-            }
-        } catch (PDOException $pdoError) {
-            throw new Exception($pdoError->getMessage());
-        }
+            if ($queryResult["status"] == "INICIADA" || ($queryResult["status"] == "FINALIZADA" && $status == 2)) {
+                // Check if alrady existis another client in same route with delivery status in progress before update another record
+                if ($status == 1) {
+                    $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM routes_clients WHERE routeid = :routeid AND status = 1");
+                    $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+                    try {
+                        $stmt->execute();
+                        $queryResult = $stmt->fetchColumn();
 
-        // Check if alrady existis another client in same route with delivery status in progress before update another record
-        if ($status == 1) {
-            $stmt = $this->dbConn->prepare("SELECT COUNT(*) FROM routes_clients WHERE routeid = :routeid AND status = 1");
-            $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
-            try {
-                $stmt->execute();
-                $queryResult = $stmt->fetchColumn();
-
-                if ($queryResult > 0) {
-                    throw new Exception("Já existe um cliente com entrega em andamento");
-                    exit;
+                        if ($queryResult > 0) {
+                            throw new Exception("Já existe um cliente com entrega em andamento.");
+                        }
+                    } catch (PDOException $pdoError) {
+                        throw new Exception($pdoError->getMessage());
+                    }
                 }
-            } catch (PDOException $pdoError) {
-                throw new Exception($pdoError->getMessage());
+
+                // Update client route status
+                $stmt = $this->dbConn->prepare("UPDATE routes_clients SET status = :status WHERE routeid = :routeid AND clientid = :clientid");
+                $stmt->bindValue(":status", $status, PDO::PARAM_INT);
+                $stmt->bindValue(":clientid", $clientid, PDO::PARAM_INT);
+                $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
+
+                try {
+                    return $stmt->execute();
+                } catch (PDOException $pdoError) {
+                    throw new Exception($pdoError->getMessage());
+                }
+            } else {
+
+                throw new Exception("Rota com status inválido. >:-(");
             }
-        }
-
-        // Update client route status
-        $stmt = $this->dbConn->prepare("UPDATE routes_clients SET status = :status WHERE routeid = :routeid AND clientid = :clientid");
-        $stmt->bindValue(":status", $status, PDO::PARAM_INT);
-        $stmt->bindValue(":clientid", $clientid, PDO::PARAM_INT);
-        $stmt->bindValue(":routeid", $routeid, PDO::PARAM_INT);
-
-        try {
-            return $stmt->execute();
         } catch (PDOException $pdoError) {
             throw new Exception($pdoError->getMessage());
         }
