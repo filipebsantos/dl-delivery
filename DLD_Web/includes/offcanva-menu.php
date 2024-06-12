@@ -33,6 +33,7 @@
             <input class="form-control" type="tel" placeholder="DDD + Número" aria-label="WhatsApp" name="wppTel" id="wppTel">
             <button class="btn btn-success" type="button" onclick="openWhatsApp()"><i class="bi bi-whatsapp"></i></button>
         </div>
+        <script src="<?= $BASE_URL ?>js/custom/custom.js"></script>
     </div>
     <div class="offcanvas-footer text-center mb-5">
         <div class="row d-flex flex-column">

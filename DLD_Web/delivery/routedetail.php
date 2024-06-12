@@ -79,6 +79,9 @@ if (isset($_SESSION["locationReturn"])) {
                     <i class="bi bi-stop-fill"></i> Finalizar rota
                 </button>
             </form>
+            <button id="buttonGoogleMapsRoute" class="btn btn-success" onclick="openGoogleMapsRoute()">
+                Iniciar Rota
+            </button>
         <?php endif; ?>
     </div>
 
@@ -141,6 +144,7 @@ if (isset($_SESSION["locationReturn"])) {
                                 <iframe loading="lazy" height="300" width="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?width=100%25&amp;height=400&amp;hl=pt&amp;gl=BR&amp;q=<?= $location["latitude"] ?>,%20<?= $location["longitude"] ?>&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                             </div>
                             <div class="modal-footer">
+                                <a href="https://www.google.com/maps/search/?api=1&query=<?= $location["latitude"] ?>%2C<?= $location["longitude"] ?>&hl=pt-br" target="_blank" class="btn btn-primary">Abrir no Google Maps</a>
                                 <button class="btn btn-primary" data-bs-target="#modalLocationList" data-bs-toggle="modal">Voltar para lista</button>
                             </div>
                         </div>
@@ -313,13 +317,34 @@ if (isset($_SESSION["locationReturn"])) {
                             <iframe loading="lazy" height="300" width="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?width=100%25&amp;height=400&amp;hl=pt&amp;gl=BR&amp;q=<?= $location["latitude"] ?>,%20<?= $location["longitude"] ?>&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         </div>
                         <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#modalHousePicture<?= $location["id"] ?>" data-bs-toggle="modal"><i class="bi bi-house-fill"></i> Foto da casa</button>
                             <button class="btn btn-primary" data-bs-target="#modalLocationList" data-bs-toggle="modal">Voltar para lista</button>
                         </div>
                     </div>
                 </div>
             </div>
         <?php endforeach; ?>
-        <!-- Modal for minimaps -->
+        <!-- End Modal for minimaps -->
+
+        <!-- Modal for house picture -->
+        <?php foreach ($client_locations as $location) : ?>
+            <div class="modal fade" id="modalHousePicture<?= $location["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel"><i class="bi bi-house-fill"></i> Foto da Casa</h1>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img loading="lazy" src="<?= $location["housepicture"] !== null ? $BASE_URL . "imgs/houses/" . $location["housepicture"] : $BASE_URL . "imgs/picture.jpg" ?>" width="300" height="auto" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#modalLocationList" data-bs-toggle="modal">Voltar para lista</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+        <!-- End Modal for house picture -->
     <?php endif; ?>
 
 </div>
@@ -331,8 +356,9 @@ if (isset($_SESSION["locationReturn"])) {
     </script>
 <?php endif; ?>
 <script>
-    document.getElementById("startRouteButton").addEventListener("click", function(event) {
-        event.preventDefault();
+    function getGoogleMapsUrl() {
+        const finalDestination = "-3.411313,-39.030812";
+        const finalDestinationPlaceId = "ChIJMdZOFQMfwQcRrwq0qSA926A";
 
         let destinations = [];
         document.querySelectorAll("button[data-lat][data-lng]").forEach(function(element) {
@@ -341,21 +367,31 @@ if (isset($_SESSION["locationReturn"])) {
             destinations.push(lat + "," + lng);
         });
 
-        let finalDestination = "-3.411313,-39.030812";
-        let finalDestinationPlaceId = "ChIJMdZOFQMfwQcRrwq0qSA926A";
+        let googleMapsUrl = "https://www.google.com/maps/dir/?api=1&travelmode=driving";
+        googleMapsUrl += "&waypoints=" + destinations.join("%7C");
+        googleMapsUrl += "&destination=" + finalDestination + "&destination_place_id=" + finalDestinationPlaceId;
 
-        if (destinations.length > 0) {
-            let googleMapsUrl = "https://www.google.com/maps/dir/?api=1&travelmode=driving";
-            googleMapsUrl += "&waypoints=" + destinations.join("%7C");
-            googleMapsUrl += "&destination=" + finalDestination + "&destination_place_id=" + finalDestinationPlaceId;
+        return googleMapsUrl;
+    }
 
-            document.getElementById("startRouteForm").submit();
+    document.getElementById("startRouteButton").addEventListener("click", function(event) {
+        event.preventDefault();
+
+        if (document.querySelectorAll("button[data-lat][data-lng]").length > 0) {
+            let googleMapsUrl = getGoogleMapsUrl();
 
             window.open(googleMapsUrl, "_blank");
+            document.getElementById("startRouteForm").submit();
         } else {
             document.getElementById("startRouteForm").submit();
         }
     });
+
+    function openGoogleMapsRoute() {
+        let googleMapsUrl = getGoogleMapsUrl();
+        window.open(googleMapsUrl, "_blank");
+    }
 </script>
+
 <?php
 require_once(__DIR__ . "/../includes/footer.php");
