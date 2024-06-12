@@ -78,19 +78,6 @@
 
                                 if ($routeStatus == "INICIADA") {
                                     $routeClients = $routeDAO->listRouteClients($routeid);
-
-                                    $listNumber = [];
-                                    foreach ($routeClients as $client) {
-                                        if (!is_null($client["phonenumber"]) || !empty($client["phonenumber"])) {
-                                            array_push($listNumber, $client["phonenumber"]);
-                                        }
-                                    }
-
-                                    if (count($listNumber) > 0){
-                                        $whastapp = new Whatsapp();
-                                        $whastappMessage = "Olá! 👋 \n\nSou o entregador da *Drogaria Litorânea*! Seu pedido está saindo para rota. 🛵 \n\nQuando eu estiver indo para seu endereço entro em contato novamente!\n\n_Mensagem Automática_";
-                                        $whastapp->sendMultipleWhatsAppMessage($listNumber, $whastappMessage);
-                                    }
                                 }
 
                                 $message->setMessage("Status da rota atualizado", "success", "back");
@@ -254,7 +241,7 @@
                         
                         switch (intval($status)) {
                             case 1:
-                                $message = "🛵💨 Estou no caminho do seu endereço para fazer sua entrega. \n\nPor favor fique atento para receber seu pedido!\n\n_Mensagem Automática_";
+                                $message = "O entregador está a caminho do seu endereço! 🛵💨 \n\nPor favor se prepare para receber seu pedido!\n\n_Mensagem Automática_";
                                 break;
                             
                             case 2:
