@@ -15,6 +15,10 @@ define("DB_NAME", getenv("DB_NAME"));
 define("DB_USER", getenv("DB_USER"));
 define("DB_PASS", getenv("DB_PASS"));
 
+// WhatsApp API
+define("WHATSAPP_API_URL", getenv("WHATSAPP_API_URL"));
+define("WHATSAPP_API_KEY", getenv("WHATSAPP_API_KEY"));
+
 // Define HTTP protocol
 if (!is_null(getenv("HTTP_PROTOCOL")) && !empty(getenv("HTTP_PROTOCOL"))){
     $http_procotol = getenv("HTTP_PROTOCOL");

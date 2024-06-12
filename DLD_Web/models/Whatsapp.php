@@ -1,10 +1,10 @@
 <?php
-
+require(__DIR__ . "/../globals.php");
 class Whatsapp
 {
 
-    private $apiUrl = "https://evo-api.drogarialitoranea.intra.net/message/sendText/entregador-litoranea";
-    private $apiKey = "o8b7kce0hw888odig5hg63";
+    private $apiUrl = WHATSAPP_API_URL;
+    private $apiKey = WHATSAPP_API_KEY;
 
     public function __construct()
     {
