@@ -1,5 +1,6 @@
 <?php
-require(__DIR__ . "/../globals.php");
+require_once(__DIR__ . "/../globals.php");
+
 class Whatsapp
 {
 

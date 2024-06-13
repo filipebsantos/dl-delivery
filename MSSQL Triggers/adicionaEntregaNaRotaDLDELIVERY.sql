@@ -51,7 +51,7 @@ BEGIN
         EXEC('USE INOVAFARMABANCO');
 
         SELECT @client_name = cad.Nome
-        FROM Cadastros cad
+        FROM Cadastro cad
         INNER JOIN Cliente cli ON cli.CodigoCadastro = cad.CodigoCadastro
         WHERE cli.CodigoCliente = @client_id;
 
