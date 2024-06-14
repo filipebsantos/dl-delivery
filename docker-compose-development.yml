@@ -1,7 +1,7 @@
 services:
 
   dldelivery:
-    image: filipebezerrasantos/dldelivery:v1.0-rc3
+    image: filipebezerrasantos/dldelivery:v1.0
     container_name: dldelivery
     hostname: dldelivery
     networks:

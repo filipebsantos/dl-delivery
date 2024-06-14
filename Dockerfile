@@ -3,7 +3,7 @@ FROM ${baseImage}
 
 ARG baseImage
 ARG appName="DL Delivery"
-ARG appVersion="1.0-rc3"
+ARG appVersion="1.0"
 ENV APP_NAME=${appName}
 ENV APP_VERSION=${appVersion}
 
