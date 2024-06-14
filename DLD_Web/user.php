@@ -34,52 +34,56 @@ if (!empty($returnMessage)) {
         <!-- Include sidebar -->
         <?php include("includes/sidebar.php"); ?>
         <!-- Include content -->
-        <div id="page-content" class="col-auto col-md-9">
-            <div class="container mt-5">
+        <?php if ($_SESSION["activeUser"]["role"] >= 3) : ?>
+            <div id="page-content" class="col-auto col-md-9">
+                <div class="container mt-5">
 
-                <?php if (!empty($returnMessage["msg"])) : ?>
-                    <div class="container mt-3" id="alert-box">
-                        <div class="alert alert-<?= $returnMessage["type"] ?>" role="alert">
-                            <?= $returnMessage["msg"] ?>
+                    <?php if (!empty($returnMessage["msg"])) : ?>
+                        <div class="container mt-3" id="alert-box">
+                            <div class="alert alert-<?= $returnMessage["type"] ?>" role="alert">
+                                <?= $returnMessage["msg"] ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="container mb-3">
+                        <div class="row">
+                            <div class="col d-flex align-items-center justify-content-end">
+                                <a href="<?= $BASE_URL ?>adduser.php" class="btn btn-success">
+                                    <i class="bi bi-person-plus"></i>
+                                    <span class="ms-2">Novo Usuário</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                <?php endif; ?>
 
-                <div class="container mb-3">
-                    <div class="row">
-                        <div class="col d-flex align-items-center justify-content-end">
-                            <a href="<?= $BASE_URL ?>adduser.php" class="btn btn-success">
-                                <i class="bi bi-person-plus"></i>
-                                <span class="ms-2">Novo Usuário</span>
-                            </a>
-                        </div>
-                    </div>
+                    <table class="table align-middle table-striped">
+                        <thead>
+                            <th scope="col">Id</th>
+                            <th scope="col">Usuário</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Acesso</th>
+                            <th scope="col">Ativo</th>
+                            <th scope="col">Ação</th>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <?php foreach ($allUsers as $user) : ?>
+                                <tr scope="row">
+                                    <td><?= $user["id"] ?></td>
+                                    <td><?= $user["username"] ?></td>
+                                    <td><?= $user["firstname"] ?> <?= $user["lastname"] ?></td>
+                                    <td><?= getRoleText($user["role"]) ?></td>
+                                    <td><?= $user["active"] == 1 ? "Sim" : "Não" ?></td>
+                                    <td><a class="btn btn-success btn-sm" href="edituser.php?id=<?= $user["id"] ?>"><i class="bi bi-pencil-fill"></i></a> <a class="btn btn-danger btn-sm" href="deluser.php?id=<?= $user["id"] ?>"><i class="bi bi-trash-fill"></i></a></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                 </div>
-
-                <table class="table align-middle table-striped">
-                    <thead>
-                        <th scope="col">Id</th>
-                        <th scope="col">Usuário</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Acesso</th>
-                        <th scope="col">Ativo</th>
-                        <th scope="col">Ação</th>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <?php foreach ($allUsers as $user) : ?>
-                            <tr scope="row">
-                                <td><?= $user["id"] ?></td>
-                                <td><?= $user["username"] ?></td>
-                                <td><?= $user["firstname"] ?> <?= $user["lastname"] ?></td>
-                                <td><?= getRoleText($user["role"]) ?></td>
-                                <td><?= $user["active"] == 1 ? "Sim" : "Não" ?></td>
-                                <td><a class="btn btn-success btn-sm" href="edituser.php?id=<?= $user["id"] ?>"><i class="bi bi-pencil-fill"></i></a> <a class="btn btn-danger btn-sm" href="deluser.php?id=<?= $user["id"] ?>"><i class="bi bi-trash-fill"></i></a></td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
             </div>
-        </div>
+        <?php else : ?>
+            <?php include_once(__DIR__ . "/includes/access-error.php"); ?>
+        <?php endif; ?>
     </div>
 </div>
 <?php include("includes/footer.php"); ?>

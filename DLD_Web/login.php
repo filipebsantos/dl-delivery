@@ -62,10 +62,11 @@
                         //Check if access is from mobile
                         $isMobile = str_contains(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile");
 
-                        if($isMobile){
+                        // Route user based if user agent is mobile or access level is deliveryman
+                        if($isMobile || intval($user->getRole() == 1)){
                             header("Location: " . $BASE_URL . "delivery/home.php");
                         } else {
-                            header("Location: " . $BASE_URL . "dashboard.php");
+                            header("Location: " . $BASE_URL . "route.php");
                         }
                         
                     } elseif ($user != false && $user->getUserActive() == 0) {
