@@ -297,7 +297,7 @@ if (isset($_SESSION["locationReturn"])) {
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a class="btn btn-primary btn-sm" href="<?= $BASE_URL ?>delivery/addlocation.php?clie=<?= $rClients["clientid"] ?>"><i class="bi bi-plus-circle-fill"></i> Nova Localização</a>
+                        <a class="btn btn-primary" href="<?= $BASE_URL ?>delivery/addlocation.php?clie=<?= $cLocation["clientid"] ?>"><i class="bi bi-plus-circle-fill"></i> Nova Localização</a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                     </div>
                 </div>
