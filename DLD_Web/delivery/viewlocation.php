@@ -27,6 +27,8 @@ if (isset($_GET["locationid"]) && $_GET["locationid"] !== null) {
     }
 }
 ?>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <div class="container">
     <?php include(__DIR__ . "/../includes/offcanva-menu.php"); ?>
     <?php if (!empty($returnMessage["msg"])) : ?>
@@ -54,10 +56,21 @@ if (isset($_GET["locationid"]) && $_GET["locationid"] !== null) {
                 <input type="text" class="form-control" value="<?= isset($loadedData) ? $locationData["name"] : "" ?>" disabled>
             </div>
 
-
             <div class="input-group mb-2">
-                <span class="input-group-text" id="txtCoordinates">Coordenadas</span>
-                <input type="text" name="txtCoordinates" class="form-control" value="<?= isset($loadedData) ? $locationData["latitude"] . ", " . $locationData["longitude"] : "" ?>" required>
+                <span class="input-group-text" id="txtCoordinatesLabel">Coordenadas</span>
+                <input type="text" name="txtCoordinates" id="txtCoordinates" class="form-control" value="<?= isset($loadedData) ? $locationData["latitude"] . ", " . $locationData["longitude"] : "" ?>" required>
+                <button id="buttonGetCoordinates" class="btn btn-secondary" type="button">
+                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-satellite">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" />
+                        <path d="M6 10l-3 3l3 3l3 -3" />
+                        <path d="M10 6l3 -3l3 3l-3 3" />
+                        <path d="M12 12l1.5 1.5" />
+                        <path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5" />
+                        <path d="M15 21a6 6 0 0 0 6 -6" />
+                    </svg>
+                    <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                </button>
             </div>
 
             <div class="input-group mb-2">
@@ -146,8 +159,37 @@ if (isset($_GET["locationid"]) && $_GET["locationid"] !== null) {
             </div>
             <!-- End Camera Modal -->
         </form>
+        
+        <!-- Modal for Get Coordinate map -->
+        <div class="modal fade" id="locationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="locationModalLabel">Sua Localização</h5>
+                        <span id="accuracyTag">Precisão:</span>
+                    </div>
+                    <div class="modal-body text-center">
+                        <span id="mapText" class="d-none"></span>
+                        <div id="map" style="height: 300px;">Obtendo Localização...</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="grabCoordinates" class="btn btn-primary" disabled>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                            </svg>
+                            Obter Localização
+                        </button>
+                        <button id="closeCoordinateModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal for Get Coordinate map -->
     </div>
 </div>
 <script src="<?= $BASE_URL ?>js/custom/camera.js"></script>
+<script src="<?= $BASE_URL ?>js/custom/coordinate.js"></script>
 <?php
 require_once(__DIR__ . "/../includes/footer.php");
