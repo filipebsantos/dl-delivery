@@ -63,36 +63,53 @@ if (isset($_GET["clientid"]) && $_GET["clientid"] !== null) {
                 <?php foreach ($clientLocations as $location) : ?>
                     <tr scope="row">
                         <td><?= $location["type"] ?></td>
-                        <td><a class="btn btn-primary btn-sm" target="_blank" href="https://www.google.com/maps/search/?api=1&query=<?= $location["latitude"] ?>%2C<?= $location["longitude"] ?>"><i class="bi bi-map-fill"></a></td>
-                        <td><button type="button" class="btn btn-<?= $location["housepicture"] == null ? "secondary" : "primary" ?> btn-sm" data-bs-toggle="modal" data-bs-target="#picture<?= $location["id"] ?>"><i class="bi bi-camera-fill"></button></td></td>
+                        <td><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#miniMapLocation<?= $location["id"] ?>"><i class="bi bi-map-fill"></button></td>
+                        <td><button type="button" class="btn btn-<?= $location["housepicture"] == null ? "secondary" : "primary" ?> btn-sm" data-bs-toggle="modal" data-bs-target="#picture<?= $location["id"] ?>"><i class="bi bi-camera-fill"></button></td>
                         <td><a class="btn btn-primary btn-sm" href="<?= $BASE_URL ?>delivery/viewlocation.php?locationid=<?= $location["id"] ?>"><i class="bi bi-pencil-fill"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-        
+
         <?php foreach ($clientLocations as $location) : ?>
-        <div class="modal fade" id="picture<?= $location["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Foto da Casa</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col">
-                                <img loading="lazy" src="<?= $location["housepicture"] !== null ? $BASE_URL . "imgs/houses/" . $location["housepicture"] : $BASE_URL . "imgs/picture.jpg" ?>" width="300" height="auto" alt="">
-                            </div>
+            <div class="modal fade" id="picture<?= $location["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Foto da Casa</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <p class="mt-3"><strong>Obervações:</strong> <?= $location["obs"] ?></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <div class="modal-body">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col">
+                                    <img loading="lazy" src="<?= $location["housepicture"] !== null ? $BASE_URL . "imgs/houses/" . $location["housepicture"] : $BASE_URL . "imgs/picture.jpg" ?>" width="300" height="auto" alt="">
+                                </div>
+                            </div>
+                            <p class="mt-3"><strong>Obervações:</strong> <?= $location["obs"] ?></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="modal fade" id="miniMapLocation<?= $location["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Mapa</h1>
+                        </div>
+                        <div class="modal-body text-center">
+                            <iframe loading="lazy" height="300" width="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?width=100%25&amp;height=400&amp;hl=pt&amp;gl=BR&amp;q=<?= $location["latitude"] ?>,%20<?= $location["longitude"] ?>&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="https://www.google.com/maps/search/?api=1&query=<?= $location["latitude"] ?>%2C<?= $location["longitude"] ?>&hl=pt-br" target="_blank" class="btn btn-primary">Abrir no Google Maps</a>
+                            <button class="btn btn-primary" data-bs-target="#modalLocationList" data-bs-toggle="modal">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <?php endforeach; ?>
     <?php endif; ?>
 </div>
