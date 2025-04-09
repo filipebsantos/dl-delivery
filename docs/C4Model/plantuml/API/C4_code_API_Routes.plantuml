@@ -1,0 +1,124 @@
+@startuml C4Model.Code-RoutesDomain
+allowmixing
+title C4Model - Code level - Routes Domain
+
+rectangle "API" as api #line.dashed {
+  () "API EntryPoint" as entryPoint #back:red
+
+  package "Interface Layer" {
+    class RouteController {
+      +RouteApplicationService routeAppService
+    }
+  }
+
+  package "Application Layer" {
+    class RouteApplicationService {
+      +RouteRepositoryInterface routeRepository
+    }
+
+    package "DTO" {
+      class CreateRouteDTO {
+        +int userID
+        +?int delivererID
+        +array<int> clientLocationIDs
+      }
+
+      class UpdateRouteDTO {
+        +?int delivererID
+        +?RouteStatus status
+      }
+
+      class RouteDTO {
+        +int routeID
+        +int userID
+        +?int delivererID
+        +RouteStatus status
+        +array<int> clientLocationIDs
+      }
+    }
+  }
+
+  package "Domain Layer" {
+
+    package "Entity" {
+      class Route {
+        -int routeID
+        -int userID
+        -?int delivererID
+        -RouteStatus status
+        -array<int> clientLocationIDs
+
+        +__construct()
+        +addLocation(int locationID): void
+        +removeLocation(int locationID): void
+        +getData(): array
+      }
+    }
+
+    package "Enum" {
+      class RouteStatus {
+        +PENDING
+        +IN_ROUTE
+        +FINISHED
+      }
+    }
+
+    package "Interface" {
+      interface RouteRepositoryInterface {
+        +listRoutes(): array<Route>
+        +createRoute(Route): Route
+        +updateRoute(Route): Route
+        +getRouteById(int id): Route
+        +deleteRoute(int id): void
+      }
+    }
+
+    package "Service" {
+      class RouteService {
+        +RouteRepositoryInterface routeRepository
+        +Route route
+
+        +listRoutes(): array<RouteDTO>
+        +createRoute(CreateRouteDTO): RouteDTO
+        +updateRoute(int id, UpdateRouteDTO): RouteDTO
+        +addLocation(int routeID, int locationID): void
+        +removeLocation(int routeID, int locationID): void
+      }
+    }
+  }
+
+  package "Infrastructure Layer" {
+    class RouteRepository {
+      +listRoutes(): array<Route>
+      +createRoute(Route): Route
+      +updateRoute(Route): Route
+      +getRouteById(int id): Route
+      +deleteRoute(int id): void
+    }
+  }
+}
+
+database "MS SQL Server" as mssql
+
+' RELAÇÕES
+
+entryPoint -d-> RouteController
+RouteController --> RouteApplicationService
+
+RouteApplicationService --> RouteService
+RouteApplicationService --> CreateRouteDTO
+RouteApplicationService --> UpdateRouteDTO
+RouteApplicationService --> RouteDTO
+
+RouteService --> RouteRepositoryInterface
+RouteService --> Route
+RouteService --> CreateRouteDTO
+RouteService --> UpdateRouteDTO
+RouteService --> RouteDTO
+
+Route --> RouteStatus
+RouteRepository ..|> RouteRepositoryInterface
+RouteRepository --> mssql
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() - All rights reserved
+@enduml

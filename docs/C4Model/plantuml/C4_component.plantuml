@@ -1,0 +1,68 @@
+@startuml C4Model.Component
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/refs/heads/master/C4_Component.puml
+
+title "C4Model - Component"
+
+Person(user, "User", "Operator or deliverer")
+
+System_Boundary(dld, "DL Delivery v2") {
+    Container_Boundary(api, "API") {
+        Component(entryPoint, "EntryPoint", "API Router", "Route requests to specific controller")
+
+        package "Controllers" {
+            Component(userController, "UserController")
+            Component(clientController, "ClientController")
+            Component(locationController, "LocationController")
+            Component(routeController, "RouteController")
+        }
+
+        package "Application Services" {
+            Component(userAppService, "UserApplicationService")
+            Component(clientAppService, "ClientApplicationService")
+            Component(routeAppService, "RouteApplicationService")
+            Component(authService, "AuthService")
+        }
+
+        package "Repositories" {
+            Component(userRepo, "UserRepository")
+            Component(clientRepo, "ClientRepository")
+            Component(routeRepo, "RouteRepository")
+        }
+    }
+
+    Container_Boundary(webapp, "Web Application", $descr = "Not fully implemented") {
+        Component(spa, "SPA", "Single Page Application", "SPA is intended to operator use, is accessible through PC web browser")
+        Component(pwa, "PWA", "Progressive Web App", "This interface is focused on deliverer access to handle delivery routing")
+    }
+}
+
+SystemDb(db, "MS SQL Server", "Store user, client, location end route data")
+
+'
+Rel(user, spa, "Uses", "HTTPS", "PC Access")
+Rel(user, pwa, "Uses", "HTTPS", "Mobile Access")
+Rel(spa, entryPoint, "Calls", "HTTPS/JSON")
+Rel(pwa, entryPoint, "Calls", "HTTPS/JSON")
+
+' API components relations
+Rel(entryPoint, userController, "")
+Rel(entryPoint, clientController, "")
+Rel(entryPoint, locationController, "")
+Rel(entryPoint, routeController, "")
+
+Rel(userController, userAppService, "")
+Rel(userController, authService, "")
+Rel(clientController, clientAppService, "")
+Rel(locationController, clientAppService, "")
+Rel(routeController, routeAppService, "")
+
+Rel(userAppService, userRepo, "")
+Rel(clientAppService, clientRepo, "")
+Rel(routeAppService, routeRepo, "")
+
+Rel(userRepo, db, "Read/Write", "SQL")
+Rel(clientRepo, db, "Read/Write", "SQL")
+Rel(routeRepo, db, "Read/Write", "SQL")
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() and C4-PlantUML v. C4Version() - All rights reserved
+@enduml

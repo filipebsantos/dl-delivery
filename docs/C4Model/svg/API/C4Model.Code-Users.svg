@@ -1,0 +1,2111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="1211px"
+   preserveAspectRatio="none"
+   style="width:2431px;height:1211px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 2431 1211"
+   width="2431px"
+   zoomAndPan="magnify"
+   id="svg95"
+   sodipodi:docname="C4Model.Code-Users.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview95"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.66721718"
+     inkscape:cx="1215.4963"
+     inkscape:cy="605.5"
+     inkscape:window-width="2560"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg95" />
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#ffffff;stroke-width:30.4819;stroke-linecap:round;paint-order:markers fill stroke"
+     id="rect95"
+     width="2431"
+     height="1211"
+     x="0"
+     y="0" />
+  <g
+     id="g95">
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="229"
+       x="1094"
+       y="22.9951"
+       id="text1">C4Model - Code level - Users</text>
+    <!--cluster api-->
+    <g
+       id="cluster_api">
+      <rect
+         fill="none"
+         height="1143"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"
+         width="2271"
+         x="7"
+         y="44.2969"
+         id="rect1" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="25"
+         x="1130"
+         y="59.292"
+         id="text2">API</text>
+    </g>
+    <!--cluster Interface Layer-->
+    <g
+       id="cluster_Interface Layer">
+      <path
+         d="M203.5,253.2969 L324.5,253.2969 A3.75,3.75 0 0 1 327,255.7969 L334,275.5938 L526.5,275.5938 A2.5,2.5 0 0 1 529,278.0938 L529,382.7969 A2.5,2.5 0 0 1 526.5,385.2969 L203.5,385.2969 A2.5,2.5 0 0 1 201,382.7969 L201,255.7969 A2.5,2.5 0 0 1 203.5,253.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path2" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="201"
+         x2="334"
+         y1="275.5938"
+         y2="275.5938"
+         id="line2" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="120"
+         x="205"
+         y="268.292"
+         id="text3">Interface Layer</text>
+    </g>
+    <!--cluster Application Layer-->
+    <g
+       id="cluster_Application Layer">
+      <path
+         d="M33.5,466.2969 L170.5,466.2969 A3.75,3.75 0 0 1 173,468.7969 L180,488.5938 L1323.5,488.5938 A2.5,2.5 0 0 1 1326,491.0938 L1326,694.7969 A2.5,2.5 0 0 1 1323.5,697.2969 L33.5,697.2969 A2.5,2.5 0 0 1 31,694.7969 L31,468.7969 A2.5,2.5 0 0 1 33.5,466.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path3" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="31"
+         x2="180"
+         y1="488.5938"
+         y2="488.5938"
+         id="line3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="136"
+         x="35"
+         y="481.292"
+         id="text4">Application Layer</text>
+    </g>
+    <!--cluster DTO-->
+    <g
+       id="cluster_DTO">
+      <path
+         d="M744.5,509.2969 L778.5,509.2969 A3.75,3.75 0 0 1 781,511.7969 L788,531.5938 L1299.5,531.5938 A2.5,2.5 0 0 1 1302,534.0938 L1302,670.7969 A2.5,2.5 0 0 1 1299.5,673.2969 L744.5,673.2969 A2.5,2.5 0 0 1 742,670.7969 L742,511.7969 A2.5,2.5 0 0 1 744.5,509.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path4" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="742"
+         x2="788"
+         y1="531.5938"
+         y2="531.5938"
+         id="line4" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="33"
+         x="746"
+         y="524.292"
+         id="text5">DTO</text>
+    </g>
+    <!--cluster Domain Layer-->
+    <g
+       id="cluster_Domain Layer">
+      <path
+         d="M1352.5,153.2969 L1460.5,153.2969 A3.75,3.75 0 0 1 1463,155.7969 L1470,175.5938 L1861.5,175.5938 A2.5,2.5 0 0 1 1864,178.0938 L1864,1160.7969 A2.5,2.5 0 0 1 1861.5,1163.2969 L1352.5,1163.2969 A2.5,2.5 0 0 1 1350,1160.7969 L1350,155.7969 A2.5,2.5 0 0 1 1352.5,153.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path5" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1350"
+         x2="1470"
+         y1="175.5938"
+         y2="175.5938"
+         id="line5" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="1354"
+         y="168.292"
+         id="text6">Domain Layer</text>
+    </g>
+    <!--cluster Entity-->
+    <g
+       id="cluster_Entity">
+      <path
+         d="M1376.5,721.2969 L1421.5,721.2969 A3.75,3.75 0 0 1 1424,723.7969 L1431,743.5938 L1587.5,743.5938 A2.5,2.5 0 0 1 1590,746.0938 L1590,964.7969 A2.5,2.5 0 0 1 1587.5,967.2969 L1376.5,967.2969 A2.5,2.5 0 0 1 1374,964.7969 L1374,723.7969 A2.5,2.5 0 0 1 1376.5,721.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path6" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1374"
+         x2="1431"
+         y1="743.5938"
+         y2="743.5938"
+         id="line6" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="44"
+         x="1378"
+         y="736.292"
+         id="text7">Entity</text>
+    </g>
+    <!--cluster Enum-->
+    <g
+       id="cluster_Enum">
+      <path
+         d="M1376.5,991.2969 L1420.5,991.2969 A3.75,3.75 0 0 1 1423,993.7969 L1430,1013.5938 L1545.5,1013.5938 A2.5,2.5 0 0 1 1548,1016.0938 L1548,1136.7969 A2.5,2.5 0 0 1 1545.5,1139.2969 L1376.5,1139.2969 A2.5,2.5 0 0 1 1374,1136.7969 L1374,993.7969 A2.5,2.5 0 0 1 1376.5,991.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path7" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1374"
+         x2="1430"
+         y1="1013.5938"
+         y2="1013.5938"
+         id="line7" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="43"
+         x="1378"
+         y="1006.292"
+         id="text8">Enum</text>
+    </g>
+    <!--cluster Service-->
+    <g
+       id="cluster_Service">
+      <path
+         d="M1376.5,196.2969 L1436.5,196.2969 A3.75,3.75 0 0 1 1439,198.7969 L1446,218.5938 L1837.5,218.5938 A2.5,2.5 0 0 1 1840,221.0938 L1840,439.7969 A2.5,2.5 0 0 1 1837.5,442.2969 L1376.5,442.2969 A2.5,2.5 0 0 1 1374,439.7969 L1374,198.7969 A2.5,2.5 0 0 1 1376.5,196.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path8" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1374"
+         x2="1446"
+         y1="218.5938"
+         y2="218.5938"
+         id="line8" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="59"
+         x="1378"
+         y="211.292"
+         id="text9">Service</text>
+    </g>
+    <!--cluster Interface-->
+    <g
+       id="cluster_Interface">
+      <path
+         d="M1476.5,492.7969 L1548.5,492.7969 A3.75,3.75 0 0 1 1551,495.2969 L1558,515.0938 L1837.5,515.0938 A2.5,2.5 0 0 1 1840,517.5938 L1840,687.2969 A2.5,2.5 0 0 1 1837.5,689.7969 L1476.5,689.7969 A2.5,2.5 0 0 1 1474,687.2969 L1474,495.2969 A2.5,2.5 0 0 1 1476.5,492.7969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path9" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1474"
+         x2="1558"
+         y1="515.0938"
+         y2="515.0938"
+         id="line9" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="71"
+         x="1478"
+         y="507.792"
+         id="text10">Interface</text>
+    </g>
+    <!--cluster Infrastructure Layer-->
+    <g
+       id="cluster_Infrastructure Layer">
+      <path
+         d="M1890.5,220.7969 L2050.5,220.7969 A3.75,3.75 0 0 1 2053,223.2969 L2060,243.0938 L2251.5,243.0938 A2.5,2.5 0 0 1 2254,245.5938 L2254,415.2969 A2.5,2.5 0 0 1 2251.5,417.7969 L1890.5,417.7969 A2.5,2.5 0 0 1 1888,415.2969 L1888,223.2969 A2.5,2.5 0 0 1 1890.5,220.7969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path10" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1888"
+         x2="2060"
+         y1="243.0938"
+         y2="243.0938"
+         id="line10" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="159"
+         x="1892"
+         y="235.792"
+         id="text11">Infrastructure Layer</text>
+    </g>
+    <!--entity entryPoint-->
+    <g
+       id="elem_entryPoint">
+      <ellipse
+         cx="365"
+         cy="108.2969"
+         fill="#FF0000"
+         rx="8"
+         ry="8"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="ellipse11" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="95"
+         x="317.5"
+         y="138.292"
+         id="text12">API EntryPoint</text>
+    </g>
+    <!--class UserController-->
+    <g
+       id="elem_UserController">
+      <rect
+         codeLine="11"
+         fill="#F1F1F1"
+         height="80.5938"
+         id="UserController"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="295"
+         x="217.5"
+         y="288.2969" />
+      <ellipse
+         cx="311.25"
+         cy="304.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse12" />
+      <path
+         d="M314.2188,309.9375 Q313.6406,310.2344 313,310.375 Q312.3594,310.5313 311.6563,310.5313 Q309.1563,310.5313 307.8281,308.8906 Q306.5156,307.2344 306.5156,304.1094 Q306.5156,300.9844 307.8281,299.3281 Q309.1563,297.6719 311.6563,297.6719 Q312.3594,297.6719 313,297.8281 Q313.6563,297.9844 314.2188,298.2813 L314.2188,301 Q313.5938,300.4219 313,300.1563 Q312.4063,299.875 311.7813,299.875 Q310.4375,299.875 309.75,300.9531 Q309.0625,302.0156 309.0625,304.1094 Q309.0625,306.2031 309.75,307.2813 Q310.4375,308.3438 311.7813,308.3438 Q312.4063,308.3438 313,308.0781 Q313.5938,307.7969 314.2188,307.2188 L314.2188,309.9375 Z "
+         fill="#000000"
+         id="path12" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="99"
+         x="331.75"
+         y="309.1436"
+         id="text13">UserController</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="218.5"
+         x2="511.5"
+         y1="320.2969"
+         y2="320.2969"
+         id="line13" />
+      <ellipse
+         cx="228.5"
+         cy="333.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse13" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="269"
+         x="237.5"
+         y="337.292"
+         id="text14">UserApplicationService userAppService</text>
+      <ellipse
+         cx="228.5"
+         cy="350.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse14" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="167"
+         x="237.5"
+         y="353.5889"
+         id="text15">AuthService authService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="218.5"
+         x2="511.5"
+         y1="360.8906"
+         y2="360.8906"
+         id="line15" />
+    </g>
+    <!--class UserApplicationService-->
+    <g
+       id="elem_UserApplicationService">
+      <rect
+         codeLine="19"
+         fill="#F1F1F1"
+         height="145.7813"
+         id="UserApplicationService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="373"
+         x="349.5"
+         y="527.7969" />
+      <ellipse
+         cx="453.25"
+         cy="543.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse15" />
+      <path
+         d="M456.2188,549.4375 Q455.6406,549.7344 455,549.875 Q454.3594,550.0313 453.6563,550.0313 Q451.1563,550.0313 449.8281,548.3906 Q448.5156,546.7344 448.5156,543.6094 Q448.5156,540.4844 449.8281,538.8281 Q451.1563,537.1719 453.6563,537.1719 Q454.3594,537.1719 455,537.3281 Q455.6563,537.4844 456.2188,537.7813 L456.2188,540.5 Q455.5938,539.9219 455,539.6563 Q454.4063,539.375 453.7813,539.375 Q452.4375,539.375 451.75,540.4531 Q451.0625,541.5156 451.0625,543.6094 Q451.0625,545.7031 451.75,546.7813 Q452.4375,547.8438 453.7813,547.8438 Q454.4063,547.8438 455,547.5781 Q455.5938,547.2969 456.2188,546.7188 L456.2188,549.4375 Z "
+         fill="#000000"
+         id="path15" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="157"
+         x="473.75"
+         y="548.6436"
+         id="text16">UserApplicationService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="350.5"
+         x2="721.5"
+         y1="559.7969"
+         y2="559.7969"
+         id="line16" />
+      <ellipse
+         cx="360.5"
+         cy="573.4453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse16" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="167"
+         x="369.5"
+         y="576.792"
+         id="text17">UserService userService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="350.5"
+         x2="721.5"
+         y1="584.0938"
+         y2="584.0938"
+         id="line17" />
+      <ellipse
+         cx="360.5"
+         cy="597.7422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse17" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="269"
+         x="369.5"
+         y="601.0889"
+         id="text18">listUsers(): array&lt;ResponseUserDTO&gt;</text>
+      <ellipse
+         cx="360.5"
+         cy="614.0391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse18" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="241"
+         x="369.5"
+         y="617.3857"
+         id="text19">getUser(int id): ResponseUserDTO</text>
+      <ellipse
+         cx="360.5"
+         cy="630.3359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse19" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="338"
+         x="369.5"
+         y="633.6826"
+         id="text20">createUser(CreateUserDTO): ResponseUserDTO</text>
+      <ellipse
+         cx="360.5"
+         cy="646.6328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse20" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="347"
+         x="369.5"
+         y="649.9795"
+         id="text21">updateUser(UpdateUserDTO): ResponseUserDTO</text>
+      <ellipse
+         cx="360.5"
+         cy="662.9297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse21" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="156"
+         x="369.5"
+         y="666.2764"
+         id="text22">deleteUser(int id): void</text>
+    </g>
+    <!--class AuthService-->
+    <g
+       id="elem_AuthService">
+      <rect
+         codeLine="29"
+         fill="#F1F1F1"
+         height="80.5938"
+         id="AuthService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="267"
+         x="47.5"
+         y="560.2969" />
+      <ellipse
+         cx="135.75"
+         cy="576.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse22" />
+      <path
+         d="M138.7188,581.9375 Q138.1406,582.2344 137.5,582.375 Q136.8594,582.5313 136.1563,582.5313 Q133.6563,582.5313 132.3281,580.8906 Q131.0156,579.2344 131.0156,576.1094 Q131.0156,572.9844 132.3281,571.3281 Q133.6563,569.6719 136.1563,569.6719 Q136.8594,569.6719 137.5,569.8281 Q138.1563,569.9844 138.7188,570.2813 L138.7188,573 Q138.0938,572.4219 137.5,572.1563 Q136.9063,571.875 136.2813,571.875 Q134.9375,571.875 134.25,572.9531 Q133.5625,574.0156 133.5625,576.1094 Q133.5625,578.2031 134.25,579.2813 Q134.9375,580.3438 136.2813,580.3438 Q136.9063,580.3438 137.5,580.0781 Q138.0938,579.7969 138.7188,579.2188 L138.7188,581.9375 Z "
+         fill="#000000"
+         id="path22" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="156.25"
+         y="581.1436"
+         id="text23">AuthService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="48.5"
+         x2="313.5"
+         y1="592.2969"
+         y2="592.2969"
+         id="line23" />
+      <ellipse
+         cx="58.5"
+         cy="605.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse23" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="167"
+         x="67.5"
+         y="609.292"
+         id="text24">UserService userService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="48.5"
+         x2="313.5"
+         y1="616.5938"
+         y2="616.5938"
+         id="line24" />
+      <ellipse
+         cx="58.5"
+         cy="630.2422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse24" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="241"
+         x="67.5"
+         y="633.5889"
+         id="text25">login(username, password): Token</text>
+    </g>
+    <!--class CreateUserDTO-->
+    <g
+       id="elem_CreateUserDTO">
+      <rect
+         codeLine="36"
+         fill="#F1F1F1"
+         height="113.1875"
+         id="CreateUserDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="142"
+         x="758"
+         y="544.2969" />
+      <ellipse
+         cx="773.45"
+         cy="560.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse25" />
+      <path
+         d="M776.4188,565.9375 Q775.8406,566.2344 775.2,566.375 Q774.5594,566.5313 773.8563,566.5313 Q771.3563,566.5313 770.0281,564.8906 Q768.7156,563.2344 768.7156,560.1094 Q768.7156,556.9844 770.0281,555.3281 Q771.3563,553.6719 773.8563,553.6719 Q774.5594,553.6719 775.2,553.8281 Q775.8563,553.9844 776.4188,554.2813 L776.4188,557 Q775.7938,556.4219 775.2,556.1563 Q774.6063,555.875 773.9813,555.875 Q772.6375,555.875 771.95,556.9531 Q771.2625,558.0156 771.2625,560.1094 Q771.2625,562.2031 771.95,563.2813 Q772.6375,564.3438 773.9813,564.3438 Q774.6063,564.3438 775.2,564.0781 Q775.7938,563.7969 776.4188,563.2188 L776.4188,565.9375 Z "
+         fill="#000000"
+         id="path25" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="109"
+         x="787.55"
+         y="565.1436"
+         id="text26">CreateUserDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="759"
+         x2="899"
+         y1="576.2969"
+         y2="576.2969"
+         id="line26" />
+      <ellipse
+         cx="769"
+         cy="589.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse26" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="778"
+         y="593.292"
+         id="text27">string name</text>
+      <ellipse
+         cx="769"
+         cy="606.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse27" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="113"
+         x="778"
+         y="609.5889"
+         id="text28">string username</text>
+      <ellipse
+         cx="769"
+         cy="622.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse28" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="110"
+         x="778"
+         y="625.8857"
+         id="text29">string password</text>
+      <ellipse
+         cx="769"
+         cy="638.8359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse29" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="778"
+         y="642.1826"
+         id="text30">UserRole access</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="759"
+         x2="899"
+         y1="649.4844"
+         y2="649.4844"
+         id="line30" />
+    </g>
+    <!--class UpdateUserDTO-->
+    <g
+       id="elem_UpdateUserDTO">
+      <rect
+         codeLine="43"
+         fill="#F1F1F1"
+         height="113.1875"
+         id="UpdateUserDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="149"
+         x="935.5"
+         y="544.2969" />
+      <ellipse
+         cx="952.3"
+         cy="560.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse30" />
+      <path
+         d="M955.2688,565.9375 Q954.6906,566.2344 954.05,566.375 Q953.4094,566.5313 952.7063,566.5313 Q950.2063,566.5313 948.8781,564.8906 Q947.5656,563.2344 947.5656,560.1094 Q947.5656,556.9844 948.8781,555.3281 Q950.2063,553.6719 952.7063,553.6719 Q953.4094,553.6719 954.05,553.8281 Q954.7063,553.9844 955.2688,554.2813 L955.2688,557 Q954.6438,556.4219 954.05,556.1563 Q953.4563,555.875 952.8313,555.875 Q951.4875,555.875 950.8,556.9531 Q950.1125,558.0156 950.1125,560.1094 Q950.1125,562.2031 950.8,563.2813 Q951.4875,564.3438 952.8313,564.3438 Q953.4563,564.3438 954.05,564.0781 Q954.6438,563.7969 955.2688,563.2188 L955.2688,565.9375 Z "
+         fill="#000000"
+         id="path30" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="113"
+         x="966.7"
+         y="565.1436"
+         id="text31">UpdateUserDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="936.5"
+         x2="1083.5"
+         y1="576.2969"
+         y2="576.2969"
+         id="line31" />
+      <ellipse
+         cx="946.5"
+         cy="589.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse31" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="66"
+         x="955.5"
+         y="593.292"
+         id="text32">int userID</text>
+      <ellipse
+         cx="946.5"
+         cy="606.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse32" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="89"
+         x="955.5"
+         y="609.5889"
+         id="text33">?string name</text>
+      <ellipse
+         cx="946.5"
+         cy="622.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse33" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="117"
+         x="955.5"
+         y="625.8857"
+         id="text34">?string password</text>
+      <ellipse
+         cx="946.5"
+         cy="638.8359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse34" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="123"
+         x="955.5"
+         y="642.1826"
+         id="text35">?UserRole access</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="936.5"
+         x2="1083.5"
+         y1="649.4844"
+         y2="649.4844"
+         id="line35" />
+    </g>
+    <!--class ResponseUserDTO-->
+    <g
+       id="elem_ResponseUserDTO">
+      <rect
+         codeLine="50"
+         fill="#F1F1F1"
+         height="113.1875"
+         id="ResponseUserDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="166"
+         x="1120"
+         y="544.2969" />
+      <ellipse
+         cx="1135"
+         cy="560.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse35" />
+      <path
+         d="M1137.9688,565.9375 Q1137.3906,566.2344 1136.75,566.375 Q1136.1094,566.5313 1135.4063,566.5313 Q1132.9063,566.5313 1131.5781,564.8906 Q1130.2656,563.2344 1130.2656,560.1094 Q1130.2656,556.9844 1131.5781,555.3281 Q1132.9063,553.6719 1135.4063,553.6719 Q1136.1094,553.6719 1136.75,553.8281 Q1137.4063,553.9844 1137.9688,554.2813 L1137.9688,557 Q1137.3438,556.4219 1136.75,556.1563 Q1136.1563,555.875 1135.5313,555.875 Q1134.1875,555.875 1133.5,556.9531 Q1132.8125,558.0156 1132.8125,560.1094 Q1132.8125,562.2031 1133.5,563.2813 Q1134.1875,564.3438 1135.5313,564.3438 Q1136.1563,564.3438 1136.75,564.0781 Q1137.3438,563.7969 1137.9688,563.2188 L1137.9688,565.9375 Z "
+         fill="#000000"
+         id="path35" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="134"
+         x="1149"
+         y="565.1436"
+         id="text36">ResponseUserDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1121"
+         x2="1285"
+         y1="576.2969"
+         y2="576.2969"
+         id="line36" />
+      <ellipse
+         cx="1131"
+         cy="589.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse36" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="66"
+         x="1140"
+         y="593.292"
+         id="text37">int userID</text>
+      <ellipse
+         cx="1131"
+         cy="606.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse37" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="1140"
+         y="609.5889"
+         id="text38">string name</text>
+      <ellipse
+         cx="1131"
+         cy="622.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse38" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="113"
+         x="1140"
+         y="625.8857"
+         id="text39">string username</text>
+      <ellipse
+         cx="1131"
+         cy="638.8359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse39" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="1140"
+         y="642.1826"
+         id="text40">UserRole access</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1121"
+         x2="1285"
+         y1="649.4844"
+         y2="649.4844"
+         id="line40" />
+    </g>
+    <!--class User-->
+    <g
+       id="elem_User">
+      <rect
+         codeLine="63"
+         fill="#F1F1F1"
+         height="194.6719"
+         id="User"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="185"
+         x="1389.5"
+         y="756.2969" />
+      <ellipse
+         cx="1461.75"
+         cy="772.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse40" />
+      <path
+         d="M1464.7188,777.9375 Q1464.1406,778.2344 1463.5,778.375 Q1462.8594,778.5313 1462.1563,778.5313 Q1459.6563,778.5313 1458.3281,776.8906 Q1457.0156,775.2344 1457.0156,772.1094 Q1457.0156,768.9844 1458.3281,767.3281 Q1459.6563,765.6719 1462.1563,765.6719 Q1462.8594,765.6719 1463.5,765.8281 Q1464.1563,765.9844 1464.7188,766.2813 L1464.7188,769 Q1464.0938,768.4219 1463.5,768.1563 Q1462.9063,767.875 1462.2813,767.875 Q1460.9375,767.875 1460.25,768.9531 Q1459.5625,770.0156 1459.5625,772.1094 Q1459.5625,774.2031 1460.25,775.2813 Q1460.9375,776.3438 1462.2813,776.3438 Q1462.9063,776.3438 1463.5,776.0781 Q1464.0938,775.7969 1464.7188,775.2188 L1464.7188,777.9375 Z "
+         fill="#000000"
+         id="path40" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="32"
+         x="1482.25"
+         y="777.1436"
+         id="text41">User</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1390.5"
+         x2="1573.5"
+         y1="788.2969"
+         y2="788.2969"
+         id="line41" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1397.5"
+         y="798.9453"
+         id="rect41" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="66"
+         x="1409.5"
+         y="805.292"
+         id="text42">int userID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1397.5"
+         y="815.2422"
+         id="rect42" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="90"
+         x="1409.5"
+         y="821.5889"
+         id="text43">int erpUserID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1397.5"
+         y="831.5391"
+         id="rect43" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="1409.5"
+         y="837.8857"
+         id="text44">string name</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1397.5"
+         y="847.8359"
+         id="rect44" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="113"
+         x="1409.5"
+         y="854.1826"
+         id="text45">string username</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1397.5"
+         y="864.1328"
+         id="rect45" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="110"
+         x="1409.5"
+         y="870.4795"
+         id="text46">string password</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1397.5"
+         y="880.4297"
+         id="rect46" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="1409.5"
+         y="886.7764"
+         id="text47">UserRole access</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1390.5"
+         x2="1573.5"
+         y1="894.0781"
+         y2="894.0781"
+         id="line47" />
+      <ellipse
+         cx="1400.5"
+         cy="907.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse47" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="155"
+         x="1409.5"
+         y="911.0732"
+         id="text48">getAccess(): UserRole</text>
+      <ellipse
+         cx="1400.5"
+         cy="924.0234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse48" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="1409.5"
+         y="927.3701"
+         id="text49">getData(): array</text>
+      <ellipse
+         cx="1400.5"
+         cy="940.3203"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse49" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="159"
+         x="1409.5"
+         y="943.667"
+         id="text50">hashPassword(): string</text>
+    </g>
+    <!--class UserRole-->
+    <g
+       id="elem_UserRole">
+      <rect
+         codeLine="78"
+         fill="#F1F1F1"
+         height="96.8906"
+         id="UserRole"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="141"
+         x="1390.5"
+         y="1026.2969" />
+      <ellipse
+         cx="1426.2"
+         cy="1042.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse50" />
+      <path
+         d="M1429.1688,1047.9375 Q1428.5906,1048.2344 1427.95,1048.375 Q1427.3094,1048.5313 1426.6063,1048.5313 Q1424.1063,1048.5313 1422.7781,1046.8906 Q1421.4656,1045.2344 1421.4656,1042.1094 Q1421.4656,1038.9844 1422.7781,1037.3281 Q1424.1063,1035.6719 1426.6063,1035.6719 Q1427.3094,1035.6719 1427.95,1035.8281 Q1428.6063,1035.9844 1429.1688,1036.2813 L1429.1688,1039 Q1428.5438,1038.4219 1427.95,1038.1563 Q1427.3563,1037.875 1426.7313,1037.875 Q1425.3875,1037.875 1424.7,1038.9531 Q1424.0125,1040.0156 1424.0125,1042.1094 Q1424.0125,1044.2031 1424.7,1045.2813 Q1425.3875,1046.3438 1426.7313,1046.3438 Q1427.3563,1046.3438 1427.95,1046.0781 Q1428.5438,1045.7969 1429.1688,1045.2188 L1429.1688,1047.9375 Z "
+         fill="#000000"
+         id="path50" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="63"
+         x="1444.8"
+         y="1047.1436"
+         id="text51">UserRole</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1391.5"
+         x2="1530.5"
+         y1="1058.2969"
+         y2="1058.2969"
+         id="line51" />
+      <ellipse
+         cx="1401.5"
+         cy="1071.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse51" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="77"
+         x="1410.5"
+         y="1075.292"
+         id="text52">DELIVERER</text>
+      <ellipse
+         cx="1401.5"
+         cy="1088.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse52" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="78"
+         x="1410.5"
+         y="1091.5889"
+         id="text53">OPERATOR</text>
+      <ellipse
+         cx="1401.5"
+         cy="1104.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse53" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="115"
+         x="1410.5"
+         y="1107.8857"
+         id="text54">ADMINISTRATOR</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1391.5"
+         x2="1530.5"
+         y1="1115.1875"
+         y2="1115.1875"
+         id="line54" />
+    </g>
+    <!--class UserService-->
+    <g
+       id="elem_UserService">
+      <rect
+         codeLine="86"
+         fill="#F1F1F1"
+         height="194.6719"
+         id="UserService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="435"
+         x="1389.5"
+         y="231.2969" />
+      <ellipse
+         cx="1561.75"
+         cy="247.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse54" />
+      <path
+         d="M1564.7188,252.9375 Q1564.1406,253.2344 1563.5,253.375 Q1562.8594,253.5313 1562.1563,253.5313 Q1559.6563,253.5313 1558.3281,251.8906 Q1557.0156,250.2344 1557.0156,247.1094 Q1557.0156,243.9844 1558.3281,242.3281 Q1559.6563,240.6719 1562.1563,240.6719 Q1562.8594,240.6719 1563.5,240.8281 Q1564.1563,240.9844 1564.7188,241.2813 L1564.7188,244 Q1564.0938,243.4219 1563.5,243.1563 Q1562.9063,242.875 1562.2813,242.875 Q1560.9375,242.875 1560.25,243.9531 Q1559.5625,245.0156 1559.5625,247.1094 Q1559.5625,249.2031 1560.25,250.2813 Q1560.9375,251.3438 1562.2813,251.3438 Q1562.9063,251.3438 1563.5,251.0781 Q1564.0938,250.7969 1564.7188,250.2188 L1564.7188,252.9375 Z "
+         fill="#000000"
+         id="path54" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="1582.25"
+         y="252.1436"
+         id="text55">UserService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1390.5"
+         x2="1823.5"
+         y1="263.2969"
+         y2="263.2969"
+         id="line55" />
+      <ellipse
+         cx="1400.5"
+         cy="276.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse55" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="275"
+         x="1409.5"
+         y="280.292"
+         id="text56">UserRepositoryInterface userRepository</text>
+      <ellipse
+         cx="1400.5"
+         cy="293.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse56" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67"
+         x="1409.5"
+         y="296.5889"
+         id="text57">User user</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1390.5"
+         x2="1823.5"
+         y1="303.8906"
+         y2="303.8906"
+         id="line57" />
+      <ellipse
+         cx="1400.5"
+         cy="317.5391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse57" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="284"
+         x="1409.5"
+         y="320.8857"
+         id="text58">listAllUsers(): array&lt;ResponseUserDTO&gt;</text>
+      <ellipse
+         cx="1400.5"
+         cy="333.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse58" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="303"
+         x="1409.5"
+         y="337.1826"
+         id="text59">getUserById(int userID): ResponseUserDTO</text>
+      <ellipse
+         cx="1400.5"
+         cy="350.1328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse59" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="409"
+         x="1409.5"
+         y="353.4795"
+         id="text60">getUserByUsername(string username): ResponseUserDTO</text>
+      <ellipse
+         cx="1400.5"
+         cy="366.4297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse60" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="365"
+         x="1409.5"
+         y="369.7764"
+         id="text61">createUser(CreateUserDTO dto): ResponseUserDTO</text>
+      <ellipse
+         cx="1400.5"
+         cy="382.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse61" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="374"
+         x="1409.5"
+         y="386.0732"
+         id="text62">updateUser(UpdateUserDTO dto): ResponseUserDTO</text>
+      <ellipse
+         cx="1400.5"
+         cy="399.0234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse62" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="189"
+         x="1409.5"
+         y="402.3701"
+         id="text63">deleteUser(int userID): void</text>
+      <ellipse
+         cx="1400.5"
+         cy="415.3203"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse63" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="336"
+         x="1409.5"
+         y="418.667"
+         id="text64">verifyPassword(User user, string password): bool</text>
+    </g>
+    <!--class UserRepositoryInterface-->
+    <g
+       id="elem_UserRepositoryInterface">
+      <rect
+         codeLine="101"
+         fill="#F1F1F1"
+         height="145.7813"
+         id="UserRepositoryInterface"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="333"
+         x="1490.5"
+         y="527.7969" />
+      <ellipse
+         cx="1569.75"
+         cy="543.7969"
+         fill="#B4A7E5"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse64" />
+      <path
+         d="M1565.6719,539.5625 L1565.6719,537.4063 L1573.0625,537.4063 L1573.0625,539.5625 L1570.5938,539.5625 L1570.5938,547.6406 L1573.0625,547.6406 L1573.0625,549.7969 L1565.6719,549.7969 L1565.6719,547.6406 L1568.1406,547.6406 L1568.1406,539.5625 L1565.6719,539.5625 Z "
+         fill="#000000"
+         id="path64" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-style="italic"
+         lengthAdjust="spacing"
+         textLength="166"
+         x="1590.25"
+         y="548.6436"
+         id="text65">UserRepositoryInterface</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1491.5"
+         x2="1822.5"
+         y1="559.7969"
+         y2="559.7969"
+         id="line65" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1491.5"
+         x2="1822.5"
+         y1="567.7969"
+         y2="567.7969"
+         id="line66" />
+      <ellipse
+         cx="1501.5"
+         cy="581.4453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse66" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="167"
+         x="1510.5"
+         y="584.792"
+         id="text66">listUsers(): array&lt;User&gt;</text>
+      <ellipse
+         cx="1501.5"
+         cy="597.7422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse67" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="159"
+         x="1510.5"
+         y="601.0889"
+         id="text67">createUser(User): User</text>
+      <ellipse
+         cx="1501.5"
+         cy="614.0391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse68" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="164"
+         x="1510.5"
+         y="617.3857"
+         id="text68">updateUser(User): User</text>
+      <ellipse
+         cx="1501.5"
+         cy="630.3359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse69" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="189"
+         x="1510.5"
+         y="633.6826"
+         id="text69">deleteUser(int userID): void</text>
+      <ellipse
+         cx="1501.5"
+         cy="646.6328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse70" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="201"
+         x="1510.5"
+         y="649.9795"
+         id="text70">getUserById(int userID): User</text>
+      <ellipse
+         cx="1501.5"
+         cy="662.9297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse71" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="307"
+         x="1510.5"
+         y="666.2764"
+         id="text71">getUserByUsername(string username): User</text>
+    </g>
+    <!--class UserRepository-->
+    <g
+       id="elem_UserRepository">
+      <rect
+         codeLine="114"
+         fill="#F1F1F1"
+         height="145.7813"
+         id="UserRepository"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="333"
+         x="1904.5"
+         y="255.7969" />
+      <ellipse
+         cx="2013.75"
+         cy="271.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse72" />
+      <path
+         d="M2016.7188,277.4375 Q2016.1406,277.7344 2015.5,277.875 Q2014.8594,278.0313 2014.1563,278.0313 Q2011.6563,278.0313 2010.3281,276.3906 Q2009.0156,274.7344 2009.0156,271.6094 Q2009.0156,268.4844 2010.3281,266.8281 Q2011.6563,265.1719 2014.1563,265.1719 Q2014.8594,265.1719 2015.5,265.3281 Q2016.1563,265.4844 2016.7188,265.7813 L2016.7188,268.5 Q2016.0938,267.9219 2015.5,267.6563 Q2014.9063,267.375 2014.2813,267.375 Q2012.9375,267.375 2012.25,268.4531 Q2011.5625,269.5156 2011.5625,271.6094 Q2011.5625,273.7031 2012.25,274.7813 Q2012.9375,275.8438 2014.2813,275.8438 Q2014.9063,275.8438 2015.5,275.5781 Q2016.0938,275.2969 2016.7188,274.7188 L2016.7188,277.4375 Z "
+         fill="#000000"
+         id="path72" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="106"
+         x="2034.25"
+         y="276.6436"
+         id="text72">UserRepository</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1905.5"
+         x2="2236.5"
+         y1="287.7969"
+         y2="287.7969"
+         id="line72" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1905.5"
+         x2="2236.5"
+         y1="295.7969"
+         y2="295.7969"
+         id="line73" />
+      <ellipse
+         cx="1915.5"
+         cy="309.4453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse73" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="167"
+         x="1924.5"
+         y="312.792"
+         id="text73">listUsers(): array&lt;User&gt;</text>
+      <ellipse
+         cx="1915.5"
+         cy="325.7422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse74" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="159"
+         x="1924.5"
+         y="329.0889"
+         id="text74">createUser(User): User</text>
+      <ellipse
+         cx="1915.5"
+         cy="342.0391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse75" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="164"
+         x="1924.5"
+         y="345.3857"
+         id="text75">updateUser(User): User</text>
+      <ellipse
+         cx="1915.5"
+         cy="358.3359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse76" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="189"
+         x="1924.5"
+         y="361.6826"
+         id="text76">deleteUser(int userID): void</text>
+      <ellipse
+         cx="1915.5"
+         cy="374.6328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse77" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="201"
+         x="1924.5"
+         y="377.9795"
+         id="text77">getUserById(int userID): User</text>
+      <ellipse
+         cx="1915.5"
+         cy="390.9297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse78" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="307"
+         x="1924.5"
+         y="394.2764"
+         id="text78">getUserByUsername(string username): User</text>
+    </g>
+    <!--entity mssql-->
+    <g
+       id="elem_mssql">
+      <path
+         d="M2294,588.2969 C2294,578.2969 2354,578.2969 2354,578.2969 C2354,578.2969 2414,578.2969 2414,588.2969 L2414,613.5938 C2414,623.5938 2354,623.5938 2354,623.5938 C2354,623.5938 2294,623.5938 2294,613.5938 L2294,588.2969 "
+         fill="#F1F1F1"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="path78" />
+      <path
+         d="M2294,588.2969 C2294,598.2969 2354,598.2969 2354,598.2969 C2354,598.2969 2414,598.2969 2414,588.2969 "
+         fill="none"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="path79" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="100"
+         x="2304"
+         y="615.292"
+         id="text79">MS SQL Server</text>
+    </g>
+    <!--link entryPoint to UserController-->
+    <g
+       id="link_entryPoint_UserController">
+      <path
+         codeLine="129"
+         d="M365,117.3369 C365,144.6669 365,229.2769 365,282.2769 "
+         fill="none"
+         id="entryPoint-to-UserController"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="365,288.2769,369,279.2769,365,283.2769,361,279.2769,365,288.2769"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon79" />
+    </g>
+    <!--link UserController to UserApplicationService-->
+    <g
+       id="link_UserController_UserApplicationService">
+      <path
+         codeLine="131"
+         d="M390.05,369.3469 C416.3,410.7969 454.9093,471.7682 487.0693,522.5382 "
+         fill="none"
+         id="UserController-to-UserApplicationService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="490.28,527.6069,488.843,517.8634,487.6044,523.383,482.0848,522.1444,490.28,527.6069"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon80" />
+    </g>
+    <!--link UserController to AuthService-->
+    <g
+       id="link_UserController_AuthService">
+      <path
+         codeLine="132"
+         d="M338.05,369.3469 C303.21,420.4669 246.2794,504.0091 211.3994,555.1791 "
+         fill="none"
+         id="UserController-to-AuthService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="208.02,560.1369,216.3943,554.9532,210.8362,556.0054,209.784,550.4473,208.02,560.1369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon81" />
+    </g>
+    <!--link UserApplicationService to UserService-->
+    <g
+       id="link_UserApplicationService_UserService">
+      <path
+         codeLine="134"
+         d="M621.96,527.7669 C657.13,501.8969 699.5,475.0069 742,458.2969 C952.17,375.6469 1204.1505,346.0114 1383.4205,335.4014 "
+         fill="none"
+         id="UserApplicationService-to-UserService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1389.41,335.0469,1380.1894,331.5856,1384.4187,335.3423,1380.662,339.5716,1389.41,335.0469"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon82" />
+    </g>
+    <!--link AuthService to UserService-->
+    <g
+       id="link_AuthService_UserService">
+      <path
+         codeLine="135"
+         d="M209.77,560.1569 C236.98,526.2369 281.14,479.6069 332,458.2969 C352.21,449.8269 507.16,451.9569 529,450.2969 C827.92,427.5469 1165.9584,387.2576 1383.3884,359.4676 "
+         fill="none"
+         id="AuthService-to-UserService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1389.34,358.7069,1379.9055,355.8802,1384.3803,359.3408,1380.9197,363.8156,1389.34,358.7069"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon83" />
+    </g>
+    <!--link UserService to UserRepositoryInterface-->
+    <g
+       id="link_UserService_UserRepositoryInterface">
+      <path
+         codeLine="137"
+         d="M1624.91,426.5069 C1631.07,459.7969 1636.7776,490.5772 1642.5176,521.5772 "
+         fill="none"
+         id="UserService-to-UserRepositoryInterface"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1643.61,527.4769,1645.9045,517.899,1642.6997,522.5604,1638.0383,519.3556,1643.61,527.4769"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon84" />
+    </g>
+    <!--link UserService to User-->
+    <g
+       id="link_UserService_User">
+      <path
+         codeLine="138"
+         d="M1492,426.6069 C1484.88,436.6169 1478.7,447.2169 1474,458.2969 C1433.59,553.5169 1442.5651,667.7539 1457.5951,750.2939 "
+         fill="none"
+         id="UserService-to-User"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1458.67,756.1969,1460.993,746.6259,1457.7743,751.2778,1453.1224,748.0591,1458.67,756.1969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon85" />
+    </g>
+    <!--link UserService to ResponseUserDTO-->
+    <g
+       id="link_UserService_ResponseUserDTO">
+      <path
+         codeLine="139"
+         d="M1462.57,426.3169 C1403.34,465.9069 1341.8885,506.973 1291.0585,540.943 "
+         fill="none"
+         id="UserService-to-ResponseUserDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1286.07,544.2769,1295.7754,542.6018,1290.2271,541.4987,1291.3302,535.9504,1286.07,544.2769"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon86" />
+    </g>
+    <!--link UserService to CreateUserDTO-->
+    <g
+       id="link_UserService_CreateUserDTO">
+      <path
+         codeLine="140"
+         d="M1389.27,351.2669 C1217.06,371.7069 993.48,407.0069 918,458.2969 C887.52,479.0169 867.9912,508.5997 853.4212,538.5997 "
+         fill="none"
+         id="UserService-to-CreateUserDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="850.8,543.9969,858.3299,537.6486,852.9843,539.4993,851.1337,534.1537,850.8,543.9969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon87" />
+    </g>
+    <!--link UserService to UpdateUserDTO-->
+    <g
+       id="link_UserService_UpdateUserDTO">
+      <path
+         codeLine="141"
+         d="M1389.3,349.7169 C1294.49,366.9269 1186.26,398.9169 1103,458.2969 C1072.84,479.8069 1052.6339,509.1071 1037.0539,538.7171 "
+         fill="none"
+         id="UserService-to-UpdateUserDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1034.26,544.0269,1041.9907,537.9247,1036.5882,539.602,1034.911,534.1996,1034.26,544.0269"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon88" />
+    </g>
+    <!--link UserRepository to UserRepositoryInterface-->
+    <g
+       id="link_UserRepository_UserRepositoryInterface">
+      <path
+         codeLine="143"
+         d="M1960.6,401.7969 C1900.84,440.7769 1842.2959,478.9424 1782.5259,517.9324 "
+         fill="none"
+         id="UserRepository-to-UserRepositoryInterface"
+         style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+      <polygon
+         fill="none"
+         points="1767.45,527.7669,1785.8041,522.9577,1779.2477,512.9071,1767.45,527.7669"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon89" />
+    </g>
+    <!--link UserRepository to mssql-->
+    <g
+       id="link_UserRepository_mssql">
+      <path
+         codeLine="144"
+         d="M2146.47,401.7969 C2208.2,460.6869 2287.1989,536.065 2326.8589,573.905 "
+         fill="none"
+         id="UserRepository-to-mssql"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="2331.2,578.0469,2327.4496,568.94,2327.5824,574.5953,2321.9271,574.7281,2331.2,578.0469"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon90" />
+    </g>
+    <!--link User to UserRole-->
+    <g
+       id="link_User_UserRole">
+      <path
+         codeLine="146"
+         d="M1472.73,951.4869 C1470.24,977.3869 1468.2417,998.2742 1466.1417,1020.2142 "
+         fill="none"
+         id="User-to-UserRole"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1465.57,1026.1869,1470.4093,1017.6089,1466.0464,1021.2096,1462.4457,1016.8467,1465.57,1026.1869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon91" />
+    </g>
+    <!--link UserRepositoryInterface to User-->
+    <g
+       id="link_UserRepositoryInterface_User">
+      <path
+         codeLine="147"
+         d="M1606.62,674.0569 C1588.75,699.6969 1571.7722,724.0455 1552.7122,751.3755 "
+         fill="none"
+         id="UserRepositoryInterface-to-User"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1549.28,756.2969,1557.7092,751.2029,1552.1402,752.1957,1551.1474,746.6267,1549.28,756.2969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon92" />
+    </g>
+    <!--link CreateUserDTO to UserRole-->
+    <g
+       id="link_CreateUserDTO_UserRole">
+      <path
+         codeLine="149"
+         d="M845.72,657.3169 C873.53,739.8869 937.39,894.0169 1047,975.2969 C1149.37,1051.2069 1295.7658,1069.2734 1384.2758,1073.1634 "
+         fill="none"
+         id="CreateUserDTO-to-UserRole"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1390.27,1073.4269,1381.4543,1069.0356,1385.2748,1073.2073,1381.103,1077.0279,1390.27,1073.4269"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon93" />
+    </g>
+    <!--link UpdateUserDTO to UserRole-->
+    <g
+       id="link_UpdateUserDTO_UserRole">
+      <path
+         codeLine="150"
+         d="M1030.94,657.5669 C1063.55,737.6669 1133.55,885.5069 1236,975.2969 C1280.41,1014.2269 1336.9175,1038.0217 1384.6675,1053.3617 "
+         fill="none"
+         id="UpdateUserDTO-to-UserRole"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1390.38,1055.1969,1383.0348,1048.6358,1385.6196,1053.6676,1380.5879,1056.2524,1390.38,1055.1969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon94" />
+    </g>
+    <!--link ResponseUserDTO to UserRole-->
+    <g
+       id="link_ResponseUserDTO_UserRole">
+      <path
+         codeLine="151"
+         d="M1222.62,657.5969 C1250.42,732.9869 1305.59,870.0569 1374,975.2969 C1385.5,992.9869 1396.0429,1006.2911 1409.9329,1021.7711 "
+         fill="none"
+         id="ResponseUserDTO-to-UserRole"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1413.94,1026.2369,1410.9066,1016.8668,1410.6008,1022.5154,1404.9522,1022.2096,1413.94,1026.2369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon95" />
+    </g>
+    <text
+       fill="#888888"
+       font-family="sans-serif"
+       font-size="10"
+       lengthAdjust="spacing"
+       textLength="361"
+       x="1028"
+       y="1201.5791"
+       id="text95">filipebezerra.dev.br - drawn with PlantUML v. 1.2024.3 - All rights reserved</text>
+    <!--SRC=[bLVDZk8u4BxxAKhTMWsZdN3Q4rfrYmLMGgAd6MZcRX8Jh7RYZ6tePMRdF4-mJx27FUrf7e4NctB8ZsCIccc99guVL_chgYz6F_CqeueciARXSwpaBer6KaW5jt_cVuGA8LyI_XTFOsAu4Gn6lpt8Y0a8O8JV8DW-NwmqKveGebXeQ1gZuSrmFhq1ge5c76u5Jra_edhB8lX207flSmEOf4OTvfAd9hTbrH9kRKu3nIA2vczWH1CQKS2Gg6HgGqCs09dYceBT20EpDODmczjfzCdGdyQOoBHqW1azC7MJ9m0G2gfrdlX8ObWf15E52k1NAnzccU0XDLocIwRs77VOdSJ5iZGUxiosjA3rSwx-Ikp7EmFDDpx-T_nN3a0SlyUuilAGQcc_Trgw9t0IwJf3IwwDixW7ADChzO9hanUmztO0L2bw-7t1T2PJpQnu_FHuLvh6BBVisGhn2Cqzmz8kL8oQNDWRLO-ex_ROPL7fiQeUBtfW6xB2eqfdBtbKmEu0vDRdUbHapDEUrQGqOU-m6bg_I6MZFCbdbhfXgafXUZTLY5Fmnlah7GRGHk5SWTtzJ5Y6FLEKMTGAk_D2uiJHC6HQ5uglf9540r8t2OkS3JOTrxBxripkEpEuloe5hugl9V5pw7Hbq3c1aKoE_wSSnq-nM27re2nbyV5xo2NW85fAe4OsY6Gi4ygT2MoM7gcCcuDVVPkOSzIWvQYvZAbivOdR40Yw40YwgXFuqDIWuJ0FSvcT-zAieHvJGojIg3LR9F9v4SYgJx4zq7rqTaaRDdbcJYkC9xFfnybYigX5Z_F9OlZqw4Y6uuVf- -dooHMtXos6kYsoJmXb5x5CQcwaEjJlZLr3thJFbGwebao7Gbp7fpMZ_d6OHhswEJfPp_LO5KtGyvhYadCNCKDav2M_Bdf-pSyZwUfq5L7dLdkc-EPGjLI5wplmsXezrrAAYpMlwbPNlRepG5U9lpGhw9NFBkzQGRJ_Ykbf1wjDVnqedPtHtEoQTd0yBd0YJpUAClJUcPsY0-199bY2TxBJJGMPaWeaJjtEZbFhRPr3zEwyQzNOrs_YLm2_3FTbiA-1-YgWVmxc4xm8CAP6rrGZF0zBM7wOWMKTYmk-SHAjFmb2ti1YCXiUlnt_cIm9SMx0GHJSUVTJGhpxQb2Od5__sYoTUz1ffvPROxbZQUVUdNmTSNcqLBPCLwlTcT3d45_VuAlpBLrMEcNcz5g___Vbx1nRkrjHcvo8geFPjsCNVrId8arQRJetcBEXycz73INPI8c1OCC5p_1dpcU6GzAFsBw_nlGWKlGbXHTkjZ0ND3MhXndi-_0BDfh6ok9lhG3mbGIAnrkZSOorRSBe1m00]-->
+  </g>
+</svg>

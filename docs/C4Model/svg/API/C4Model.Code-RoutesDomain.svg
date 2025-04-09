@@ -1,0 +1,1778 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="1071px"
+   preserveAspectRatio="none"
+   style="width:1894px;height:1071px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 1894 1071"
+   width="1894px"
+   zoomAndPan="magnify"
+   id="svg77"
+   sodipodi:docname="C4Model.Code-RoutesDomain.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview77"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.75443511"
+     inkscape:cx="946.40347"
+     inkscape:cy="535.5"
+     inkscape:window-width="2560"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg77" />
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#ffffff;stroke-width:30.4819;stroke-linecap:round;paint-order:markers fill stroke"
+     id="rect77"
+     width="1894"
+     height="1071"
+     x="0"
+     y="0" />
+  <g
+     id="g77">
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="301"
+       x="789.5"
+       y="22.9951"
+       id="text1">C4Model - Code level - Routes Domain</text>
+    <!--cluster api-->
+    <g
+       id="cluster_api">
+      <rect
+         fill="none"
+         height="1003"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"
+         width="1734"
+         x="7"
+         y="44.2969"
+         id="rect1" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="25"
+         x="861.5"
+         y="59.292"
+         id="text2">API</text>
+    </g>
+    <!--cluster Interface Layer-->
+    <g
+       id="cluster_Interface Layer">
+      <path
+         d="M355.5,162.2969 L476.5,162.2969 A3.75,3.75 0 0 1 479,164.7969 L486,184.5938 L694.5,184.5938 A2.5,2.5 0 0 1 697,187.0938 L697,274.7969 A2.5,2.5 0 0 1 694.5,277.2969 L355.5,277.2969 A2.5,2.5 0 0 1 353,274.7969 L353,164.7969 A2.5,2.5 0 0 1 355.5,162.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path2" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="353"
+         x2="486"
+         y1="184.5938"
+         y2="184.5938"
+         id="line2" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="120"
+         x="357"
+         y="177.292"
+         id="text3">Interface Layer</text>
+    </g>
+    <!--cluster Application Layer-->
+    <g
+       id="cluster_Application Layer">
+      <path
+         d="M33.5,393.2969 L170.5,393.2969 A3.75,3.75 0 0 1 173,395.7969 L180,415.5938 L786.5,415.5938 A2.5,2.5 0 0 1 789,418.0938 L789,815.7969 A2.5,2.5 0 0 1 786.5,818.2969 L33.5,818.2969 A2.5,2.5 0 0 1 31,815.7969 L31,395.7969 A2.5,2.5 0 0 1 33.5,393.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path3" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="31"
+         x2="180"
+         y1="415.5938"
+         y2="415.5938"
+         id="line3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="136"
+         x="35"
+         y="408.292"
+         id="text4">Application Layer</text>
+    </g>
+    <!--cluster DTO-->
+    <g
+       id="cluster_DTO">
+      <path
+         d="M57.5,614.2969 L91.5,614.2969 A3.75,3.75 0 0 1 94,616.7969 L101,636.5938 L762.5,636.5938 A2.5,2.5 0 0 1 765,639.0938 L765,791.7969 A2.5,2.5 0 0 1 762.5,794.2969 L57.5,794.2969 A2.5,2.5 0 0 1 55,791.7969 L55,616.7969 A2.5,2.5 0 0 1 57.5,614.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path4" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="55"
+         x2="101"
+         y1="636.5938"
+         y2="636.5938"
+         id="line4" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="33"
+         x="59"
+         y="629.292"
+         id="text5">DTO</text>
+    </g>
+    <!--cluster Domain Layer-->
+    <g
+       id="cluster_Domain Layer">
+      <path
+         d="M815.5,301.2969 L923.5,301.2969 A3.75,3.75 0 0 1 926,303.7969 L933,323.5938 L1438.5,323.5938 A2.5,2.5 0 0 1 1441,326.0938 L1441,1020.7969 A2.5,2.5 0 0 1 1438.5,1023.2969 L815.5,1023.2969 A2.5,2.5 0 0 1 813,1020.7969 L813,303.7969 A2.5,2.5 0 0 1 815.5,301.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path5" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="813"
+         x2="933"
+         y1="323.5938"
+         y2="323.5938"
+         id="line5" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="817"
+         y="316.292"
+         id="text6">Domain Layer</text>
+    </g>
+    <!--cluster Entity-->
+    <g
+       id="cluster_Entity">
+      <path
+         d="M839.5,581.2969 L884.5,581.2969 A3.75,3.75 0 0 1 887,583.7969 L894,603.5938 L1138.5,603.5938 A2.5,2.5 0 0 1 1141,606.0938 L1141,824.7969 A2.5,2.5 0 0 1 1138.5,827.2969 L839.5,827.2969 A2.5,2.5 0 0 1 837,824.7969 L837,583.7969 A2.5,2.5 0 0 1 839.5,581.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path6" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="837"
+         x2="894"
+         y1="603.5938"
+         y2="603.5938"
+         id="line6" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="44"
+         x="841"
+         y="596.292"
+         id="text7">Entity</text>
+    </g>
+    <!--cluster Enum-->
+    <g
+       id="cluster_Enum">
+      <path
+         d="M916.5,851.2969 L960.5,851.2969 A3.75,3.75 0 0 1 963,853.7969 L970,873.5938 L1061.5,873.5938 A2.5,2.5 0 0 1 1064,876.0938 L1064,996.7969 A2.5,2.5 0 0 1 1061.5,999.2969 L916.5,999.2969 A2.5,2.5 0 0 1 914,996.7969 L914,853.7969 A2.5,2.5 0 0 1 916.5,851.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path7" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="914"
+         x2="970"
+         y1="873.5938"
+         y2="873.5938"
+         id="line7" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="43"
+         x="918"
+         y="866.292"
+         id="text8">Enum</text>
+    </g>
+    <!--cluster Interface-->
+    <g
+       id="cluster_Interface">
+      <path
+         d="M1167.5,614.2969 L1239.5,614.2969 A3.75,3.75 0 0 1 1242,616.7969 L1249,636.5938 L1414.5,636.5938 A2.5,2.5 0 0 1 1417,639.0938 L1417,791.7969 A2.5,2.5 0 0 1 1414.5,794.2969 L1167.5,794.2969 A2.5,2.5 0 0 1 1165,791.7969 L1165,616.7969 A2.5,2.5 0 0 1 1167.5,614.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path8" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1165"
+         x2="1249"
+         y1="636.5938"
+         y2="636.5938"
+         id="line8" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="71"
+         x="1169"
+         y="629.292"
+         id="text9">Interface</text>
+    </g>
+    <!--cluster Service-->
+    <g
+       id="cluster_Service">
+      <path
+         d="M839.5,344.2969 L899.5,344.2969 A3.75,3.75 0 0 1 902,346.7969 L909,366.5938 L1240.5,366.5938 A2.5,2.5 0 0 1 1243,369.0938 L1243,554.7969 A2.5,2.5 0 0 1 1240.5,557.2969 L839.5,557.2969 A2.5,2.5 0 0 1 837,554.7969 L837,346.7969 A2.5,2.5 0 0 1 839.5,344.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path9" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="837"
+         x2="909"
+         y1="366.5938"
+         y2="366.5938"
+         id="line9" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="59"
+         x="841"
+         y="359.292"
+         id="text10">Service</text>
+    </g>
+    <!--cluster Infrastructure Layer-->
+    <g
+       id="cluster_Infrastructure Layer">
+      <path
+         d="M1467.5,360.7969 L1627.5,360.7969 A3.75,3.75 0 0 1 1630,363.2969 L1637,383.0938 L1714.5,383.0938 A2.5,2.5 0 0 1 1717,385.5938 L1717,538.2969 A2.5,2.5 0 0 1 1714.5,540.7969 L1467.5,540.7969 A2.5,2.5 0 0 1 1465,538.2969 L1465,363.2969 A2.5,2.5 0 0 1 1467.5,360.7969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path10" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1465"
+         x2="1637"
+         y1="383.0938"
+         y2="383.0938"
+         id="line10" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="159"
+         x="1469"
+         y="375.792"
+         id="text11">Infrastructure Layer</text>
+    </g>
+    <!--entity entryPoint-->
+    <g
+       id="elem_entryPoint">
+      <ellipse
+         cx="525"
+         cy="108.2969"
+         fill="#FF0000"
+         rx="8"
+         ry="8"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="ellipse11" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="95"
+         x="477.5"
+         y="138.292"
+         id="text12">API EntryPoint</text>
+    </g>
+    <!--class RouteController-->
+    <g
+       id="elem_RouteController">
+      <rect
+         codeLine="9"
+         fill="#F1F1F1"
+         height="64.2969"
+         id="RouteController"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="311"
+         x="369.5"
+         y="197.2969" />
+      <ellipse
+         cx="466.25"
+         cy="213.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse12" />
+      <path
+         d="M469.2188,218.9375 Q468.6406,219.2344 468,219.375 Q467.3594,219.5313 466.6563,219.5313 Q464.1563,219.5313 462.8281,217.8906 Q461.5156,216.2344 461.5156,213.1094 Q461.5156,209.9844 462.8281,208.3281 Q464.1563,206.6719 466.6563,206.6719 Q467.3594,206.6719 468,206.8281 Q468.6563,206.9844 469.2188,207.2813 L469.2188,210 Q468.5938,209.4219 468,209.1563 Q467.4063,208.875 466.7813,208.875 Q465.4375,208.875 464.75,209.9531 Q464.0625,211.0156 464.0625,213.1094 Q464.0625,215.2031 464.75,216.2813 Q465.4375,217.3438 466.7813,217.3438 Q467.4063,217.3438 468,217.0781 Q468.5938,216.7969 469.2188,216.2188 L469.2188,218.9375 Z "
+         fill="#000000"
+         id="path12" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="109"
+         x="486.75"
+         y="218.1436"
+         id="text13">RouteController</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="370.5"
+         x2="679.5"
+         y1="229.2969"
+         y2="229.2969"
+         id="line13" />
+      <ellipse
+         cx="380.5"
+         cy="242.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse13" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="285"
+         x="389.5"
+         y="246.292"
+         id="text14">RouteApplicationService routeAppService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="370.5"
+         x2="679.5"
+         y1="253.5938"
+         y2="253.5938"
+         id="line14" />
+    </g>
+    <!--class RouteApplicationService-->
+    <g
+       id="elem_RouteApplicationService">
+      <rect
+         codeLine="15"
+         fill="#F1F1F1"
+         height="64.2969"
+         id="RouteApplicationService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="317"
+         x="366.5"
+         y="428.2969" />
+      <ellipse
+         cx="437.25"
+         cy="444.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse14" />
+      <path
+         d="M440.2188,449.9375 Q439.6406,450.2344 439,450.375 Q438.3594,450.5313 437.6563,450.5313 Q435.1563,450.5313 433.8281,448.8906 Q432.5156,447.2344 432.5156,444.1094 Q432.5156,440.9844 433.8281,439.3281 Q435.1563,437.6719 437.6563,437.6719 Q438.3594,437.6719 439,437.8281 Q439.6563,437.9844 440.2188,438.2813 L440.2188,441 Q439.5938,440.4219 439,440.1563 Q438.4063,439.875 437.7813,439.875 Q436.4375,439.875 435.75,440.9531 Q435.0625,442.0156 435.0625,444.1094 Q435.0625,446.2031 435.75,447.2813 Q436.4375,448.3438 437.7813,448.3438 Q438.4063,448.3438 439,448.0781 Q439.5938,447.7969 440.2188,447.2188 L440.2188,449.9375 Z "
+         fill="#000000"
+         id="path14" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="167"
+         x="457.75"
+         y="449.1436"
+         id="text15">RouteApplicationService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="367.5"
+         x2="682.5"
+         y1="460.2969"
+         y2="460.2969"
+         id="line15" />
+      <ellipse
+         cx="377.5"
+         cy="473.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse15" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="291"
+         x="386.5"
+         y="477.292"
+         id="text16">RouteRepositoryInterface routeRepository</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="367.5"
+         x2="682.5"
+         y1="484.5938"
+         y2="484.5938"
+         id="line16" />
+    </g>
+    <!--class CreateRouteDTO-->
+    <g
+       id="elem_CreateRouteDTO">
+      <rect
+         codeLine="20"
+         fill="#F1F1F1"
+         height="96.8906"
+         id="CreateRouteDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="221"
+         x="70.5"
+         y="665.2969" />
+      <ellipse
+         cx="117.25"
+         cy="681.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse16" />
+      <path
+         d="M120.2188,686.9375 Q119.6406,687.2344 119,687.375 Q118.3594,687.5313 117.6563,687.5313 Q115.1563,687.5313 113.8281,685.8906 Q112.5156,684.2344 112.5156,681.1094 Q112.5156,677.9844 113.8281,676.3281 Q115.1563,674.6719 117.6563,674.6719 Q118.3594,674.6719 119,674.8281 Q119.6563,674.9844 120.2188,675.2813 L120.2188,678 Q119.5938,677.4219 119,677.1563 Q118.4063,676.875 117.7813,676.875 Q116.4375,676.875 115.75,677.9531 Q115.0625,679.0156 115.0625,681.1094 Q115.0625,683.2031 115.75,684.2813 Q116.4375,685.3438 117.7813,685.3438 Q118.4063,685.3438 119,685.0781 Q119.5938,684.7969 120.2188,684.2188 L120.2188,686.9375 Z "
+         fill="#000000"
+         id="path16" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="119"
+         x="137.75"
+         y="686.1436"
+         id="text17">CreateRouteDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="71.5"
+         x2="290.5"
+         y1="697.2969"
+         y2="697.2969"
+         id="line17" />
+      <ellipse
+         cx="81.5"
+         cy="710.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse17" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="66"
+         x="90.5"
+         y="714.292"
+         id="text18">int userID</text>
+      <ellipse
+         cx="81.5"
+         cy="727.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse18" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="101"
+         x="90.5"
+         y="730.5889"
+         id="text19">?int delivererID</text>
+      <ellipse
+         cx="81.5"
+         cy="743.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse19" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="195"
+         x="90.5"
+         y="746.8857"
+         id="text20">array&lt;int&gt; clientLocationIDs</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="71.5"
+         x2="290.5"
+         y1="754.1875"
+         y2="754.1875"
+         id="line20" />
+    </g>
+    <!--class UpdateRouteDTO-->
+    <g
+       id="elem_UpdateRouteDTO">
+      <rect
+         codeLine="26"
+         fill="#F1F1F1"
+         height="80.5938"
+         id="UpdateRouteDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="166"
+         x="583"
+         y="673.2969" />
+      <ellipse
+         cx="602.95"
+         cy="689.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse20" />
+      <path
+         d="M605.9188,694.9375 Q605.3406,695.2344 604.7,695.375 Q604.0594,695.5313 603.3563,695.5313 Q600.8563,695.5313 599.5281,693.8906 Q598.2156,692.2344 598.2156,689.1094 Q598.2156,685.9844 599.5281,684.3281 Q600.8563,682.6719 603.3563,682.6719 Q604.0594,682.6719 604.7,682.8281 Q605.3563,682.9844 605.9188,683.2813 L605.9188,686 Q605.2938,685.4219 604.7,685.1563 Q604.1063,684.875 603.4813,684.875 Q602.1375,684.875 601.45,685.9531 Q600.7625,687.0156 600.7625,689.1094 Q600.7625,691.2031 601.45,692.2813 Q602.1375,693.3438 603.4813,693.3438 Q604.1063,693.3438 604.7,693.0781 Q605.2938,692.7969 605.9188,692.2188 L605.9188,694.9375 Z "
+         fill="#000000"
+         id="path20" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="123"
+         x="618.05"
+         y="694.1436"
+         id="text21">UpdateRouteDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="584"
+         x2="748"
+         y1="705.2969"
+         y2="705.2969"
+         id="line21" />
+      <ellipse
+         cx="594"
+         cy="718.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse21" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="101"
+         x="603"
+         y="722.292"
+         id="text22">?int delivererID</text>
+      <ellipse
+         cx="594"
+         cy="735.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse22" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="140"
+         x="603"
+         y="738.5889"
+         id="text23">?RouteStatus status</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="584"
+         x2="748"
+         y1="745.8906"
+         y2="745.8906"
+         id="line23" />
+    </g>
+    <!--class RouteDTO-->
+    <g
+       id="elem_RouteDTO">
+      <rect
+         codeLine="31"
+         fill="#F1F1F1"
+         height="129.4844"
+         id="RouteDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="221"
+         x="326.5"
+         y="649.2969" />
+      <ellipse
+         cx="396.25"
+         cy="665.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse23" />
+      <path
+         d="M399.2188,670.9375 Q398.6406,671.2344 398,671.375 Q397.3594,671.5313 396.6563,671.5313 Q394.1563,671.5313 392.8281,669.8906 Q391.5156,668.2344 391.5156,665.1094 Q391.5156,661.9844 392.8281,660.3281 Q394.1563,658.6719 396.6563,658.6719 Q397.3594,658.6719 398,658.8281 Q398.6563,658.9844 399.2188,659.2813 L399.2188,662 Q398.5938,661.4219 398,661.1563 Q397.4063,660.875 396.7813,660.875 Q395.4375,660.875 394.75,661.9531 Q394.0625,663.0156 394.0625,665.1094 Q394.0625,667.2031 394.75,668.2813 Q395.4375,669.3438 396.7813,669.3438 Q397.4063,669.3438 398,669.0781 Q398.5938,668.7969 399.2188,668.2188 L399.2188,670.9375 Z "
+         fill="#000000"
+         id="path23" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="73"
+         x="416.75"
+         y="670.1436"
+         id="text24">RouteDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="327.5"
+         x2="546.5"
+         y1="681.2969"
+         y2="681.2969"
+         id="line24" />
+      <ellipse
+         cx="337.5"
+         cy="694.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse24" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="346.5"
+         y="698.292"
+         id="text25">int routeID</text>
+      <ellipse
+         cx="337.5"
+         cy="711.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse25" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="66"
+         x="346.5"
+         y="714.5889"
+         id="text26">int userID</text>
+      <ellipse
+         cx="337.5"
+         cy="727.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse26" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="101"
+         x="346.5"
+         y="730.8857"
+         id="text27">?int delivererID</text>
+      <ellipse
+         cx="337.5"
+         cy="743.8359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse27" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="133"
+         x="346.5"
+         y="747.1826"
+         id="text28">RouteStatus status</text>
+      <ellipse
+         cx="337.5"
+         cy="760.1328"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse28" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="195"
+         x="346.5"
+         y="763.4795"
+         id="text29">array&lt;int&gt; clientLocationIDs</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="327.5"
+         x2="546.5"
+         y1="770.7813"
+         y2="770.7813"
+         id="line29" />
+    </g>
+    <!--class Route-->
+    <g
+       id="elem_Route">
+      <rect
+         codeLine="44"
+         fill="#F1F1F1"
+         height="194.6719"
+         id="Route"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="272"
+         x="853"
+         y="616.2969" />
+      <ellipse
+         cx="963.75"
+         cy="632.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse29" />
+      <path
+         d="M966.7188,637.9375 Q966.1406,638.2344 965.5,638.375 Q964.8594,638.5313 964.1563,638.5313 Q961.6563,638.5313 960.3281,636.8906 Q959.0156,635.2344 959.0156,632.1094 Q959.0156,628.9844 960.3281,627.3281 Q961.6563,625.6719 964.1563,625.6719 Q964.8594,625.6719 965.5,625.8281 Q966.1563,625.9844 966.7188,626.2813 L966.7188,629 Q966.0938,628.4219 965.5,628.1563 Q964.9063,627.875 964.2813,627.875 Q962.9375,627.875 962.25,628.9531 Q961.5625,630.0156 961.5625,632.1094 Q961.5625,634.2031 962.25,635.2813 Q962.9375,636.3438 964.2813,636.3438 Q964.9063,636.3438 965.5,636.0781 Q966.0938,635.7969 966.7188,635.2188 L966.7188,637.9375 Z "
+         fill="#000000"
+         id="path29" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="42"
+         x="984.25"
+         y="637.1436"
+         id="text30">Route</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="854"
+         x2="1124"
+         y1="648.2969"
+         y2="648.2969"
+         id="line30" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="861"
+         y="658.9453"
+         id="rect30" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="873"
+         y="665.292"
+         id="text31">int routeID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="861"
+         y="675.2422"
+         id="rect31" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="66"
+         x="873"
+         y="681.5889"
+         id="text32">int userID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="861"
+         y="691.5391"
+         id="rect32" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="101"
+         x="873"
+         y="697.8857"
+         id="text33">?int delivererID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="861"
+         y="707.8359"
+         id="rect33" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="133"
+         x="873"
+         y="714.1826"
+         id="text34">RouteStatus status</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="861"
+         y="724.1328"
+         id="rect34" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="195"
+         x="873"
+         y="730.4795"
+         id="text35">array&lt;int&gt; clientLocationIDs</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="854"
+         x2="1124"
+         y1="737.7813"
+         y2="737.7813"
+         id="line35" />
+      <ellipse
+         cx="864"
+         cy="751.4297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse35" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="90"
+         x="873"
+         y="754.7764"
+         id="text36">__construct()</text>
+      <ellipse
+         cx="864"
+         cy="767.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse36" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="220"
+         x="873"
+         y="771.0732"
+         id="text37">addLocation(int locationID): void</text>
+      <ellipse
+         cx="864"
+         cy="784.0234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse37" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="246"
+         x="873"
+         y="787.3701"
+         id="text38">removeLocation(int locationID): void</text>
+      <ellipse
+         cx="864"
+         cy="800.3203"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse38" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="873"
+         y="803.667"
+         id="text39">getData(): array</text>
+    </g>
+    <!--class RouteStatus-->
+    <g
+       id="elem_RouteStatus">
+      <rect
+         codeLine="59"
+         fill="#F1F1F1"
+         height="96.8906"
+         id="RouteStatus"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="118"
+         x="930"
+         y="886.2969" />
+      <ellipse
+         cx="945"
+         cy="902.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse39" />
+      <path
+         d="M947.9688,907.9375 Q947.3906,908.2344 946.75,908.375 Q946.1094,908.5313 945.4063,908.5313 Q942.9063,908.5313 941.5781,906.8906 Q940.2656,905.2344 940.2656,902.1094 Q940.2656,898.9844 941.5781,897.3281 Q942.9063,895.6719 945.4063,895.6719 Q946.1094,895.6719 946.75,895.8281 Q947.4063,895.9844 947.9688,896.2813 L947.9688,899 Q947.3438,898.4219 946.75,898.1563 Q946.1563,897.875 945.5313,897.875 Q944.1875,897.875 943.5,898.9531 Q942.8125,900.0156 942.8125,902.1094 Q942.8125,904.2031 943.5,905.2813 Q944.1875,906.3438 945.5313,906.3438 Q946.1563,906.3438 946.75,906.0781 Q947.3438,905.7969 947.9688,905.2188 L947.9688,907.9375 Z "
+         fill="#000000"
+         id="path39" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="86"
+         x="959"
+         y="907.1436"
+         id="text40">RouteStatus</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="931"
+         x2="1047"
+         y1="918.2969"
+         y2="918.2969"
+         id="line40" />
+      <ellipse
+         cx="941"
+         cy="931.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse40" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="63"
+         x="950"
+         y="935.292"
+         id="text41">PENDING</text>
+      <ellipse
+         cx="941"
+         cy="948.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse41" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="69"
+         x="950"
+         y="951.5889"
+         id="text42">IN_ROUTE</text>
+      <ellipse
+         cx="941"
+         cy="964.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse42" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="63"
+         x="950"
+         y="967.8857"
+         id="text43">FINISHED</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="931"
+         x2="1047"
+         y1="975.1875"
+         y2="975.1875"
+         id="line43" />
+    </g>
+    <!--class RouteRepositoryInterface-->
+    <g
+       id="elem_RouteRepositoryInterface">
+      <rect
+         codeLine="67"
+         fill="#F1F1F1"
+         height="129.4844"
+         id="RouteRepositoryInterface"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="220"
+         x="1181"
+         y="649.2969" />
+      <ellipse
+         cx="1200.95"
+         cy="665.2969"
+         fill="#B4A7E5"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse43" />
+      <path
+         d="M1196.8719,661.0625 L1196.8719,658.9063 L1204.2625,658.9063 L1204.2625,661.0625 L1201.7938,661.0625 L1201.7938,669.1406 L1204.2625,669.1406 L1204.2625,671.2969 L1196.8719,671.2969 L1196.8719,669.1406 L1199.3406,669.1406 L1199.3406,661.0625 L1196.8719,661.0625 Z "
+         fill="#000000"
+         id="path43" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-style="italic"
+         lengthAdjust="spacing"
+         textLength="177"
+         x="1216.05"
+         y="670.1436"
+         id="text44">RouteRepositoryInterface</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1182"
+         x2="1400"
+         y1="681.2969"
+         y2="681.2969"
+         id="line44" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1182"
+         x2="1400"
+         y1="689.2969"
+         y2="689.2969"
+         id="line45" />
+      <ellipse
+         cx="1192"
+         cy="702.9453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse45" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="187"
+         x="1201"
+         y="706.292"
+         id="text45">listRoutes(): array&lt;Route&gt;</text>
+      <ellipse
+         cx="1192"
+         cy="719.2422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse46" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="189"
+         x="1201"
+         y="722.5889"
+         id="text46">createRoute(Route): Route</text>
+      <ellipse
+         cx="1192"
+         cy="735.5391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse47" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="194"
+         x="1201"
+         y="738.8857"
+         id="text47">updateRoute(Route): Route</text>
+      <ellipse
+         cx="1192"
+         cy="751.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse48" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="188"
+         x="1201"
+         y="755.1826"
+         id="text48">getRouteById(int id): Route</text>
+      <ellipse
+         cx="1192"
+         cy="768.1328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse49" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="166"
+         x="1201"
+         y="771.4795"
+         id="text49">deleteRoute(int id): void</text>
+    </g>
+    <!--class RouteService-->
+    <g
+       id="elem_RouteService">
+      <rect
+         codeLine="77"
+         fill="#F1F1F1"
+         height="162.0781"
+         id="RouteService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="373"
+         x="853.5"
+         y="379.2969" />
+      <ellipse
+         cx="989.75"
+         cy="395.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse50" />
+      <path
+         d="M992.7188,400.9375 Q992.1406,401.2344 991.5,401.375 Q990.8594,401.5313 990.1563,401.5313 Q987.6563,401.5313 986.3281,399.8906 Q985.0156,398.2344 985.0156,395.1094 Q985.0156,391.9844 986.3281,390.3281 Q987.6563,388.6719 990.1563,388.6719 Q990.8594,388.6719 991.5,388.8281 Q992.1563,388.9844 992.7188,389.2813 L992.7188,392 Q992.0938,391.4219 991.5,391.1563 Q990.9063,390.875 990.2813,390.875 Q988.9375,390.875 988.25,391.9531 Q987.5625,393.0156 987.5625,395.1094 Q987.5625,397.2031 988.25,398.2813 Q988.9375,399.3438 990.2813,399.3438 Q990.9063,399.3438 991.5,399.0781 Q992.0938,398.7969 992.7188,398.2188 L992.7188,400.9375 Z "
+         fill="#000000"
+         id="path50" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="92"
+         x="1010.25"
+         y="400.1436"
+         id="text50">RouteService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="854.5"
+         x2="1225.5"
+         y1="411.2969"
+         y2="411.2969"
+         id="line50" />
+      <ellipse
+         cx="864.5"
+         cy="424.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse51" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="291"
+         x="873.5"
+         y="428.292"
+         id="text51">RouteRepositoryInterface routeRepository</text>
+      <ellipse
+         cx="864.5"
+         cy="441.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse52" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="83"
+         x="873.5"
+         y="444.5889"
+         id="text52">Route route</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="854.5"
+         x2="1225.5"
+         y1="451.8906"
+         y2="451.8906"
+         id="line52" />
+      <ellipse
+         cx="864.5"
+         cy="465.5391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse53" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="218"
+         x="873.5"
+         y="468.8857"
+         id="text53">listRoutes(): array&lt;RouteDTO&gt;</text>
+      <ellipse
+         cx="864.5"
+         cy="481.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse54" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="297"
+         x="873.5"
+         y="485.1826"
+         id="text54">createRoute(CreateRouteDTO): RouteDTO</text>
+      <ellipse
+         cx="864.5"
+         cy="498.1328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse55" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="347"
+         x="873.5"
+         y="501.4795"
+         id="text55">updateRoute(int id, UpdateRouteDTO): RouteDTO</text>
+      <ellipse
+         cx="864.5"
+         cy="514.4297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse56" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="300"
+         x="873.5"
+         y="517.7764"
+         id="text56">addLocation(int routeID, int locationID): void</text>
+      <ellipse
+         cx="864.5"
+         cy="530.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse57" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="326"
+         x="873.5"
+         y="534.0732"
+         id="text57">removeLocation(int routeID, int locationID): void</text>
+    </g>
+    <!--class RouteRepository-->
+    <g
+       id="elem_RouteRepository">
+      <rect
+         codeLine="91"
+         fill="#F1F1F1"
+         height="129.4844"
+         id="RouteRepository"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="220"
+         x="1481"
+         y="395.7969" />
+      <ellipse
+         cx="1528.75"
+         cy="411.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse58" />
+      <path
+         d="M1531.7188,417.4375 Q1531.1406,417.7344 1530.5,417.875 Q1529.8594,418.0313 1529.1563,418.0313 Q1526.6563,418.0313 1525.3281,416.3906 Q1524.0156,414.7344 1524.0156,411.6094 Q1524.0156,408.4844 1525.3281,406.8281 Q1526.6563,405.1719 1529.1563,405.1719 Q1529.8594,405.1719 1530.5,405.3281 Q1531.1563,405.4844 1531.7188,405.7813 L1531.7188,408.5 Q1531.0938,407.9219 1530.5,407.6563 Q1529.9063,407.375 1529.2813,407.375 Q1527.9375,407.375 1527.25,408.4531 Q1526.5625,409.5156 1526.5625,411.6094 Q1526.5625,413.7031 1527.25,414.7813 Q1527.9375,415.8438 1529.2813,415.8438 Q1529.9063,415.8438 1530.5,415.5781 Q1531.0938,415.2969 1531.7188,414.7188 L1531.7188,417.4375 Z "
+         fill="#000000"
+         id="path58" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="1549.25"
+         y="416.6436"
+         id="text58">RouteRepository</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1482"
+         x2="1700"
+         y1="427.7969"
+         y2="427.7969"
+         id="line58" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1482"
+         x2="1700"
+         y1="435.7969"
+         y2="435.7969"
+         id="line59" />
+      <ellipse
+         cx="1492"
+         cy="449.4453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse59" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="187"
+         x="1501"
+         y="452.792"
+         id="text59">listRoutes(): array&lt;Route&gt;</text>
+      <ellipse
+         cx="1492"
+         cy="465.7422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse60" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="189"
+         x="1501"
+         y="469.0889"
+         id="text60">createRoute(Route): Route</text>
+      <ellipse
+         cx="1492"
+         cy="482.0391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse61" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="194"
+         x="1501"
+         y="485.3857"
+         id="text61">updateRoute(Route): Route</text>
+      <ellipse
+         cx="1492"
+         cy="498.3359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse62" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="188"
+         x="1501"
+         y="501.6826"
+         id="text62">getRouteById(int id): Route</text>
+      <ellipse
+         cx="1492"
+         cy="514.6328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse63" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="166"
+         x="1501"
+         y="517.9795"
+         id="text63">deleteRoute(int id): void</text>
+    </g>
+    <!--entity mssql-->
+    <g
+       id="elem_mssql">
+      <path
+         d="M1757,701.2969 C1757,691.2969 1817,691.2969 1817,691.2969 C1817,691.2969 1877,691.2969 1877,701.2969 L1877,726.5938 C1877,736.5938 1817,736.5938 1817,736.5938 C1817,736.5938 1757,736.5938 1757,726.5938 L1757,701.2969 "
+         fill="#F1F1F1"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="path63" />
+      <path
+         d="M1757,701.2969 C1757,711.2969 1817,711.2969 1817,711.2969 C1817,711.2969 1877,711.2969 1877,701.2969 "
+         fill="none"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="path64" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="100"
+         x="1767"
+         y="728.292"
+         id="text64">MS SQL Server</text>
+    </g>
+    <!--link entryPoint to RouteController-->
+    <g
+       id="link_entryPoint_RouteController">
+      <path
+         codeLine="105"
+         d="M525,117.4769 C525,133.6469 525,164.4669 525,191.2369 "
+         fill="none"
+         id="entryPoint-to-RouteController"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="525,197.2369,529,188.2369,525,192.2369,521,188.2369,525,197.2369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon64" />
+    </g>
+    <!--link RouteController to RouteApplicationService-->
+    <g
+       id="link_RouteController_RouteApplicationService">
+      <path
+         codeLine="106"
+         d="M525,261.6569 C525,305.3869 525,378.2269 525,421.9469 "
+         fill="none"
+         id="RouteController-to-RouteApplicationService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="525,427.9469,529,418.9469,525,422.9469,521,418.9469,525,427.9469"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon65" />
+    </g>
+    <!--link RouteApplicationService to RouteService-->
+    <g
+       id="link_RouteApplicationService_RouteService">
+      <path
+         codeLine="108"
+         d="M683.67,460.2969 C740.28,460.2969 790.88,460.2969 847.49,460.2969 "
+         fill="none"
+         id="RouteApplicationService-to-RouteService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="853.49,460.2969,844.49,456.2969,848.49,460.2969,844.49,464.2969,853.49,460.2969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon66" />
+    </g>
+    <!--link RouteApplicationService to CreateRouteDTO-->
+    <g
+       id="link_RouteApplicationService_CreateRouteDTO">
+      <path
+         codeLine="109"
+         d="M449.96,492.2969 C406.57,512.1069 352.18,540.2369 309,573.2969 C274.42,599.7669 245.1521,631.5735 221.2921,660.5735 "
+         fill="none"
+         id="RouteApplicationService-to-CreateRouteDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="217.48,665.2069,226.2871,660.7983,220.6568,661.3458,220.1093,655.7155,217.48,665.2069"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon67" />
+    </g>
+    <!--link RouteApplicationService to UpdateRouteDTO-->
+    <g
+       id="link_RouteApplicationService_UpdateRouteDTO">
+      <path
+         codeLine="110"
+         d="M542.43,492.3869 C568,537.9969 612.7359,617.7832 640.8059,667.8532 "
+         fill="none"
+         id="RouteApplicationService-to-UpdateRouteDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="643.74,673.0869,642.828,663.2803,641.2949,668.7255,635.8498,667.1924,643.74,673.0869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon68" />
+    </g>
+    <!--link RouteApplicationService to RouteDTO-->
+    <g
+       id="link_RouteApplicationService_RouteDTO">
+      <path
+         codeLine="111"
+         d="M514.12,492.3869 C500.49,531.3569 478.7615,593.4435 461.2215,643.5735 "
+         fill="none"
+         id="RouteApplicationService-to-RouteDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="459.24,649.2369,465.9879,642.0629,460.8913,644.5174,458.4368,639.4208,459.24,649.2369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon69" />
+    </g>
+    <!--link RouteService to RouteRepositoryInterface-->
+    <g
+       id="link_RouteService_RouteRepositoryInterface">
+      <path
+         codeLine="113"
+         d="M1120.11,541.5669 C1154.83,576.3569 1190.6613,612.2603 1223.2813,644.9403 "
+         fill="none"
+         id="RouteService-to-RouteRepositoryInterface"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1227.52,649.1869,1223.9929,639.9912,1223.9877,645.6481,1218.3309,645.6429,1227.52,649.1869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon70" />
+    </g>
+    <!--link RouteService to Route-->
+    <g
+       id="link_RouteService_Route">
+      <path
+         codeLine="114"
+         d="M1023.72,541.5669 C1018.91,565.2869 1014.7932,585.6167 1009.7932,610.2567 "
+         fill="none"
+         id="RouteService-to-Route"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1008.6,616.1369,1014.3099,608.1121,1009.5943,611.2367,1006.4697,606.5212,1008.6,616.1369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon71" />
+    </g>
+    <!--link RouteService to CreateRouteDTO-->
+    <g
+       id="link_RouteService_CreateRouteDTO">
+      <path
+         codeLine="115"
+         d="M870.92,541.3469 C844.03,551.1369 816.13,559.6669 789,565.2969 C762.89,570.7169 333.33,562.3569 309,573.2969 C266.73,592.2969 235.6088,627.7562 213.1088,660.2062 "
+         fill="none"
+         id="RouteService-to-CreateRouteDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="209.69,665.1369,218.1053,660.02,212.539,661.028,211.5311,655.4616,209.69,665.1369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon72" />
+    </g>
+    <!--link RouteService to UpdateRouteDTO-->
+    <g
+       id="link_RouteService_UpdateRouteDTO">
+      <path
+         codeLine="116"
+         d="M887.71,541.3769 C870.33,551.6669 853.09,562.4269 837,573.2969 C791.6,603.9669 748.0924,639.9638 714.5224,669.2338 "
+         fill="none"
+         id="RouteService-to-UpdateRouteDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="710,673.1769,719.4123,670.2771,713.7686,669.891,714.1548,664.2473,710,673.1769"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon73" />
+    </g>
+    <!--link RouteService to RouteDTO-->
+    <g
+       id="link_RouteService_RouteDTO">
+      <path
+         codeLine="117"
+         d="M869.44,541.3869 C843,551.0269 815.62,559.5069 789,565.2969 C764.77,570.5669 588.53,562.9569 566,573.2969 C530.62,589.5269 504.1342,615.7012 481.8842,644.3012 "
+         fill="none"
+         id="RouteService-to-RouteDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="478.2,649.0369,486.8834,644.3895,481.2702,645.0905,480.5692,639.4772,478.2,649.0369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon74" />
+    </g>
+    <!--link Route to RouteStatus-->
+    <g
+       id="link_Route_RouteStatus">
+      <path
+         codeLine="119"
+         d="M989,811.4869 C989,837.3869 989,858.2469 989,880.1869 "
+         fill="none"
+         id="Route-to-RouteStatus"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="989,886.1869,993,877.1869,989,881.1869,985,877.1869,989,886.1869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon75" />
+    </g>
+    <!--link RouteRepository to RouteRepositoryInterface-->
+    <g
+       id="link_RouteRepository_RouteRepositoryInterface">
+      <path
+         codeLine="120"
+         d="M1514.91,525.0869 C1469.52,563.1369 1425.8728,599.7214 1380.5428,637.7314 "
+         fill="none"
+         id="RouteRepository-to-RouteRepositoryInterface"
+         style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+      <polygon
+         fill="none"
+         points="1366.75,649.2969,1384.3979,642.329,1376.6876,633.1338,1366.75,649.2969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon76" />
+    </g>
+    <!--link RouteRepository to mssql-->
+    <g
+       id="link_RouteRepository_mssql">
+      <path
+         codeLine="121"
+         d="M1648.32,525.0869 C1697.23,579.5169 1760.6795,650.1241 1793.4895,686.6341 "
+         fill="none"
+         id="RouteRepository-to-mssql"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1797.5,691.0969,1794.4594,681.7291,1794.1579,687.3779,1788.5091,687.0764,1797.5,691.0969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon77" />
+    </g>
+    <text
+       fill="#888888"
+       font-family="sans-serif"
+       font-size="10"
+       lengthAdjust="spacing"
+       textLength="361"
+       x="759.5"
+       y="1061.5791"
+       id="text77">filipebezerra.dev.br - drawn with PlantUML v. 1.2024.3 - All rights reserved</text>
+    <!--SRC=[bLRTRjem5BxtKnnHJGEjuMfNrTIA0TqYKSgWlQvCRAXL4sUsGyT-hlS4UwA-s4wSaBycG970nEVp-Vdy7JlcIOGHrNG3IneyhRMAGpPKKcauktOVGgLKpnlnGuHhOeML78OVRnJZ4ZmOuWYIRzt3NCMM6nYf3HKX8Pe7bePhn7S6Cxy3r02D19n94V8-e-QHC_X50Bez1u1nQFLkfaHe7PRdZt2Mf7QXEIC8Z_0_NQDJFxHShsZ0OK9tN7USCu10KcFIN8OAVIWfkSvi01-SOH15KWJK2XKkkDuAzA6p-UpPmV-Gv5kEMLhO6hN1UJNwd4VA2AlqhYX1LmrPU3VamKTtjvtSLHfmg3d5TSbYjEP6Z9Jm5Xkk_L4nTvLCuiQ9BTTL2zMQxZwX-H8T2wH-ej8A_979K5as-yZt4Mk9t1xboi4NbjhOW753i_EsWXnBPOzlgx8r_AaCD8iY5NoXX-gkeQo5tTKtpgLIAizhAizhACzhBSyxK9vtiBo2XOU7G8N6wZYmtLw97CRs-6uINkQBUnUmLO8LKCqtQijFHQ-v7L5BksXm6TQOhZCPRnfvp6ekYMKsdexywPTYmfy-p6_lxyR5pBK_zHTVnwE38VC6BUAAl6TRcxcKY1J6fkTYNkCdztnPO8AYYRlk5v5kB21nqMrj4AJIpNpU-SpHBjXh4Eg6x_tacDAMDBEG7MFDtDUEkBSUSiMAr4nEu0vFXXRwgkVXldxysqnbIi5vxJ1hN5PlWQnNp-7j_N3IqhR3nWzNcgOT6klsgwzWkRXyZchng1AFwl045HxHO5enreo1w98QBFbc0Ojl4qYKbjIAxmOROxvBGjx3V3mPlFnz-JTU459wOV2OTrb_1I3rLm9lZtbzOHFITfFdY_R8Gy2g6Wz2gmey7Zu1aKe3vgQ6pcj1lfvkolXOcWToAz6LtaTrRVRxluzbNK8dthAjNoc5A5W9AIA-v3yvghdF-BQ_n8q5fkbp2C_2Fi9Cqj3UtqnWsuTtg1-JT64FCGCfGOlrepMWkKcqnVu3]-->
+  </g>
+</svg>

@@ -1,0 +1,2401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="980px"
+   preserveAspectRatio="none"
+   style="width:3155px;height:980px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 3155 980"
+   width="3155px"
+   zoomAndPan="magnify"
+   id="svg110"
+   sodipodi:docname="C4Model.Code-ClientsDomain.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview110"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.38177496"
+     inkscape:cx="1642.3288"
+     inkscape:cy="827.71274"
+     inkscape:window-width="2560"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg110" />
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#ffffff;stroke-width:30.4819;stroke-linecap:round;paint-order:markers fill stroke"
+     id="rect110"
+     width="3155"
+     height="980"
+     x="0"
+     y="0" />
+  <g
+     id="g110">
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="300"
+       x="1420.5"
+       y="22.9951"
+       id="text1">C4Model - Code level - Clients Domain</text>
+    <!--cluster api-->
+    <g
+       id="cluster_api">
+      <rect
+         fill="none"
+         height="912"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"
+         width="2995"
+         x="7"
+         y="44.2969"
+         id="rect1" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="25"
+         x="1492"
+         y="59.292"
+         id="text2">API</text>
+    </g>
+    <!--cluster Interface Layer-->
+    <g
+       id="cluster_Interface Layer">
+      <path
+         d="M677.5,162.2969 L798.5,162.2969 A3.75,3.75 0 0 1 801,164.7969 L808,184.5938 L1006.5,184.5938 A2.5,2.5 0 0 1 1009,187.0938 L1009,274.7969 A2.5,2.5 0 0 1 1006.5,277.2969 L677.5,277.2969 A2.5,2.5 0 0 1 675,274.7969 L675,164.7969 A2.5,2.5 0 0 1 677.5,162.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path2" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="675"
+         x2="808"
+         y1="184.5938"
+         y2="184.5938"
+         id="line2" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="120"
+         x="679"
+         y="177.292"
+         id="text3">Interface Layer</text>
+    </g>
+    <!--cluster Application Layer-->
+    <g
+       id="cluster_Application Layer">
+      <path
+         d="M33.5,433.7969 L170.5,433.7969 A3.75,3.75 0 0 1 173,436.2969 L180,456.0938 L1385.5,456.0938 A2.5,2.5 0 0 1 1388,458.5938 L1388,897.2969 A2.5,2.5 0 0 1 1385.5,899.7969 L33.5,899.7969 A2.5,2.5 0 0 1 31,897.2969 L31,436.2969 A2.5,2.5 0 0 1 33.5,433.7969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path3" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="31"
+         x2="180"
+         y1="456.0938"
+         y2="456.0938"
+         id="line3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="136"
+         x="35"
+         y="448.792"
+         id="text4">Application Layer</text>
+    </g>
+    <!--cluster DTO-->
+    <g
+       id="cluster_DTO">
+      <path
+         d="M57.5,678.7969 L91.5,678.7969 A3.75,3.75 0 0 1 94,681.2969 L101,701.0938 L1361.5,701.0938 A2.5,2.5 0 0 1 1364,703.5938 L1364,873.2969 A2.5,2.5 0 0 1 1361.5,875.7969 L57.5,875.7969 A2.5,2.5 0 0 1 55,873.2969 L55,681.2969 A2.5,2.5 0 0 1 57.5,678.7969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path4" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="55"
+         x2="101"
+         y1="701.0938"
+         y2="701.0938"
+         id="line4" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="33"
+         x="59"
+         y="693.792"
+         id="text5">DTO</text>
+    </g>
+    <!--cluster Domain Layer-->
+    <g
+       id="cluster_Domain Layer">
+      <path
+         d="M1414.5,301.2969 L1522.5,301.2969 A3.75,3.75 0 0 1 1525,303.7969 L1532,323.5938 L2455.5,323.5938 A2.5,2.5 0 0 1 2458,326.0938 L2458,929.7969 A2.5,2.5 0 0 1 2455.5,932.2969 L1414.5,932.2969 A2.5,2.5 0 0 1 1412,929.7969 L1412,303.7969 A2.5,2.5 0 0 1 1414.5,301.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path5" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1412"
+         x2="1532"
+         y1="323.5938"
+         y2="323.5938"
+         id="line5" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="1416"
+         y="316.292"
+         id="text6">Domain Layer</text>
+    </g>
+    <!--cluster Entity-->
+    <g
+       id="cluster_Entity">
+      <path
+         d="M1438.5,662.7969 L1483.5,662.7969 A3.75,3.75 0 0 1 1486,665.2969 L1493,685.0938 L1795.5,685.0938 A2.5,2.5 0 0 1 1798,687.5938 L1798,889.2969 A2.5,2.5 0 0 1 1795.5,891.7969 L1438.5,891.7969 A2.5,2.5 0 0 1 1436,889.2969 L1436,665.2969 A2.5,2.5 0 0 1 1438.5,662.7969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path6" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1436"
+         x2="1493"
+         y1="685.0938"
+         y2="685.0938"
+         id="line6" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="44"
+         x="1440"
+         y="677.792"
+         id="text7">Entity</text>
+    </g>
+    <!--cluster Interface-->
+    <g
+       id="cluster_Interface">
+      <path
+         d="M1824.5,646.2969 L1896.5,646.2969 A3.75,3.75 0 0 1 1899,648.7969 L1906,668.5938 L2431.5,668.5938 A2.5,2.5 0 0 1 2434,671.0938 L2434,905.7969 A2.5,2.5 0 0 1 2431.5,908.2969 L1824.5,908.2969 A2.5,2.5 0 0 1 1822,905.7969 L1822,648.7969 A2.5,2.5 0 0 1 1824.5,646.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path7" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1822"
+         x2="1906"
+         y1="668.5938"
+         y2="668.5938"
+         id="line7" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="71"
+         x="1826"
+         y="661.292"
+         id="text8">Interface</text>
+    </g>
+    <!--cluster Service-->
+    <g
+       id="cluster_Service">
+      <path
+         d="M1438.5,344.2969 L1498.5,344.2969 A3.75,3.75 0 0 1 1501,346.7969 L1508,366.5938 L1939.5,366.5938 A2.5,2.5 0 0 1 1942,369.0938 L1942,619.7969 A2.5,2.5 0 0 1 1939.5,622.2969 L1438.5,622.2969 A2.5,2.5 0 0 1 1436,619.7969 L1436,346.7969 A2.5,2.5 0 0 1 1438.5,344.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path8" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="1436"
+         x2="1508"
+         y1="366.5938"
+         y2="366.5938"
+         id="line8" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="59"
+         x="1440"
+         y="359.292"
+         id="text9">Service</text>
+    </g>
+    <!--cluster Infrastructure Layer-->
+    <g
+       id="cluster_Infrastructure Layer">
+      <path
+         d="M2484.5,352.2969 L2644.5,352.2969 A3.75,3.75 0 0 1 2647,354.7969 L2654,374.5938 L2975.5,374.5938 A2.5,2.5 0 0 1 2978,377.0938 L2978,611.7969 A2.5,2.5 0 0 1 2975.5,614.2969 L2484.5,614.2969 A2.5,2.5 0 0 1 2482,611.7969 L2482,354.7969 A2.5,2.5 0 0 1 2484.5,352.2969 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path9" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="2482"
+         x2="2654"
+         y1="374.5938"
+         y2="374.5938"
+         id="line9" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="159"
+         x="2486"
+         y="367.292"
+         id="text10">Infrastructure Layer</text>
+    </g>
+    <!--entity entryPoint-->
+    <g
+       id="elem_entryPoint">
+      <ellipse
+         cx="842"
+         cy="108.2969"
+         fill="#FF0000"
+         rx="8"
+         ry="8"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="ellipse10" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="95"
+         x="794.5"
+         y="138.292"
+         id="text11">API EntryPoint</text>
+    </g>
+    <!--class ClientController-->
+    <g
+       id="elem_ClientController">
+      <rect
+         codeLine="9"
+         fill="#F1F1F1"
+         height="64.2969"
+         id="ClientController"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="302"
+         x="691"
+         y="197.2969" />
+      <ellipse
+         cx="784.75"
+         cy="213.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse11" />
+      <path
+         d="M787.7188,218.9375 Q787.1406,219.2344 786.5,219.375 Q785.8594,219.5313 785.1563,219.5313 Q782.6563,219.5313 781.3281,217.8906 Q780.0156,216.2344 780.0156,213.1094 Q780.0156,209.9844 781.3281,208.3281 Q782.6563,206.6719 785.1563,206.6719 Q785.8594,206.6719 786.5,206.8281 Q787.1563,206.9844 787.7188,207.2813 L787.7188,210 Q787.0938,209.4219 786.5,209.1563 Q785.9063,208.875 785.2813,208.875 Q783.9375,208.875 783.25,209.9531 Q782.5625,211.0156 782.5625,213.1094 Q782.5625,215.2031 783.25,216.2813 Q783.9375,217.3438 785.2813,217.3438 Q785.9063,217.3438 786.5,217.0781 Q787.0938,216.7969 787.7188,216.2188 L787.7188,218.9375 Z "
+         fill="#000000"
+         id="path11" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="106"
+         x="805.25"
+         y="218.1436"
+         id="text12">ClientController</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="692"
+         x2="992"
+         y1="229.2969"
+         y2="229.2969"
+         id="line12" />
+      <ellipse
+         cx="702"
+         cy="242.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse12" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="276"
+         x="711"
+         y="246.292"
+         id="text13">ClientApplicationService userAppService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="692"
+         x2="992"
+         y1="253.5938"
+         y2="253.5938"
+         id="line13" />
+    </g>
+    <!--class ClientApplicationService-->
+    <g
+       id="elem_ClientApplicationService">
+      <rect
+         codeLine="15"
+         fill="#F1F1F1"
+         height="48"
+         id="ClientApplicationService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="196"
+         x="744"
+         y="468.7969" />
+      <ellipse
+         cx="759"
+         cy="484.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse13" />
+      <path
+         d="M761.9688,490.4375 Q761.3906,490.7344 760.75,490.875 Q760.1094,491.0313 759.4063,491.0313 Q756.9063,491.0313 755.5781,489.3906 Q754.2656,487.7344 754.2656,484.6094 Q754.2656,481.4844 755.5781,479.8281 Q756.9063,478.1719 759.4063,478.1719 Q760.1094,478.1719 760.75,478.3281 Q761.4063,478.4844 761.9688,478.7813 L761.9688,481.5 Q761.3438,480.9219 760.75,480.6563 Q760.1563,480.375 759.5313,480.375 Q758.1875,480.375 757.5,481.4531 Q756.8125,482.5156 756.8125,484.6094 Q756.8125,486.7031 757.5,487.7813 Q758.1875,488.8438 759.5313,488.8438 Q760.1563,488.8438 760.75,488.5781 Q761.3438,488.2969 761.9688,487.7188 L761.9688,490.4375 Z "
+         fill="#000000"
+         id="path13" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="164"
+         x="773"
+         y="489.6436"
+         id="text14">ClientApplicationService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="745"
+         x2="939"
+         y1="500.7969"
+         y2="500.7969"
+         id="line14" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="745"
+         x2="939"
+         y1="508.7969"
+         y2="508.7969"
+         id="line15" />
+    </g>
+    <!--class CreateClientDTO-->
+    <g
+       id="elem_CreateClientDTO">
+      <rect
+         codeLine="20"
+         fill="#F1F1F1"
+         height="64.2969"
+         id="CreateClientDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="148"
+         x="214"
+         y="754.7969" />
+      <ellipse
+         cx="229"
+         cy="770.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse15" />
+      <path
+         d="M231.9688,776.4375 Q231.3906,776.7344 230.75,776.875 Q230.1094,777.0313 229.4063,777.0313 Q226.9063,777.0313 225.5781,775.3906 Q224.2656,773.7344 224.2656,770.6094 Q224.2656,767.4844 225.5781,765.8281 Q226.9063,764.1719 229.4063,764.1719 Q230.1094,764.1719 230.75,764.3281 Q231.4063,764.4844 231.9688,764.7813 L231.9688,767.5 Q231.3438,766.9219 230.75,766.6563 Q230.1563,766.375 229.5313,766.375 Q228.1875,766.375 227.5,767.4531 Q226.8125,768.5156 226.8125,770.6094 Q226.8125,772.7031 227.5,773.7813 Q228.1875,774.8438 229.5313,774.8438 Q230.1563,774.8438 230.75,774.5781 Q231.3438,774.2969 231.9688,773.7188 L231.9688,776.4375 Z "
+         fill="#000000"
+         id="path15" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="243"
+         y="775.6436"
+         id="text15">CreateClientDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="215"
+         x2="361"
+         y1="786.7969"
+         y2="786.7969"
+         id="line16" />
+      <ellipse
+         cx="225"
+         cy="800.4453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse16" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="234"
+         y="803.792"
+         id="text16">string name</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="215"
+         x2="361"
+         y1="811.0938"
+         y2="811.0938"
+         id="line17" />
+    </g>
+    <!--class ClientDTO-->
+    <g
+       id="elem_ClientDTO">
+      <rect
+         codeLine="24"
+         fill="#F1F1F1"
+         height="80.5938"
+         id="ClientDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="108"
+         x="71"
+         y="746.2969" />
+      <ellipse
+         cx="88.7"
+         cy="762.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse17" />
+      <path
+         d="M91.6688,767.9375 Q91.0906,768.2344 90.45,768.375 Q89.8094,768.5313 89.1063,768.5313 Q86.6063,768.5313 85.2781,766.8906 Q83.9656,765.2344 83.9656,762.1094 Q83.9656,758.9844 85.2781,757.3281 Q86.6063,755.6719 89.1063,755.6719 Q89.8094,755.6719 90.45,755.8281 Q91.1063,755.9844 91.6688,756.2813 L91.6688,759 Q91.0438,758.4219 90.45,758.1563 Q89.8563,757.875 89.2313,757.875 Q87.8875,757.875 87.2,758.9531 Q86.5125,760.0156 86.5125,762.1094 Q86.5125,764.2031 87.2,765.2813 Q87.8875,766.3438 89.2313,766.3438 Q89.8563,766.3438 90.45,766.0781 Q91.0438,765.7969 91.6688,765.2188 L91.6688,767.9375 Z "
+         fill="#000000"
+         id="path17" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="70"
+         x="103.3"
+         y="767.1436"
+         id="text17">ClientDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="72"
+         x2="178"
+         y1="778.2969"
+         y2="778.2969"
+         id="line18" />
+      <ellipse
+         cx="82"
+         cy="791.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse18" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="91"
+         y="795.292"
+         id="text18">int clientID</text>
+      <ellipse
+         cx="82"
+         cy="808.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse19" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="91"
+         y="811.5889"
+         id="text19">string name</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="72"
+         x2="178"
+         y1="818.8906"
+         y2="818.8906"
+         id="line19" />
+    </g>
+    <!--class CreateLocationDTO-->
+    <g
+       id="elem_CreateLocationDTO">
+      <rect
+         codeLine="29"
+         fill="#F1F1F1"
+         height="129.4844"
+         id="CreateLocationDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="168"
+         x="1180"
+         y="722.2969" />
+      <ellipse
+         cx="1195.45"
+         cy="738.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse20" />
+      <path
+         d="M1198.4188,743.9375 Q1197.8406,744.2344 1197.2,744.375 Q1196.5594,744.5313 1195.8563,744.5313 Q1193.3563,744.5313 1192.0281,742.8906 Q1190.7156,741.2344 1190.7156,738.1094 Q1190.7156,734.9844 1192.0281,733.3281 Q1193.3563,731.6719 1195.8563,731.6719 Q1196.5594,731.6719 1197.2,731.8281 Q1197.8563,731.9844 1198.4188,732.2813 L1198.4188,735 Q1197.7938,734.4219 1197.2,734.1563 Q1196.6063,733.875 1195.9813,733.875 Q1194.6375,733.875 1193.95,734.9531 Q1193.2625,736.0156 1193.2625,738.1094 Q1193.2625,740.2031 1193.95,741.2813 Q1194.6375,742.3438 1195.9813,742.3438 Q1196.6063,742.3438 1197.2,742.0781 Q1197.7938,741.7969 1198.4188,741.2188 L1198.4188,743.9375 Z "
+         fill="#000000"
+         id="path20" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="135"
+         x="1209.55"
+         y="743.1436"
+         id="text20">CreateLocationDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1181"
+         x2="1347"
+         y1="754.2969"
+         y2="754.2969"
+         id="line20" />
+      <ellipse
+         cx="1191"
+         cy="767.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse21" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="1200"
+         y="771.292"
+         id="text21">int clientID</text>
+      <ellipse
+         cx="1191"
+         cy="784.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse22" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="94"
+         x="1200"
+         y="787.5889"
+         id="text22">string latitude</text>
+      <ellipse
+         cx="1191"
+         cy="800.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse23" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="108"
+         x="1200"
+         y="803.8857"
+         id="text23">string longitude</text>
+      <ellipse
+         cx="1191"
+         cy="816.8359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse24" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="133"
+         x="1200"
+         y="820.1826"
+         id="text24">int neighborhoodID</text>
+      <ellipse
+         cx="1191"
+         cy="833.1328"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse25" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142"
+         x="1200"
+         y="836.4795"
+         id="text25">?string housePicture</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1181"
+         x2="1347"
+         y1="843.7813"
+         y2="843.7813"
+         id="line25" />
+    </g>
+    <!--class UpdateLocationDTO-->
+    <g
+       id="elem_UpdateLocationDTO">
+      <rect
+         codeLine="37"
+         fill="#F1F1F1"
+         height="129.4844"
+         id="UpdateLocationDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="171"
+         x="973.5"
+         y="722.2969" />
+      <ellipse
+         cx="988.5"
+         cy="738.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse26" />
+      <path
+         d="M991.4688,743.9375 Q990.8906,744.2344 990.25,744.375 Q989.6094,744.5313 988.9063,744.5313 Q986.4063,744.5313 985.0781,742.8906 Q983.7656,741.2344 983.7656,738.1094 Q983.7656,734.9844 985.0781,733.3281 Q986.4063,731.6719 988.9063,731.6719 Q989.6094,731.6719 990.25,731.8281 Q990.9063,731.9844 991.4688,732.2813 L991.4688,735 Q990.8438,734.4219 990.25,734.1563 Q989.6563,733.875 989.0313,733.875 Q987.6875,733.875 987,734.9531 Q986.3125,736.0156 986.3125,738.1094 Q986.3125,740.2031 987,741.2813 Q987.6875,742.3438 989.0313,742.3438 Q989.6563,742.3438 990.25,742.0781 Q990.8438,741.7969 991.4688,741.2188 L991.4688,743.9375 Z "
+         fill="#000000"
+         id="path26" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="139"
+         x="1002.5"
+         y="743.1436"
+         id="text26">UpdateLocationDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="974.5"
+         x2="1143.5"
+         y1="754.2969"
+         y2="754.2969"
+         id="line26" />
+      <ellipse
+         cx="984.5"
+         cy="767.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse27" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="89"
+         x="993.5"
+         y="771.292"
+         id="text27">int locationID</text>
+      <ellipse
+         cx="984.5"
+         cy="784.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse28" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="101"
+         x="993.5"
+         y="787.5889"
+         id="text28">?string latitude</text>
+      <ellipse
+         cx="984.5"
+         cy="800.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse29" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="115"
+         x="993.5"
+         y="803.8857"
+         id="text29">?string longitude</text>
+      <ellipse
+         cx="984.5"
+         cy="816.8359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse30" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="140"
+         x="993.5"
+         y="820.1826"
+         id="text30">?int neighborhoodID</text>
+      <ellipse
+         cx="984.5"
+         cy="833.1328"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse31" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142"
+         x="993.5"
+         y="836.4795"
+         id="text31">?string housePicture</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="974.5"
+         x2="1143.5"
+         y1="843.7813"
+         y2="843.7813"
+         id="line31" />
+    </g>
+    <!--class ResponseLocationDTO-->
+    <g
+       id="elem_ResponseLocationDTO">
+      <rect
+         codeLine="45"
+         fill="#F1F1F1"
+         height="145.7813"
+         id="ResponseLocationDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="192"
+         x="746"
+         y="713.7969" />
+      <ellipse
+         cx="761"
+         cy="729.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse32" />
+      <path
+         d="M763.9688,735.4375 Q763.3906,735.7344 762.75,735.875 Q762.1094,736.0313 761.4063,736.0313 Q758.9063,736.0313 757.5781,734.3906 Q756.2656,732.7344 756.2656,729.6094 Q756.2656,726.4844 757.5781,724.8281 Q758.9063,723.1719 761.4063,723.1719 Q762.1094,723.1719 762.75,723.3281 Q763.4063,723.4844 763.9688,723.7813 L763.9688,726.5 Q763.3438,725.9219 762.75,725.6563 Q762.1563,725.375 761.5313,725.375 Q760.1875,725.375 759.5,726.4531 Q758.8125,727.5156 758.8125,729.6094 Q758.8125,731.7031 759.5,732.7813 Q760.1875,733.8438 761.5313,733.8438 Q762.1563,733.8438 762.75,733.5781 Q763.3438,733.2969 763.9688,732.7188 L763.9688,735.4375 Z "
+         fill="#000000"
+         id="path32" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="160"
+         x="775"
+         y="734.6436"
+         id="text32">ResponseLocationDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="747"
+         x2="937"
+         y1="745.7969"
+         y2="745.7969"
+         id="line32" />
+      <ellipse
+         cx="757"
+         cy="759.4453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse33" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="89"
+         x="766"
+         y="762.792"
+         id="text33">int locationID</text>
+      <ellipse
+         cx="757"
+         cy="775.7422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse34" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="766"
+         y="779.0889"
+         id="text34">int clientID</text>
+      <ellipse
+         cx="757"
+         cy="792.0391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse35" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="94"
+         x="766"
+         y="795.3857"
+         id="text35">string latitude</text>
+      <ellipse
+         cx="757"
+         cy="808.3359"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse36" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="108"
+         x="766"
+         y="811.6826"
+         id="text36">string longitude</text>
+      <ellipse
+         cx="757"
+         cy="824.6328"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse37" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="133"
+         x="766"
+         y="827.9795"
+         id="text37">int neighborhoodID</text>
+      <ellipse
+         cx="757"
+         cy="840.9297"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse38" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="135"
+         x="766"
+         y="844.2764"
+         id="text38">string housePicture</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="747"
+         x2="937"
+         y1="851.5781"
+         y2="851.5781"
+         id="line38" />
+    </g>
+    <!--class ResponseClientDTO-->
+    <g
+       id="elem_ResponseClientDTO">
+      <rect
+         codeLine="54"
+         fill="#F1F1F1"
+         height="96.8906"
+         id="ResponseClientDTO"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="313"
+         x="397.5"
+         y="738.2969" />
+      <ellipse
+         cx="479.25"
+         cy="754.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse39" />
+      <path
+         d="M482.2188,759.9375 Q481.6406,760.2344 481,760.375 Q480.3594,760.5313 479.6563,760.5313 Q477.1563,760.5313 475.8281,758.8906 Q474.5156,757.2344 474.5156,754.1094 Q474.5156,750.9844 475.8281,749.3281 Q477.1563,747.6719 479.6563,747.6719 Q480.3594,747.6719 481,747.8281 Q481.6563,747.9844 482.2188,748.2813 L482.2188,751 Q481.5938,750.4219 481,750.1563 Q480.4063,749.875 479.7813,749.875 Q478.4375,749.875 477.75,750.9531 Q477.0625,752.0156 477.0625,754.1094 Q477.0625,756.2031 477.75,757.2813 Q478.4375,758.3438 479.7813,758.3438 Q480.4063,758.3438 481,758.0781 Q481.5938,757.7969 482.2188,757.2188 L482.2188,759.9375 Z "
+         fill="#000000"
+         id="path39" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="141"
+         x="499.75"
+         y="759.1436"
+         id="text39">ResponseClientDTO</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="398.5"
+         x2="709.5"
+         y1="770.2969"
+         y2="770.2969"
+         id="line39" />
+      <ellipse
+         cx="408.5"
+         cy="783.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse40" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="417.5"
+         y="787.292"
+         id="text40">int clientID</text>
+      <ellipse
+         cx="408.5"
+         cy="800.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse41" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="417.5"
+         y="803.5889"
+         id="text41">string name</text>
+      <ellipse
+         cx="408.5"
+         cy="816.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse42" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="287"
+         x="417.5"
+         y="819.8857"
+         id="text42">array locations &lt;ResponseLocationDTO&gt;</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="398.5"
+         x2="709.5"
+         y1="827.1875"
+         y2="827.1875"
+         id="line42" />
+    </g>
+    <!--class Client-->
+    <g
+       id="elem_Client">
+      <rect
+         codeLine="66"
+         fill="#F1F1F1"
+         height="113.1875"
+         id="Client"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="133"
+         x="1648.5"
+         y="730.2969" />
+      <ellipse
+         cx="1691.4"
+         cy="746.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse43" />
+      <path
+         d="M1694.3688,751.9375 Q1693.7906,752.2344 1693.15,752.375 Q1692.5094,752.5313 1691.8063,752.5313 Q1689.3063,752.5313 1687.9781,750.8906 Q1686.6656,749.2344 1686.6656,746.1094 Q1686.6656,742.9844 1687.9781,741.3281 Q1689.3063,739.6719 1691.8063,739.6719 Q1692.5094,739.6719 1693.15,739.8281 Q1693.8063,739.9844 1694.3688,740.2813 L1694.3688,743 Q1693.7438,742.4219 1693.15,742.1563 Q1692.5563,741.875 1691.9313,741.875 Q1690.5875,741.875 1689.9,742.9531 Q1689.2125,744.0156 1689.2125,746.1094 Q1689.2125,748.2031 1689.9,749.2813 Q1690.5875,750.3438 1691.9313,750.3438 Q1692.5563,750.3438 1693.15,750.0781 Q1693.7438,749.7969 1694.3688,749.2188 L1694.3688,751.9375 Z "
+         fill="#000000"
+         id="path43" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="39"
+         x="1711.6"
+         y="751.1436"
+         id="text43">Client</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1649.5"
+         x2="1780.5"
+         y1="762.2969"
+         y2="762.2969"
+         id="line43" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1656.5"
+         y="772.9453"
+         id="rect43" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="1668.5"
+         y="779.292"
+         id="text44">int clientID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1656.5"
+         y="789.2422"
+         id="rect44" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="82"
+         x="1668.5"
+         y="795.5889"
+         id="text45">string name</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1649.5"
+         x2="1780.5"
+         y1="802.8906"
+         y2="802.8906"
+         id="line45" />
+      <ellipse
+         cx="1659.5"
+         cy="816.5391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse45" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="90"
+         x="1668.5"
+         y="819.8857"
+         id="text46">__construct()</text>
+      <ellipse
+         cx="1659.5"
+         cy="832.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse46" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="1668.5"
+         y="836.1826"
+         id="text47">getData(): array</text>
+    </g>
+    <!--class Location-->
+    <g
+       id="elem_Location">
+      <rect
+         codeLine="74"
+         fill="#F1F1F1"
+         height="178.375"
+         id="Location"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="161"
+         x="1452.5"
+         y="697.7969" />
+      <ellipse
+         cx="1499.75"
+         cy="713.7969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse47" />
+      <path
+         d="M1502.7188,719.4375 Q1502.1406,719.7344 1501.5,719.875 Q1500.8594,720.0313 1500.1563,720.0313 Q1497.6563,720.0313 1496.3281,718.3906 Q1495.0156,716.7344 1495.0156,713.6094 Q1495.0156,710.4844 1496.3281,708.8281 Q1497.6563,707.1719 1500.1563,707.1719 Q1500.8594,707.1719 1501.5,707.3281 Q1502.1563,707.4844 1502.7188,707.7813 L1502.7188,710.5 Q1502.0938,709.9219 1501.5,709.6563 Q1500.9063,709.375 1500.2813,709.375 Q1498.9375,709.375 1498.25,710.4531 Q1497.5625,711.5156 1497.5625,713.6094 Q1497.5625,715.7031 1498.25,716.7813 Q1498.9375,717.8438 1500.2813,717.8438 Q1500.9063,717.8438 1501.5,717.5781 Q1502.0938,717.2969 1502.7188,716.7188 L1502.7188,719.4375 Z "
+         fill="#000000"
+         id="path47" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="58"
+         x="1520.25"
+         y="718.6436"
+         id="text48">Location</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1453.5"
+         x2="1612.5"
+         y1="729.7969"
+         y2="729.7969"
+         id="line48" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1460.5"
+         y="740.4453"
+         id="rect48" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="89"
+         x="1472.5"
+         y="746.792"
+         id="text49">int locationID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1460.5"
+         y="756.7422"
+         id="rect49" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="1472.5"
+         y="763.0889"
+         id="text50">int clientID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1460.5"
+         y="773.0391"
+         id="rect50" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="94"
+         x="1472.5"
+         y="779.3857"
+         id="text51">string latitude</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1460.5"
+         y="789.3359"
+         id="rect51" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="108"
+         x="1472.5"
+         y="795.6826"
+         id="text52">string longitude</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1460.5"
+         y="805.6328"
+         id="rect52" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="128"
+         x="1472.5"
+         y="811.9795"
+         id="text53">id neighborhoodID</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="1460.5"
+         y="821.9297"
+         id="rect53" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="135"
+         x="1472.5"
+         y="828.2764"
+         id="text54">string housePicture</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1453.5"
+         x2="1612.5"
+         y1="835.5781"
+         y2="835.5781"
+         id="line54" />
+      <ellipse
+         cx="1463.5"
+         cy="849.2266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse54" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="90"
+         x="1472.5"
+         y="852.5732"
+         id="text55">__construct()</text>
+      <ellipse
+         cx="1463.5"
+         cy="865.5234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse55" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="107"
+         x="1472.5"
+         y="868.8701"
+         id="text56">getData(): array</text>
+    </g>
+    <!--class ClientRepositoryInterface-->
+    <g
+       id="elem_ClientRepositoryInterface">
+      <rect
+         codeLine="88"
+         fill="#F1F1F1"
+         height="210.9688"
+         id="ClientRepositoryInterface"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="580"
+         x="1838"
+         y="681.2969" />
+      <ellipse
+         cx="2036.75"
+         cy="697.2969"
+         fill="#B4A7E5"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse56" />
+      <path
+         d="M2032.6719,693.0625 L2032.6719,690.9063 L2040.0625,690.9063 L2040.0625,693.0625 L2037.5938,693.0625 L2037.5938,701.1406 L2040.0625,701.1406 L2040.0625,703.2969 L2032.6719,703.2969 L2032.6719,701.1406 L2035.1406,701.1406 L2035.1406,693.0625 L2032.6719,693.0625 Z "
+         fill="#000000"
+         id="path56" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-style="italic"
+         lengthAdjust="spacing"
+         textLength="174"
+         x="2057.25"
+         y="702.1436"
+         id="text57">ClientRepositoryInterface</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1839"
+         x2="2417"
+         y1="713.2969"
+         y2="713.2969"
+         id="line57" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1839"
+         x2="2417"
+         y1="721.2969"
+         y2="721.2969"
+         id="line58" />
+      <ellipse
+         cx="1849"
+         cy="734.9453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse58" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="181"
+         x="1858"
+         y="738.292"
+         id="text58">listClients(): array&lt;Client&gt;</text>
+      <ellipse
+         cx="1849"
+         cy="751.2422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse59" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="284"
+         x="1858"
+         y="754.5889"
+         id="text59">createClient(CreateClientDTO dto): Client</text>
+      <ellipse
+         cx="1849"
+         cy="767.5391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse60" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="289"
+         x="1858"
+         y="770.8857"
+         id="text60">updateClient(CreateClientDTO dto): Client</text>
+      <ellipse
+         cx="1849"
+         cy="783.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse61" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="202"
+         x="1858"
+         y="787.1826"
+         id="text61">deleteClient(int clientID): void</text>
+      <ellipse
+         cx="1849"
+         cy="800.1328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse62" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="294"
+         x="1858"
+         y="803.4795"
+         id="text62">getClient(int clientID): ResponseClientDTO</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="4"
+         x="1858"
+         y="819.7764"
+         id="text63"> </text>
+      <ellipse
+         cx="1849"
+         cy="832.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse63" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="554"
+         x="1858"
+         y="836.0732"
+         id="text64">createLocation(CreateLocationDTO locationDTO, CreateClientDTO dto): Location</text>
+      <ellipse
+         cx="1849"
+         cy="849.0234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse64" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="517"
+         x="1858"
+         y="852.3701"
+         id="text65">updateLocation(UpdateLocationDTO locationDTO, ClientDTO dto): Location</text>
+      <ellipse
+         cx="1849"
+         cy="865.3203"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse65" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="238"
+         x="1858"
+         y="868.667"
+         id="text66">deleteLocation(int locationID): void</text>
+      <ellipse
+         cx="1849"
+         cy="881.6172"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse66" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="247"
+         x="1858"
+         y="884.9639"
+         id="text67">getLocation(int locationID): Location</text>
+    </g>
+    <!--class ClientService-->
+    <g
+       id="elem_ClientService">
+      <rect
+         codeLine="104"
+         fill="#F1F1F1"
+         height="227.2656"
+         id="ClientService"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="474"
+         x="1452"
+         y="379.2969" />
+      <ellipse
+         cx="1640.25"
+         cy="395.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse67" />
+      <path
+         d="M1643.2188,400.9375 Q1642.6406,401.2344 1642,401.375 Q1641.3594,401.5313 1640.6563,401.5313 Q1638.1563,401.5313 1636.8281,399.8906 Q1635.5156,398.2344 1635.5156,395.1094 Q1635.5156,391.9844 1636.8281,390.3281 Q1638.1563,388.6719 1640.6563,388.6719 Q1641.3594,388.6719 1642,388.8281 Q1642.6563,388.9844 1643.2188,389.2813 L1643.2188,392 Q1642.5938,391.4219 1642,391.1563 Q1641.4063,390.875 1640.7813,390.875 Q1639.4375,390.875 1638.75,391.9531 Q1638.0625,393.0156 1638.0625,395.1094 Q1638.0625,397.2031 1638.75,398.2813 Q1639.4375,399.3438 1640.7813,399.3438 Q1641.4063,399.3438 1642,399.0781 Q1642.5938,398.7969 1643.2188,398.2188 L1643.2188,400.9375 Z "
+         fill="#000000"
+         id="path67" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="89"
+         x="1660.75"
+         y="400.1436"
+         id="text68">ClientService</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1453"
+         x2="1925"
+         y1="411.2969"
+         y2="411.2969"
+         id="line68" />
+      <ellipse
+         cx="1463"
+         cy="424.9453"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse68" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="288"
+         x="1472"
+         y="428.292"
+         id="text69">ClientRepositoryInterface clientRepository</text>
+      <ellipse
+         cx="1463"
+         cy="441.2422"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse69" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="80"
+         x="1472"
+         y="444.5889"
+         id="text70">Client client</text>
+      <ellipse
+         cx="1463"
+         cy="457.5391"
+         fill="none"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse70" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="1472"
+         y="460.8857"
+         id="text71">Location location</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="1453"
+         x2="1925"
+         y1="468.1875"
+         y2="468.1875"
+         id="line71" />
+      <ellipse
+         cx="1463"
+         cy="481.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse71" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="216"
+         x="1472"
+         y="485.1826"
+         id="text72">getClients(): array&lt;ClientDTO&gt;</text>
+      <ellipse
+         cx="1463"
+         cy="498.1328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse72" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="315"
+         x="1472"
+         y="501.4795"
+         id="text73">createClient(CreateClientDTO dto): ClientDTO</text>
+      <ellipse
+         cx="1463"
+         cy="514.4297"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse73" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="320"
+         x="1472"
+         y="517.7764"
+         id="text74">updateClient(CreateClientDTO dto): ClientDTO</text>
+      <ellipse
+         cx="1463"
+         cy="530.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse74" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="202"
+         x="1472"
+         y="534.0732"
+         id="text75">deleteClient(int clientID): void</text>
+      <ellipse
+         cx="1463"
+         cy="547.0234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse75" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="360"
+         x="1472"
+         y="550.3701"
+         id="text76">getClientLocations(int clientID): ResponseClientDTO</text>
+      <ellipse
+         cx="1463"
+         cy="563.3203"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse76" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="443"
+         x="1472"
+         y="566.667"
+         id="text77">createLocation(CreateLocationDTO dto): ResponseLocationDTO</text>
+      <ellipse
+         cx="1463"
+         cy="579.6172"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse77" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="448"
+         x="1472"
+         y="582.9639"
+         id="text78">updateLocation(CreateLocationDTO dto): ResponseLocationDTO</text>
+      <ellipse
+         cx="1463"
+         cy="595.9141"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse78" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="238"
+         x="1472"
+         y="599.2607"
+         id="text79">deleteLocation(int locationID): void</text>
+    </g>
+    <!--class ClientRepository-->
+    <g
+       id="elem_ClientRepository">
+      <rect
+         codeLine="122"
+         fill="#F1F1F1"
+         height="210.9688"
+         id="ClientRepository"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="464"
+         x="2498"
+         y="387.2969" />
+      <ellipse
+         cx="2669.25"
+         cy="403.2969"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse79" />
+      <path
+         d="M2672.2188,408.9375 Q2671.6406,409.2344 2671,409.375 Q2670.3594,409.5313 2669.6563,409.5313 Q2667.1563,409.5313 2665.8281,407.8906 Q2664.5156,406.2344 2664.5156,403.1094 Q2664.5156,399.9844 2665.8281,398.3281 Q2667.1563,396.6719 2669.6563,396.6719 Q2670.3594,396.6719 2671,396.8281 Q2671.6563,396.9844 2672.2188,397.2813 L2672.2188,400 Q2671.5938,399.4219 2671,399.1563 Q2670.4063,398.875 2669.7813,398.875 Q2668.4375,398.875 2667.75,399.9531 Q2667.0625,401.0156 2667.0625,403.1094 Q2667.0625,405.2031 2667.75,406.2813 Q2668.4375,407.3438 2669.7813,407.3438 Q2670.4063,407.3438 2671,407.0781 Q2671.5938,406.7969 2672.2188,406.2188 L2672.2188,408.9375 Z "
+         fill="#000000"
+         id="path79" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="113"
+         x="2689.75"
+         y="408.1436"
+         id="text80">ClientRepository</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="2499"
+         x2="2961"
+         y1="419.2969"
+         y2="419.2969"
+         id="line80" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="2499"
+         x2="2961"
+         y1="427.2969"
+         y2="427.2969"
+         id="line81" />
+      <ellipse
+         cx="2509"
+         cy="440.9453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse81" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="181"
+         x="2518"
+         y="444.292"
+         id="text81">listClients(): array&lt;Client&gt;</text>
+      <ellipse
+         cx="2509"
+         cy="457.2422"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse82" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="257"
+         x="2518"
+         y="460.5889"
+         id="text82">createClient(CreateClientDTO): Client</text>
+      <ellipse
+         cx="2509"
+         cy="473.5391"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse83" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="262"
+         x="2518"
+         y="476.8857"
+         id="text83">updateClient(CreateClientDTO): Client</text>
+      <ellipse
+         cx="2509"
+         cy="489.8359"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse84" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="202"
+         x="2518"
+         y="493.1826"
+         id="text84">deleteClient(int clientID): void</text>
+      <ellipse
+         cx="2509"
+         cy="506.1328"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse85" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="294"
+         x="2518"
+         y="509.4795"
+         id="text85">getClient(int clientID): ResponseClientDTO</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="4"
+         x="2518"
+         y="525.7764"
+         id="text86"> </text>
+      <ellipse
+         cx="2509"
+         cy="538.7266"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse86" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="438"
+         x="2518"
+         y="542.0732"
+         id="text87">createLocation(CreateLocationDTO, CreateClientDTO): Location</text>
+      <ellipse
+         cx="2509"
+         cy="555.0234"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse87" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="401"
+         x="2518"
+         y="558.3701"
+         id="text88">updateLocation(UpdateLocationDTO, ClientDTO): Location</text>
+      <ellipse
+         cx="2509"
+         cy="571.3203"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse88" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="238"
+         x="2518"
+         y="574.667"
+         id="text89">deleteLocation(int locationID): void</text>
+      <ellipse
+         cx="2509"
+         cy="587.6172"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse89" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="247"
+         x="2518"
+         y="590.9639"
+         id="text90">getLocation(int locationID): Location</text>
+    </g>
+    <!--entity mssql-->
+    <g
+       id="elem_mssql">
+      <path
+         d="M3018,774.2969 C3018,764.2969 3078,764.2969 3078,764.2969 C3078,764.2969 3138,764.2969 3138,774.2969 L3138,799.5938 C3138,809.5938 3078,809.5938 3078,809.5938 C3078,809.5938 3018,809.5938 3018,799.5938 L3018,774.2969 "
+         fill="#F1F1F1"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="path90" />
+      <path
+         d="M3018,774.2969 C3018,784.2969 3078,784.2969 3078,784.2969 C3078,784.2969 3138,784.2969 3138,774.2969 "
+         fill="none"
+         style="stroke:#181818;stroke-width:0.5;"
+         id="path91" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="100"
+         x="3028"
+         y="801.292"
+         id="text91">MS SQL Server</text>
+    </g>
+    <!--link entryPoint to ClientController-->
+    <g
+       id="link_entryPoint_ClientController">
+      <path
+         codeLine="141"
+         d="M842,117.4769 C842,133.6469 842,164.4669 842,191.2369 "
+         fill="none"
+         id="entryPoint-to-ClientController"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="842,197.2369,846,188.2369,842,192.2369,838,188.2369,842,197.2369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon91" />
+    </g>
+    <!--link ClientController to ClientApplicationService-->
+    <g
+       id="link_ClientController_ClientApplicationService">
+      <path
+         codeLine="143"
+         d="M842,261.3169 C842,314.3569 842,415.2769 842,462.4869 "
+         fill="none"
+         id="ClientController-to-ClientApplicationService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="842,468.4869,846,459.4869,842,463.4869,838,459.4869,842,468.4869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon92" />
+    </g>
+    <!--link ClientApplicationService to ClientService-->
+    <g
+       id="link_ClientApplicationService_ClientService">
+      <path
+         codeLine="145"
+         d="M940.02,492.7969 C1110.56,492.7969 1275.11,492.7969 1445.65,492.7969 "
+         fill="none"
+         id="ClientApplicationService-to-ClientService"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1451.65,492.7969,1442.65,488.7969,1446.65,492.7969,1442.65,496.7969,1451.65,492.7969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon93" />
+    </g>
+    <!--link ClientApplicationService to CreateClientDTO-->
+    <g
+       id="link_ClientApplicationService_CreateClientDTO">
+      <path
+         codeLine="148"
+         d="M743.98,504.3269 C643.63,519.3869 487.54,555.1569 380,638.2969 C340.6,668.7569 316.0992,715.6974 302.0092,749.1474 "
+         fill="none"
+         id="ClientApplicationService-to-CreateClientDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="299.68,754.6769,306.86,747.9354,301.621,750.069,299.4874,744.8299,299.68,754.6769"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon94" />
+    </g>
+    <!--link ClientApplicationService to ClientDTO-->
+    <g
+       id="link_ClientApplicationService_ClientDTO">
+      <path
+         codeLine="149"
+         d="M743.76,505.2969 C584.92,525.5869 280.97,571.9669 197,638.2969 C162.9,665.2369 145.5547,706.6553 135.7447,740.4053 "
+         fill="none"
+         id="ClientApplicationService-to-ClientDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="134.07,746.1669,140.4231,738.641,135.4656,741.3656,132.741,736.4081,134.07,746.1669"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon95" />
+    </g>
+    <!--link ClientApplicationService to CreateLocationDTO-->
+    <g
+       id="link_ClientApplicationService_CreateLocationDTO">
+      <path
+         codeLine="150"
+         d="M922.97,516.8069 C992.02,539.4069 1091.07,579.1569 1162,638.2969 C1189.62,661.3269 1209.9488,688.4787 1227.3788,716.9687 "
+         fill="none"
+         id="ClientApplicationService-to-CreateLocationDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1230.51,722.0869,1229.2252,712.3222,1227.9006,717.8218,1222.401,716.4972,1230.51,722.0869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon96" />
+    </g>
+    <!--link ClientApplicationService to UpdateLocationDTO-->
+    <g
+       id="link_ClientApplicationService_UpdateLocationDTO">
+      <path
+         codeLine="151"
+         d="M860.99,516.9969 C883.97,545.2769 923.61,594.6869 956,638.2969 C976.11,665.3769 994.1796,690.9203 1012.2796,717.1203 "
+         fill="none"
+         id="ClientApplicationService-to-UpdateLocationDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1015.69,722.0569,1013.8655,712.3785,1012.848,717.9431,1007.2834,716.9256,1015.69,722.0569"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon97" />
+    </g>
+    <!--link ClientApplicationService to ResponseLocationDTO-->
+    <g
+       id="link_ClientApplicationService_ResponseLocationDTO">
+      <path
+         codeLine="152"
+         d="M842,517.1969 C842,559.2869 842,643.3469 842,707.5669 "
+         fill="none"
+         id="ClientApplicationService-to-ResponseLocationDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="842,713.5669,846,704.5669,842,708.5669,838,704.5669,842,713.5669"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon98" />
+    </g>
+    <!--link ClientApplicationService to ResponseClientDTO-->
+    <g
+       id="link_ClientApplicationService_ResponseClientDTO">
+      <path
+         codeLine="153"
+         d="M818.92,517.1969 C771.73,565.0369 667.6332,670.585 605.0932,733.995 "
+         fill="none"
+         id="ClientApplicationService-to-ResponseClientDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="600.88,738.2669,610.0477,734.6679,604.391,734.707,604.352,729.0503,600.88,738.2669"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon99" />
+    </g>
+    <!--link ClientService to ClientRepositoryInterface-->
+    <g
+       id="link_ClientService_ClientRepositoryInterface">
+      <path
+         codeLine="156"
+         d="M1858.41,606.4869 C1895.35,631.0469 1929.2843,653.6237 1965.7243,677.8637 "
+         fill="none"
+         id="ClientService-to-ClientRepositoryInterface"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1970.72,681.1869,1965.4419,672.8717,1966.5569,678.4176,1961.0111,679.5326,1970.72,681.1869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon100" />
+    </g>
+    <!--link ClientService to Client-->
+    <g
+       id="link_ClientService_Client">
+      <path
+         codeLine="157"
+         d="M1699.05,606.6869 C1702.82,649.0569 1706.4176,689.3805 1709.5276,724.2905 "
+         fill="none"
+         id="ClientService-to-Client"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1710.06,730.2669,1713.2456,720.9474,1709.6163,725.2866,1705.2772,721.6573,1710.06,730.2669"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon101" />
+    </g>
+    <!--link ClientService to Location-->
+    <g
+       id="link_ClientService_Location">
+      <path
+         codeLine="158"
+         d="M1628.69,606.6869 C1612.57,636.8669 1598.2073,663.7348 1582.9173,692.3548 "
+         fill="none"
+         id="ClientService-to-Location"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1580.09,697.6469,1587.859,691.5935,1582.4461,693.2368,1580.8028,687.8238,1580.09,697.6469"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon102" />
+    </g>
+    <!--link ClientService to ClientDTO-->
+    <g
+       id="link_ClientService_ClientDTO">
+      <path
+         codeLine="159"
+         d="M1468.22,606.3069 C1441.72,616.0769 1414.62,624.4469 1388,630.2969 C1371.84,633.8469 211,629.4869 197,638.2969 C159.62,661.8269 142.5683,705.1168 133.7783,740.1968 "
+         fill="none"
+         id="ClientService-to-ClientDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="132.32,746.0169,138.3876,738.259,133.5353,741.1668,130.6275,736.3145,132.32,746.0169"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon103" />
+    </g>
+    <!--link ClientService to CreateClientDTO-->
+    <g
+       id="link_ClientService_CreateClientDTO">
+      <path
+         codeLine="160"
+         d="M1467.79,606.4269 C1441.43,616.1369 1414.48,624.4669 1388,630.2969 C1360.65,636.3169 404.43,624.6169 380,638.2969 C335.63,663.1469 311.8021,713.5272 299.3421,748.9272 "
+         fill="none"
+         id="ClientService-to-CreateClientDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="297.35,754.5869,304.1112,747.4254,299.0101,749.8705,296.565,744.7694,297.35,754.5869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon104" />
+    </g>
+    <!--link ClientService to CreateLocationDTO-->
+    <g
+       id="link_ClientService_CreateLocationDTO">
+      <path
+         codeLine="161"
+         d="M1483.91,606.4469 C1467.46,616.8369 1451.3,627.5169 1436,638.2969 C1400.15,663.5669 1367.3849,690.8112 1336.7549,718.0312 "
+         fill="none"
+         id="ClientService-to-CreateLocationDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1332.27,722.0169,1341.6545,719.0284,1336.0075,718.6955,1336.3403,713.0485,1332.27,722.0169"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon105" />
+    </g>
+    <!--link ClientService to UpdateLocationDTO-->
+    <g
+       id="link_ClientService_UpdateLocationDTO">
+      <path
+         codeLine="162"
+         d="M1465.95,606.3269 C1440.16,615.8969 1413.84,624.2269 1388,630.2969 C1363.65,636.0169 1185,626.3869 1163,638.2969 C1129.24,656.5669 1106.8814,685.875 1089.7114,716.955 "
+         fill="none"
+         id="ClientService-to-UpdateLocationDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="1086.81,722.2069,1094.6633,716.2633,1089.2278,717.8303,1087.6608,712.3948,1086.81,722.2069"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon106" />
+    </g>
+    <!--link ClientService to ResponseLocationDTO-->
+    <g
+       id="link_ClientService_ResponseLocationDTO">
+      <path
+         codeLine="163"
+         d="M1467.31,606.3069 C1441.1,615.9969 1414.31,624.3569 1388,630.2969 C1364.59,635.5869 977.45,627.5169 956,638.2969 C923.61,654.5769 901.0179,679.8114 882.1679,708.7114 "
+         fill="none"
+         id="ClientService-to-ResponseLocationDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="878.89,713.7369,887.1571,708.3839,881.6216,709.549,880.4565,704.0134,878.89,713.7369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon107" />
+    </g>
+    <!--link ClientService to ResponseClientDTO-->
+    <g
+       id="link_ClientService_ResponseClientDTO">
+      <path
+         codeLine="164"
+         d="M1467.77,606.3169 C1441.41,616.0469 1414.46,624.4069 1388,630.2969 C1352.26,638.2469 763.32,625.5269 729,638.2969 C675,658.3869 630.103,698.6311 597.793,733.5811 "
+         fill="none"
+         id="ClientService-to-ResponseClientDTO"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="593.72,737.9869,602.7667,734.0935,597.1141,734.3154,596.8923,728.6629,593.72,737.9869"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon108" />
+    </g>
+    <!--link ClientRepository to ClientRepositoryInterface-->
+    <g
+       id="link_ClientRepository_ClientRepositoryInterface">
+      <path
+         codeLine="167"
+         d="M2514.36,598.3869 C2458.87,625.3069 2415.3454,646.4214 2359.8454,673.3414 "
+         fill="none"
+         id="ClientRepository-to-ClientRepositoryInterface"
+         style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+      <polygon
+         fill="none"
+         points="2343.65,681.1969,2362.4639,678.7398,2357.2269,667.9429,2343.65,681.1969"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon109" />
+    </g>
+    <!--link ClientRepository to mssql-->
+    <g
+       id="link_ClientRepository_mssql">
+      <path
+         codeLine="168"
+         d="M2854.65,598.3869 C2926.62,658.7769 3006.2632,725.6108 3047.7132,760.3808 "
+         fill="none"
+         id="ClientRepository-to-mssql"
+         style="stroke:#181818;stroke-width:1.0;" />
+      <polygon
+         fill="#181818"
+         points="3052.31,764.2369,3047.9854,755.3883,3048.4793,761.0235,3042.844,761.5174,3052.31,764.2369"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="polygon110" />
+    </g>
+    <text
+       fill="#888888"
+       font-family="sans-serif"
+       font-size="10"
+       lengthAdjust="spacing"
+       textLength="361"
+       x="1390"
+       y="970.5791"
+       id="text110">filipebezerra.dev.br - drawn with PlantUML v. 1.2024.3 - All rights reserved</text>
+    <!--SRC=[lLVDRkCs4BxhAGOEYZZObKyzBHO9WYG50ZZODDazBsXfOXDBaLgISkhTxhbFq2VeeUW3zDAhNwoZ7rEoHDbIjcY0m28vCnpED_CDQJvncJBD4bYmwDDIgqp6Lqee3IS_5Ny14q8z9_mNBfU1vLOWNFrufs8K4C8L_OB0TJaG7AKrSAqIncKGQ8miaqjIc5pUtqw06M0fXnF19SvYPbOOmzS0O7fM2C2Dj7fphxYqXIow8PpalhtH60Sadj8tMvBHMsbHFx48OSusg2U5CO18C6CgPwuK6L52eAuM0LwLAvTfAdZ4B5Vo4VMQavNCeARfQbY8Vmlo_-Qc3Rt-RJt6lmQLmUB7cRj-_sxYNAjCQ6GMIqEqx5R9TMCreG2I9LXDLlRsjszfvH6CYeNRwp6s2Z_cgZp769k2D6mMOtT1oMLh9JSaaIzN2wLNIiLDSnULsaeHDFSyifdkyVL36X_sLLHBFlDTTo_w_RtuRnn-G9CgQSQw_B-4VVGXlYlhQ99fpJRkl0RUUg9plkz2jp1BrgbhSh_EY5kutNHAhV2luNNezJfiUbsx_V5ZH4vQdKLsUbPFBz5UCykcPs-WE9W_ThkZjJVte7xOgGxgOI_g8O_xG0zzeB_yg3wgStHTey0TWvT8F62g3BTARsfkRwIKuCPMJSPj-RQSEA-beWP_Jjja6bj5ckMuLiaA-XYbGlqFdKeJ899TAnuxoLEuCLPbb3mGR_zPyvY1GK1Z66p_0WO9YXLrMvLk_zp-eLx3vmor0erMIQOXIoh3295AyhQegJQeiV8rVUV98lWNHgf_ezd3nUzPjsATKZk0kmITTlk0gBzVWpzSE_5sZ9tLBcFlMprghmJ0sTkldJO8UKJwHLl6_UbRDN8_XTHTtktOdz5HQwMjKmdKquuhTbu77gWx9T4WpJ5LGUCN5CQUrk3QgBtV7T4SpTWHULeww6aclLdv8XiZCl5RJ_EwbK-QbVnAnDj_iQoJfhxF3c35W-YtoUqWw1tXWLYFeAGW68XlXtkwfNoKTHfCuz4UWUm8XYdXfmGWNzY2KJUOt3t2uyzpo6aa1vweFJ7cimY2KtYucLzkVzl-VlCO18qdKHY7vvr7JX1qdZsX4-i-IdRYdkTAhUPaJw7vziceVobwwxr_PuvOsSTeo9R7nTgfS5YyW_fXSL-n3r9efF0frAzA5oZ0_55BDu0OTq7h7jxJCNfbFGikq_fqwjCSHsb8p8S4UbXqZuQqmNuyIGKcjCJgIsJGuSZPxDVZOMt8vpjNXVUa58d14nSynGL-GQBLMOphsO9g2cBDdYKySxk2Uy6a_N0tX_KCVg3gDJa1d97CfH2WwR9jYpjRNjdnlm00]-->
+  </g>
+</svg>

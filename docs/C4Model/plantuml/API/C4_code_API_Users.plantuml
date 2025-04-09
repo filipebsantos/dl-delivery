@@ -1,0 +1,154 @@
+@startuml C4Model.Code-Users
+allowmixing
+title C4Model - Code level - Users
+
+
+rectangle "API" as api #line.dashed {
+  () "API EntryPoint" as entryPoint #back:red
+
+  ' Camada de interface: onde a API recebe chamadas
+  package "Interface Layer" {
+    class UserController {
+      +UserApplicationService userAppService
+      +AuthService authService
+    }
+  }
+
+  ' Camada de aplicação: lógica de caso de uso
+  package "Application Layer" {
+    class UserApplicationService {
+      +UserService userService
+
+      +listUsers(): array<ResponseUserDTO>
+      +getUser(int id): ResponseUserDTO
+      +createUser(CreateUserDTO): ResponseUserDTO
+      +updateUser(UpdateUserDTO): ResponseUserDTO
+      +deleteUser(int id): void
+    }
+
+    class AuthService {
+      +UserService userService
+
+      +login(username, password): Token
+    }
+
+    package "DTO" {
+      class CreateUserDTO {
+        +string name
+        +string username
+        +string password
+        +UserRole access
+      }
+
+      class UpdateUserDTO {
+        +int userID
+        +?string name
+        +?string password
+        +?UserRole access
+      }
+
+      class ResponseUserDTO {
+        +int userID
+        +string name
+        +string username
+        +UserRole access
+      }
+    }
+  }
+
+  ' Camada de domínio: regras de negócio e contratos
+  package "Domain Layer" {
+
+    package "Entity" {
+      class User {
+        -int userID
+        -int erpUserID
+        -string name
+        -string username
+        -string password
+        -UserRole access
+
+        +getAccess(): UserRole
+        +getData(): array
+        +hashPassword(): string
+      }
+    }
+
+    package "Enum" {
+      class UserRole {
+        +DELIVERER
+        +OPERATOR
+        +ADMINISTRATOR
+      }
+    }
+
+    package "Service" {
+      class UserService {
+        +UserRepositoryInterface userRepository
+        +User user
+
+        +listAllUsers(): array<ResponseUserDTO>
+        +getUserById(int userID): ResponseUserDTO
+        +getUserByUsername(string username): ResponseUserDTO
+        +createUser(CreateUserDTO dto): ResponseUserDTO
+        +updateUser(UpdateUserDTO dto): ResponseUserDTO
+        +deleteUser(int userID): void
+        +verifyPassword(User user, string password): bool
+      }
+    }
+
+    package "Interface" {
+      interface UserRepositoryInterface {
+        +listUsers(): array<User>
+        +createUser(User): User
+        +updateUser(User): User
+        +deleteUser(int userID): void
+        +getUserById(int userID): User
+        +getUserByUsername(string username): User
+      }
+    }
+  }
+
+  ' Camada de infraestrutura: implementação real dos contratos
+  package "Infrastructure Layer" {
+    class UserRepository {
+      +listUsers(): array<User>
+      +createUser(User): User
+      +updateUser(User): User
+      +deleteUser(int userID): void
+      +getUserById(int userID): User
+      +getUserByUsername(string username): User
+    }
+  }
+}
+
+database "MS SQL Server" as mssql
+
+' RELAÇÕES
+
+entryPoint -d-> UserController
+
+UserController --> UserApplicationService
+UserController --> AuthService
+
+UserApplicationService --> UserService
+AuthService --> UserService
+
+UserService --> UserRepositoryInterface
+UserService --> User
+UserService --> ResponseUserDTO
+UserService --> CreateUserDTO
+UserService --> UpdateUserDTO
+
+UserRepository ..|> UserRepositoryInterface
+UserRepository --> mssql
+
+User --> UserRole
+UserRepositoryInterface --> User
+
+CreateUserDTO --> UserRole
+UpdateUserDTO --> UserRole
+ResponseUserDTO --> UserRole
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() - All rights reserved
+@enduml
