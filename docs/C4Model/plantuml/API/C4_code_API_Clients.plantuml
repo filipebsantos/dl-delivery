@@ -1,0 +1,171 @@
+@startuml C4Model.Code-ClientsDomain
+allowmixing
+title C4Model - Code level - Clients Domain
+
+rectangle "API" as api #line.dashed {
+  () "API EntryPoint" as entryPoint #back:red
+
+  package "Interface Layer" {
+    class ClientController {
+      +ClientApplicationService userAppService
+    }
+  }
+
+  package "Application Layer" {
+    class ClientApplicationService {
+
+    }
+
+    package "DTO" {
+      class CreateClientDTO {
+        +string name
+      }
+
+      class ClientDTO {
+        +int clientID
+        +string name
+      }
+
+      class CreateLocationDTO {
+        +int clientID
+        +string latitude
+        +string longitude
+        +int neighborhoodID
+        +?string housePicture
+      }
+
+      class UpdateLocationDTO {
+        +int locationID
+        +?string latitude
+        +?string longitude
+        +?int neighborhoodID
+        +?string housePicture
+      }
+
+      class ResponseLocationDTO {
+        +int locationID
+        +int clientID
+        +string latitude
+        +string longitude
+        +int neighborhoodID
+        +string housePicture
+      }
+
+      class ResponseClientDTO {
+        +int clientID
+        +string name
+        +array locations <ResponseLocationDTO>
+      }
+
+    }
+  }
+
+  package "Domain Layer" {
+
+    package "Entity" {
+      class Client {
+        -int clientID
+        -string name
+
+        +__construct()
+        +getData(): array
+      }
+
+      class Location {
+        -int locationID
+        -int clientID
+        -string latitude
+        -string longitude
+        -id neighborhoodID
+        -string housePicture
+
+        +__construct()
+        +getData(): array
+      }
+    }
+
+    package "Interface" {
+      interface ClientRepositoryInterface {
+        +listClients(): array<Client>
+        +createClient(CreateClientDTO dto): Client
+        +updateClient(CreateClientDTO dto): Client
+        +deleteClient(int clientID): void
+        ' Estou na dúvida se essa é a melhor opção, quero retonar um cliente com as respectivas localizações
+        +getClient(int clientID): ResponseClientDTO 
+        
+        +createLocation(CreateLocationDTO locationDTO, CreateClientDTO dto): Location
+        +updateLocation(UpdateLocationDTO locationDTO, ClientDTO dto): Location
+        +deleteLocation(int locationID): void
+        +getLocation(int locationID): Location
+      }
+    }
+
+    package "Service" {
+      class ClientService {
+        +ClientRepositoryInterface clientRepository
+        +Client client
+        +Location location
+
+        +getClients(): array<ClientDTO>
+        +createClient(CreateClientDTO dto): ClientDTO
+        +updateClient(CreateClientDTO dto): ClientDTO
+        +deleteClient(int clientID): void
+        +getClientLocations(int clientID): ResponseClientDTO
+        +createLocation(CreateLocationDTO dto): ResponseLocationDTO
+        +updateLocation(CreateLocationDTO dto): ResponseLocationDTO
+        +deleteLocation(int locationID): void
+      }
+    }
+  }
+
+  package "Infrastructure Layer" {
+    class ClientRepository {
+      +listClients(): array<Client>
+      +createClient(CreateClientDTO): Client
+      +updateClient(CreateClientDTO): Client
+      +deleteClient(int clientID): void
+      +getClient(int clientID): ResponseClientDTO
+
+      +createLocation(CreateLocationDTO, CreateClientDTO): Location
+      +updateLocation(UpdateLocationDTO, ClientDTO): Location
+      +deleteLocation(int locationID): void
+      +getLocation(int locationID): Location
+    }
+  }
+}
+
+database "MS SQL Server" as mssql
+
+' RELAÇÕES
+
+entryPoint -d-> ClientController
+
+ClientController --> ClientApplicationService
+
+ClientApplicationService --> ClientService
+
+' Application usa os DTOs
+ClientApplicationService --> CreateClientDTO
+ClientApplicationService --> ClientDTO
+ClientApplicationService --> CreateLocationDTO
+ClientApplicationService --> UpdateLocationDTO
+ClientApplicationService --> ResponseLocationDTO
+ClientApplicationService --> ResponseClientDTO
+
+' Service usa os DTOs e entidades
+ClientService --> ClientRepositoryInterface
+ClientService --> Client
+ClientService --> Location
+ClientService --> ClientDTO
+ClientService --> CreateClientDTO
+ClientService --> CreateLocationDTO
+ClientService --> UpdateLocationDTO
+ClientService --> ResponseLocationDTO
+ClientService --> ResponseClientDTO
+
+' Repository implementa interface
+ClientRepository ..|> ClientRepositoryInterface
+ClientRepository --> mssql
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() - All rights reserved
+@enduml

@@ -1,0 +1,7 @@
+.devcontainer
+/docs/C4Model/svg
+/src/.vscode
+/src/api/config/.env
+/src/api/database/*.sqlite
+/src/api/logs/*.log
+/src/api/vendor

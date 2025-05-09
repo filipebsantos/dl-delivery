@@ -1,0 +1,15 @@
+@startuml C4Model.Context
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title "C4Model - Context"
+
+Person(user, "User", "Operator or deliverer")
+
+System(dld, "DL Delivery v2", "Web application to support delivery system acting as geolocation database")
+SystemDb(db, "MS SQL Server", "Store user, client, location end route data")
+
+Rel_D(user, dld, "Uses", "HTTPS")
+Rel_R(dld, db, "Read/Write", "SQL")
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() and C4-PlantUML v. C4Version() - All rights reserved
+@enduml

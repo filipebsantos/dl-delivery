@@ -1,0 +1,31 @@
+<?php
+
+namespace DLDelivery\Exception;
+
+enum ErrorCode: int
+{
+    // Common Errors Code
+    case INVALID_JSON = 500;
+
+    // Users Errors Code
+    case USER_MISSING_CREATE_PAYLOAD = 1000;
+    case USER_INSUFICIENT_ACCESS_LEVEL = 1001;
+    case USER_INVALID_PASSWORD = 1002;
+    case USER_INVALID_JWT_TOKEN = 1003;
+    case USER_NOT_FOUND = 1004;
+    case USER_MISSING_UPDATE_PAYLOAD = 1005;
+    case USER_ALREADY_EXISTS = 1006;
+
+    // Router Errors
+    case ROUTER_INVALID_CONTROLLER = 2000;
+    case ROUTER_INVALID_CONTROLLER_METHOD = 2001;
+    case ROUTER_METHOD_NOT_SUPPORTED = 2002;
+    case ROUTER_PATH_NOT_EXISTS = 2003;
+    case ROUTER_UNAUTHORIZED = 2004;
+
+    // Client Errors
+    case CLIENT_NOT_FOUND = 3000;
+    case CLIENT_LOCATION_NOT_FOUND = 3001;
+    case CLIENT_MISSING_CREATE_PAYLOAD = 3002;
+    case CLIENT_ALREADY_EXISTS_IN_DB = 3003;
+}

@@ -1,0 +1,19 @@
+@startuml C4Model.Container
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title "C4Model - Container"
+
+Person(user, "User", "Operator or deliverer")
+
+System_Boundary(dld, "DL Delivery v2") {
+    Container(webapp, "Web Application", "Vue.JS + Tailwind CSS", "Provide access to users interact, create delivery route, register client locations, etc.")
+    Container(api, "API", "PHP 8.3.19", "Handle business logic")
+}
+SystemDb(db, "MS SQL Server", "Store user, client, location end route data")
+
+Rel_D(user, webapp, "Uses", "HTTPS")
+Rel_R(webapp, api, "Calls", "HTTP/JSON", "", $sprite = "&envelope-closed")
+Rel_R(api, db, "Read/Write", "SQL")
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() and C4-PlantUML v. C4Version() - All rights reserved
+@enduml

@@ -1,0 +1,197 @@
+@startuml C4Model.Code-Users
+allowmixing
+title C4Model - Code level - Users
+
+
+rectangle "API" as api #line.dashed {
+  () "API EntryPoint" as entryPoint #back:red
+
+  ' Camada de interface: onde a API recebe chamadas
+  package "Interface Layer" {
+    class UserController {
+      +UserApplicationService userAppService
+      +AuthApplicationService authService
+    }
+  }
+
+  ' Camada de aplicação: lógica de caso de uso
+  package "Application Layer" {
+    class UserApplicationService {
+      +UserService userService
+
+      +listAllUsers(): array<UserDTO>
+      +createUser(CreateUserDTP dto): UserDTO
+      +updateUser(UpdateUserDTO): UserDTO
+      +deleteUser(int userID): bool
+      +getUserByID(int id): UserDTO
+      +getUserByUsername(string username): UserDTO
+    }
+
+    class AuthApplicationService {
+      +UserService service
+      +JwtService jwt
+
+      +loginUser(username, password): string
+    }
+
+    class JwtService {
+      +string jwtSecret
+
+      +generate(JwtDTO dto): string
+      +validate(string token): UserDTO
+    }
+
+    package "DTO" {
+      class CreateUserDTO {
+        +string name
+        +string username
+        +string password
+        +UserRole access
+        +?int erpUserID
+      }
+
+      class UpdateUserDTO {
+        +int userID
+        +?int erpUserID
+        +?string name
+        +?string password
+        +?UserRole access
+      }
+
+      class UserDTO {
+        +int userID
+        +?int erpUserID
+        +string name
+        +string username
+        +UserRole access
+      }
+
+      class AuthUserDTO {
+        +int userID
+        +string username
+        +string password
+      }
+
+      class JwtDTO {
+        +int sub
+        +?int erpUserID
+        +string name
+        +string username
+        +UserRole role
+        +int ita
+        +int exp
+
+        +toArray()
+        +fromStdClass()
+      }
+    }
+  }
+
+  ' Camada de domínio: regras de negócio e contratos
+  package "Domain Layer" {
+
+    package "Entity" {
+      class User {
+        -int userID
+        -int erpUserID
+        -string name
+        -string username
+        -string password
+        -UserRole access
+
+        +getID()
+        +getErpUserID()
+        +getName()
+        +getUsername()
+        +getPassword()
+        +getAccess()
+      }
+    }
+
+    package "Enum" {
+      class UserRole {
+        +DELIVERER
+        +OPERATOR
+        +ADMINISTRATOR
+
+        +hasAccessLevel()
+      }
+    }
+
+    package "Service" {
+      class UserService {
+        +UserRepositoryInterface userRepository
+        +?UserDTO authenticatedUser
+
+        -toUserDTO(User): UserDTO
+        +listAllUsers(): array<UserDTO>
+        +getUserById(int userID): UserDTO
+        +getUserByUsername(string username): UserDTO
+        +createUser(CreateUserDTO dto): UserDTO
+        +updateUser(UpdateUserDTO dto): UserDTO
+        +deleteUser(int userID): void
+        +getAuthData(string username): AuthUserDTO
+      }
+    }
+
+    package "Interface" {
+      interface UserRepositoryInterface {
+        +listUsers(): array<User>
+        +createUser(CreateUserDTO): User
+        +updateUser(UpdateUserDTO): User
+        +deleteUser(int userID): bool
+        +getUserById(int userID): User
+        +getUserByUsername(string username): User
+      }
+    }
+  }
+
+  ' Camada de infraestrutura: implementação real dos contratos
+  package "Infrastructure Layer" {
+    class UserRepository {
+      +listUsers(): array<User>
+      +createUser(User): User
+      +updateUser(User): User
+      +deleteUser(int userID): bool
+      +getUserById(int userID): User
+      +getUserByUsername(string username): User
+    }
+  }
+}
+
+database "MS SQL Server" as mssql
+
+' RELAÇÕES
+
+entryPoint -d-> UserController
+entryPoint --> JwtService
+
+UserController --> UserApplicationService
+UserController --> AuthApplicationService
+
+UserApplicationService --> UserService
+AuthApplicationService --> UserService
+AuthApplicationService --> JwtService
+AuthApplicationService --> JwtDTO
+
+JwtService --> JwtDTO
+
+UserService --> UserRepositoryInterface
+UserService --> User
+UserService --> UserDTO
+UserService --> CreateUserDTO
+UserService --> UpdateUserDTO
+UserService --> AuthUserDTO
+
+UserRepository ..|> UserRepositoryInterface
+UserRepository --> mssql
+
+User --> UserRole
+UserRepositoryInterface --> User
+
+CreateUserDTO --> UserRole
+UpdateUserDTO --> UserRole
+UserDTO --> UserRole
+
+footer filipebezerra.dev.br - drawn with PlantUML v. %version() - All rights reserved
+@enduml

@@ -1,0 +1,39 @@
+services:
+  app:
+    image: filipebezerrasantos/dl-delivery:v2.0.0
+    container_name: dld2
+    hostname: dld
+    ports:
+      - "80:80"
+    networks:
+      - dldelivery
+    environment:
+      - TZ=America/Fortaleza
+      - PHP_INI_SCAN_DIR=/usr/local/etc/php/conf.d
+    volumes:
+      - ./src:/var/www/html
+      - ./conf/php-custom.ini:/usr/local/etc/php/conf.d/php-custom.ini
+
+  database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    hostname: sqlserver
+    ports:
+      - "1433:1433"
+    networks:
+      - dldelivery
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=S3nh@F0rt3
+      - MSSQL_PID=Express
+      - MSSQL_LCID=1046
+      - MSSQL_COLLATION=SQL_Latin1_General_CP1_CI_AI
+      - TZ=America/Fortaleza
+    volumes:
+      - dld_mssql:/var/opt/mssql
+
+volumes:
+  dld_mssql:
+
+networks:
+  dldelivery:
