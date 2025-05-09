@@ -19,8 +19,8 @@ interface ClientRepositoryInterface
     public function update(ClientDTO $dto): Client;
     public function delete(int $clientID): bool;
 
-    public function getLocationByID(int $locationID): LocationResponseDTO;
-    public function createLocation(int $clientID, LocationDTO $dto): LocationResponseDTO;
-    public function updateLocation(int $clientID, LocationUpdateDTO $dto): LocationResponseDTO;
+    public function getLocationByID(int $locationID): Location;
+    public function createLocation(int $clientID, LocationDTO $dto): Location;
+    public function updateLocation(LocationUpdateDTO $dto): Location;
     public function deleteLocation(int $locationID): bool;
 }

@@ -132,9 +132,9 @@ class SqliteClientRepository implements ClientRepositoryInterface
         return $stmt->rowCount() > 0;
     }
 
-    private function getClientLocations(int $clientID)
+    private function getClientLocations(int $clientID): array
     {
-        $stmt = $this->pdo->prepare("SELECT locations.id, locations.latitude, locations.longitude, neighborhoods.name as neighborhood, locations.housePicture FROM locations
+        $stmt = $this->pdo->prepare("SELECT locations.id, locations.latitude, locations.longitude, locations.neighborhoodID, neighborhoods.name as neighborhood, locations.housePicture FROM locations
                                      LEFT JOIN neighborhoods ON locations.neighborhoodID = neighborhoods.id
                                      WHERE clientID = :clientID");
         $stmt->bindValue(":clientID", $clientID, PDO::PARAM_INT);
@@ -143,38 +143,42 @@ class SqliteClientRepository implements ClientRepositoryInterface
         $returnDB = $stmt->fetchAll();
         $locations = [];
 
-        foreach ($returnDB as $location) {
-            $locations[] = new LocationResponseDTO($location['latitude'], $location['longitude'], $location['neighborhood'], $location['id'], $location['housePicture']);
+        foreach ($returnDB as $row) {
+            $loc = new Location($row['latitude'], $row['longitude'], $row['neighborhoodID'], $row['id'], $row['housePicture']);
+            $loc->setNeighborhoodName($row['neighborhood']);
+            $locations[] = $loc;
         }
 
         return $locations;
-        
     }
 
-    public function getLocationByID(int $locationID): LocationResponseDTO
+    public function getLocationByID(int $locationID): Location
     {
-        $stmt = $this->pdo->prepare("SELECT locations.id, locations.latitude, locations.longitude, neighborhoods.name as neighborhood, locations.housePicture FROM locations
+        $stmt = $this->pdo->prepare("SELECT locations.id, locations.latitude, locations.longitude, locations.neighborhoodID, neighborhoods.name as neighborhood, locations.housePicture FROM locations
                                      LEFT JOIN neighborhoods ON locations.neighborhoodID = neighborhoods.id
                                      WHERE locations.id = :id");
         $stmt->bindValue(":id", $locationID, PDO::PARAM_INT);
         $stmt->execute();
 
-        $location = $stmt->fetch();
+        $returnDB = $stmt->fetch();
 
-        if (!$location) {
+        if (!$returnDB) {
             throw new LocationNotFoundException;
         }
 
-        return new LocationResponseDTO(
-            $location['latitude'],
-            $location['longitude'],
-            $location['neighborhood'],
-            $location['id'],
-            $location['housePicture']
+        $location = new Location(
+            $returnDB['latitude'],
+            $returnDB['longitude'],
+            $returnDB['neighborhoodID'],
+            $returnDB['id'],
+            $returnDB['housePicture']
         );
+        $location->setNeighborhoodName($returnDB['neighborhood']);
+
+        return $location;
     }
 
-    public function createLocation(int $clientID, LocationDTO $dto): LocationResponseDTO
+    public function createLocation(int $clientID, LocationDTO $dto): Location
     {
         $stmt = $this->pdo->prepare("INSERT INTO locations (clientID, latitude, longitude, neighborhoodID, housePicture) VALUES (:clientID, :latitude, :longitude, :neighborhoodID, :housePicture)");
         $stmt->bindValue(":clientID", $clientID, PDO::PARAM_INT);
@@ -189,7 +193,7 @@ class SqliteClientRepository implements ClientRepositoryInterface
         return $this->getLocationByID($locationID);
     }
 
-    public function updateLocation(int $clientID, LocationUpdateDTO $dto): LocationResponseDTO
+    public function updateLocation(LocationUpdateDTO $dto): Location
     {
         $fields = [];
         $params = [':id' => $dto->id];

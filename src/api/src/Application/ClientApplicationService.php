@@ -2,23 +2,49 @@
 
 namespace DLDelivery\Application;
 
+use DLDelivery\Domain\Client;
+use DLDelivery\Domain\Location;
+use DLDelivery\Domain\Enum\UserRole;
+use DLDelivery\Domain\Interface\ClientRepositoryInterface;
 use DLDelivery\Application\DTO\Client\ClientDTO;
 use DLDelivery\Application\DTO\Client\ClientFilterDTO;
 use DLDelivery\Application\DTO\Client\LocationDTO;
 use DLDelivery\Application\DTO\Client\LocationResponseDTO;
 use DLDelivery\Application\DTO\Client\LocationUpdateDTO;
-use DLDelivery\Domain\Service\ClientService;
 use DLDelivery\Application\DTO\User\UserDTO;
-use DLDelivery\Domain\Enum\UserRole;
+use DLDelivery\Application\DTO\Client\ClientWithLocationsDTO;
 use DLDelivery\Exception\User\AccessLevelException;
+use DLDelivery\Exception\Client\ClientNotFoundException;
+use DLDelivery\Exception\Client\LocationNotFoundException;
 
 class ClientApplicationService
 {
-    private ClientService $service;
+    private ClientRepositoryInterface $repo;
 
-    public function __construct(ClientService $clientService)
+    public function __construct(ClientRepositoryInterface $repository)
     {
-        $this->service = $clientService;    
+        $this->repo = $repository;
+    }
+
+    private function toClientDTO(Client $client): ClientDTO|ClientWithLocationsDTO
+    {   
+        if (count($client->getLocations()) == 0) {
+            return new ClientDTO(
+                $client->getID(),
+                $client->getName()
+            );
+        }
+
+        $locationsDTO = [];
+        foreach ($client->getLocations() as $location) {
+            $locationsDTO[] = $location->toResponseDTO();
+        }
+
+        return new ClientWithLocationsDTO(
+            $client->getID(),
+            $client->getName(),
+            $locationsDTO
+        );
     }
 
     /**
@@ -26,12 +52,23 @@ class ClientApplicationService
      */
     public function listAll(ClientFilterDTO $dto): array
     {
-        return $this->service->listAll($dto);
+        $clients = $this->repo->list($dto);
+
+        foreach($clients['clients'] as &$client) {
+            $client = $this->toClientDTO($client);
+        }
+        unset($client);
+
+        return $clients;
     }
 
     public function getByID(int $clientID): ClientDTO
     {
-        return $this->service->getByID($clientID);
+        $client = $this->repo->getByID($clientID);
+
+        if (!$client) { throw new ClientNotFoundException; }
+
+        return $this->toClientDTO($client);
     }
 
     public function create(UserDTO $authenticatedUser, ClientDTO $dto): ClientDTO
@@ -40,7 +77,13 @@ class ClientApplicationService
             throw new AccessLevelException;
         }
 
-        return $this->service->create($dto);
+        $sanitizedDTO = new ClientDTO(
+            $dto->id,
+            strtoupper($dto->name)
+        );
+        $newClient = $this->repo->create($sanitizedDTO);
+
+        return $this->toClientDTO($newClient);
     }
 
     public function update(UserDTO $authenticatedUser, ClientDTO $dto): ClientDTO
@@ -49,31 +92,51 @@ class ClientApplicationService
             throw new AccessLevelException;
         }
 
-        return $this->service->update($dto);
+        $sanitizedDTO = new ClientDTO(
+            $dto->id,
+            strtoupper($dto->name)
+        );
+        $updateClient = $this->repo->update($sanitizedDTO);
+
+        return $this->toClientDTO($updateClient);
     }
 
-    public function delete(UserDTO $authenticatedUser, int $clienID): bool
+    public function delete(UserDTO $authenticatedUser, int $clientID): bool
     {
         if (!$authenticatedUser->access->hasAccessLevel(UserRole::ADMINISTRATOR)) {
             throw new AccessLevelException;
         }
 
-        return $this->service->delete($clienID);
+        return $this->repo->delete($clientID);
     }
 
     public function getLocation(int $locationID): LocationResponseDTO
     {
-        return $this->service->getLocation($locationID);
+        $location = $this->repo->getLocationByID($locationID);
+
+        if (!$location) { throw new LocationNotFoundException; };
+
+        return $location->toResponseDTO();
     }
 
     public function newLocation(int $clientID, LocationDTO $dto): LocationResponseDTO
     {
-        return $this->service->newLocation($clientID, $dto);
+        $newLocation = $this->repo->createLocation($clientID, $dto);
+
+        return $newLocation->toResponseDTO();
     }
 
-    public function updateLocation(int $clientID, LocationUpdateDTO $dto): LocationResponseDTO
-    {
-        return $this->service->updateLocation($clientID, $dto);
+    public function updateLocation(LocationUpdateDTO $dto): LocationResponseDTO
+    {   
+        $oldLocation = $this->repo->getLocationByID($dto->id);
+
+        if ($oldLocation->hasHousePicture()) {
+
+        }
+
+        $updatedLocation = $this->repo->updateLocation($dto);
+
+        return $updatedLocation->toResponseDTO();
     }
 
     public function deleteLocation(UserDTO $authenticatedUser, int $locationID): bool
@@ -83,6 +146,6 @@ class ClientApplicationService
             throw new AccessLevelException;
         }
 
-        return $this->service->deleteLocation($locationID);
+        return $this->repo->deleteLocation($locationID);
     }
 }

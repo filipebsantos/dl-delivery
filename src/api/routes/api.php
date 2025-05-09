@@ -41,6 +41,7 @@ return [
         '/user/{id}' => [UserController::class, 'deleteUser'],
         // ClientController
         '/client/{id}' => [ClientController::class, 'delete'],
+        '/client/location/{id}' => [ClientController::class, 'deleteLocation'],
         // RouteController
         
     ],

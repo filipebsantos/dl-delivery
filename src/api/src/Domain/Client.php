@@ -2,14 +2,14 @@
 
 namespace DLDelivery\Domain;
 
-use DLDelivery\Application\DTO\Client\LocationResponseDTO;
+use DLDelivery\Domain\Location;
 
 class Client
 {
     private int $id;
     private string $name;
     /**
-     * @var array<LocationResponseDTO>
+     * @var array<Location>
      */
     private array $locations = [];
 
@@ -30,7 +30,7 @@ class Client
         return $this->name;
     }
 
-    /** @return array<LocationResponseDTO> */
+    /** @return array<Location> */
     public function getLocations(): array
     {
         return $this->locations;

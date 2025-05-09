@@ -5,6 +5,7 @@ namespace DLDelivery\Exception;
 use DLDelivery\Application\Contratcs\LoggerInterface;
 use DLDelivery\Exception\Client\ClientAlreadyExistsException;
 use DLDelivery\Exception\Client\ClientNotFoundException;
+use DLDelivery\Exception\Client\InvalidLocationCoordinate;
 use DLDelivery\Exception\Client\LocationNotFoundException;
 use DLDelivery\Exception\Client\MissingCreateClientPayloadException;
 use DLDelivery\Exception\User\AccessLevelException;
@@ -47,6 +48,7 @@ class ExceptionHandler
             case $exception instanceof MissingCreateUserPayloadException:
             case $exception instanceof MissingCreateClientPayloadException:
             case $exception instanceof ClientAlreadyExistsException;
+            case $exception instanceof InvalidLocationCoordinate;
                 $this->respond(400, $exception->getMessage(), $exception->getCode());
                 break;
 

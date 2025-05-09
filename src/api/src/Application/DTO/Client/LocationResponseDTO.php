@@ -20,8 +20,8 @@ class LocationResponseDTO implements JsonSerializable
             'id' => $this->id,
             'latitude' => $this->latitude,
             'longitude' => $this->longitude,
-            'neighborhood' => $this->neighborhood,
-            'housePicture' => $this->housePicture
+            'neighborhood' => $this->neighborhood ?? "NOT SET",
+            'housePicture' => $this->housePicture ?? "NO IMAGE"
         ];
     }
 }
