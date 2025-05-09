@@ -1,6 +1,8 @@
 # DL Delivery
 
-> **Important**: I'm current working in a new version of this software, trying to reach better programming pratices and architecture methods. Stay tunned!
+> **Important**: I'm current working in a new version of this software, trying to reach  better programming pratices and architecture methods. Stay tunned!
+> (**Version 2.0 Repo**)[https://github.com/filipebsantos/dl-delivery/tree/dev]
+
 
 DLDelivery, Drogaria Litorânea Delivery, ou DLD is an auxiliar delivery system to our drugstore. In my city the addresses in Google Maps are not correct, some time there are only a map but without any other information. The city hall also doens't provide a detailed city map, and a lot of streets doesn't even have a name. So basically this system is a database for manipulate GPS coordinates.
 
