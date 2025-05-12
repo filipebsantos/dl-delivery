@@ -57,6 +57,11 @@ class Location
         );
     }
 
+    public function getHousePicture(): string
+    {
+        return $this->housePicture;
+    }
+
     private function isValidLatitude(string $latitude): bool
     {
         if (!is_numeric($latitude)) return false;
@@ -75,4 +80,6 @@ class Location
     {
         return str_replace(",", ".", $coordinate);
     }
+
+
 }

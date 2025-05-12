@@ -87,4 +87,13 @@ class ClientController
             throw new LocationNotFoundException;
         }
     }
+
+    public function updateLocation(UserDTO $authUser, int $id): void
+    {
+        $updateDTO = ClientRequestValidator::updateLocation($id);
+    
+        $udpateLocation = $this->clientService->updateLocation($updateDTO);
+
+        ResponseHelper::send($udpateLocation->jsonSerialize(), 200);
+    }
 }

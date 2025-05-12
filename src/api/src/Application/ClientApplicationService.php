@@ -16,6 +16,7 @@ use DLDelivery\Application\DTO\Client\ClientWithLocationsDTO;
 use DLDelivery\Exception\User\AccessLevelException;
 use DLDelivery\Exception\Client\ClientNotFoundException;
 use DLDelivery\Exception\Client\LocationNotFoundException;
+use DLDelivery\Infrastructure\Persistence\ImageRepository;
 
 class ClientApplicationService
 {
@@ -121,6 +122,14 @@ class ClientApplicationService
 
     public function newLocation(int $clientID, LocationDTO $dto): LocationResponseDTO
     {
+        if (!is_null($dto->housePicture)) {
+            $fileName = ImageRepository::saveImage($dto->housePicture);
+            
+            if ($fileName) {
+                $dto->housePicture->setFileName($fileName);
+            }
+        }
+
         $newLocation = $this->repo->createLocation($clientID, $dto);
 
         return $newLocation->toResponseDTO();
@@ -128,10 +137,20 @@ class ClientApplicationService
 
     public function updateLocation(LocationUpdateDTO $dto): LocationResponseDTO
     {   
-        $oldLocation = $this->repo->getLocationByID($dto->id);
+        
+        if (!is_null($dto->housePicture)) {
+            
+            $oldLocation = $this->repo->getLocationByID($dto->id);
 
-        if ($oldLocation->hasHousePicture()) {
+            if ($oldLocation->hasHousePicture()) {
+                ImageRepository::deleteImage($oldLocation->getHousePicture());
+            }
 
+            $newFileName = ImageRepository::saveImage($dto->housePicture);
+
+            if ($newFileName) {
+                $dto->housePicture->setFileName($newFileName);
+            }
         }
 
         $updatedLocation = $this->repo->updateLocation($dto);
@@ -144,6 +163,12 @@ class ClientApplicationService
         if (!$authenticatedUser->access->hasAccessLevel(UserRole::OPERATOR))
         {
             throw new AccessLevelException;
+        }
+
+        $oldLocation = $this->repo->getLocationByID($locationID);
+
+        if ($oldLocation->hasHousePicture()) {
+            ImageRepository::deleteImage($oldLocation->getHousePicture());
         }
 
         return $this->repo->deleteLocation($locationID);

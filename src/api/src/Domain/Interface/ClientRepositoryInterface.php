@@ -5,7 +5,6 @@ namespace DLDelivery\Domain\Interface;
 use DLDelivery\Application\DTO\Client\ClientDTO;
 use DLDelivery\Application\DTO\Client\ClientFilterDTO;
 use DLDelivery\Application\DTO\Client\LocationDTO;
-use DLDelivery\Application\DTO\Client\LocationResponseDTO;
 use DLDelivery\Application\DTO\Client\LocationUpdateDTO;
 use DLDelivery\Domain\Client;
 use DLDelivery\Domain\Location;

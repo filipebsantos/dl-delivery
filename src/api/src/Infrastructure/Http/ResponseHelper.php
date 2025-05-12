@@ -12,6 +12,6 @@ class ResponseHelper
 
     public static function info(): void
     {
-        self::send(['message' => getenv("APP_NAME"), 'version' => getenv("APP_VERSION")], 200);    
+        self::send(['message' => getenv("APP_NAME"), 'version' => getenv("APP_VERSION")], 200);      
     }
 }

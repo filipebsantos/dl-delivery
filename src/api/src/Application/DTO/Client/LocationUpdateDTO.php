@@ -2,15 +2,15 @@
 
 namespace DLDelivery\Application\DTO\Client;
 
-use JsonSerializable;
+use DLDelivery\Application\DTO\UploadImageDTO;
 
 class LocationUpdateDTO
 {
     public function __construct(
         public readonly int $id,
-        public readonly ?string $latitude,
-        public readonly ?string $longitude,
-        public readonly ?int $neighborhoodID,
-        public readonly ?string $housePicture = null
+        public readonly ?string $latitude = null,
+        public readonly ?string $longitude = null,
+        public readonly ?int $neighborhoodID = null,
+        public readonly ?UploadImageDTO $housePicture = null
     ){}
 }

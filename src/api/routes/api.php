@@ -25,6 +25,7 @@ return [
         // ClientController
         '/client' => [ClientController::class, 'createClient'],
         '/client/{id}/location' => [ClientController::class, 'createLocation'],
+        '/client/location/{id}' => [ClientController::class, 'updateLocation'],
         // RouteController
         
     ],

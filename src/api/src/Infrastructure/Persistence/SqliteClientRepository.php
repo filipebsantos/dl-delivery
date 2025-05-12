@@ -185,7 +185,7 @@ class SqliteClientRepository implements ClientRepositoryInterface
         $stmt->bindValue(":latitude", $dto->latitude);
         $stmt->bindValue(":longitude", $dto->longitude);
         $stmt->bindValue(":neighborhoodID", $dto->neighborhoodID, PDO::PARAM_INT);
-        $stmt->bindValue(":housePicture", $dto->housePicture);
+        $stmt->bindValue(":housePicture", $dto->housePicture->getFileName());
         $stmt->execute();
 
         $locationID = (int) $this->pdo->lastInsertId();
@@ -215,7 +215,7 @@ class SqliteClientRepository implements ClientRepositoryInterface
 
         if (!is_null($dto->housePicture)) {
             $fields[] = 'housePicture = :housePicture';
-            $params[':housePicture'] = $dto->housePicture;
+            $params[':housePicture'] = $dto->housePicture->getFileName();
         }
 
         if (empty($fields)) {

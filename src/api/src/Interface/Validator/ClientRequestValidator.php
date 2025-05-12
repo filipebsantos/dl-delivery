@@ -5,7 +5,10 @@ namespace DLDelivery\Interface\Validator;
 use DLDelivery\Application\DTO\Client\ClientDTO;
 use DLDelivery\Application\DTO\Client\ClientFilterDTO;
 use DLDelivery\Application\DTO\Client\LocationDTO;
+use DLDelivery\Application\DTO\Client\LocationUpdateDTO;
+use DLDelivery\Application\DTO\UploadImageDTO;
 use DLDelivery\Exception\Client\MissingCreateClientPayloadException;
+use DLDelivery\Exception\Client\MissingLocationPayloadException;
 use DLDelivery\Exception\InvalidJsonException;
 
 class ClientRequestValidator
@@ -57,18 +60,53 @@ class ClientRequestValidator
     {
         $latitude = isset($_POST['latitude']) ? filter_input(INPUT_POST, "latitude", FILTER_SANITIZE_SPECIAL_CHARS) : null;
         $longitude = isset($_POST['longitude']) ? filter_input(INPUT_POST, "longitude", FILTER_SANITIZE_SPECIAL_CHARS) : null;
-        $neighborhoodID = isset($_POST['neighborhoodID']) ? filter_input(INPUT_POST, "neighborhoodID", FILTER_SANITIZE_NUMBER_INT) : null;
+        $neighborhoodID = isset($_POST['neighborhoodID']) ? (int) filter_input(INPUT_POST, "neighborhoodID", FILTER_SANITIZE_NUMBER_INT) : null;
 
         if (is_null($latitude) || is_null($longitude) || is_null($neighborhoodID)) {
-
+            throw new MissingLocationPayloadException;
         }
 
-        return new LocationDTO(
-            $latitude,
-            $longitude,
-            $neighborhoodID,
-            null,
-            null
-        );
+        if (isset($_FILES['housePicture'])) {
+            $uploadImage = new UploadImageDTO($_FILES['housePicture']['tmp_name'], $_FILES['housePicture']['type'], $_FILES['housePicture']['size']);
+            
+            return new LocationDTO(
+                $latitude,
+                $longitude,
+                $neighborhoodID,
+                $uploadImage
+            );
+        } else {
+            return new LocationDTO(
+                $latitude,
+                $longitude,
+                $neighborhoodID
+            );
+        }
+    }
+
+    public static function updateLocation(int $id): LocationUpdateDTO
+    {
+        $latitude = isset($_POST['latitude']) ? filter_input(INPUT_POST, "latitude", FILTER_SANITIZE_SPECIAL_CHARS) : null;
+        $longitude = isset($_POST['longitude']) ? filter_input(INPUT_POST, "longitude", FILTER_SANITIZE_SPECIAL_CHARS) : null;
+        $neighborhoodID = isset($_POST['neighborhoodID']) ? (int) filter_input(INPUT_POST, "neighborhoodID", FILTER_SANITIZE_NUMBER_INT) : null;
+
+        if (isset($_FILES['housePicture'])) {
+            $uploadImage = new UploadImageDTO($_FILES['housePicture']['tmp_name'], $_FILES['housePicture']['type'], $_FILES['housePicture']['size']);
+            
+            return new LocationUpdateDTO(
+                $id,
+                $latitude,
+                $longitude,
+                $neighborhoodID,
+                $uploadImage
+            );
+        } else {
+            return new LocationUpdateDTO(
+                $id,
+                $latitude,
+                $longitude,
+                $neighborhoodID
+            );
+        }
     }
 }

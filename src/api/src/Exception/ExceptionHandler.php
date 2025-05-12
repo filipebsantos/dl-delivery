@@ -6,8 +6,11 @@ use DLDelivery\Application\Contratcs\LoggerInterface;
 use DLDelivery\Exception\Client\ClientAlreadyExistsException;
 use DLDelivery\Exception\Client\ClientNotFoundException;
 use DLDelivery\Exception\Client\InvalidLocationCoordinate;
+use DLDelivery\Exception\Client\LocationImageInvalidSizeException;
+use DLDelivery\Exception\Client\LocationImageInvalidTypeException;
 use DLDelivery\Exception\Client\LocationNotFoundException;
 use DLDelivery\Exception\Client\MissingCreateClientPayloadException;
+use DLDelivery\Exception\Client\MissingLocationPayloadException;
 use DLDelivery\Exception\User\AccessLevelException;
 use DLDelivery\Exception\User\InvalidPasswordException;
 use DLDelivery\Exception\User\InvalidTokenException;
@@ -47,8 +50,11 @@ class ExceptionHandler
             case $exception instanceof UserAlreadyExistsException:
             case $exception instanceof MissingCreateUserPayloadException:
             case $exception instanceof MissingCreateClientPayloadException:
-            case $exception instanceof ClientAlreadyExistsException;
-            case $exception instanceof InvalidLocationCoordinate;
+            case $exception instanceof MissingLocationPayloadException:
+            case $exception instanceof ClientAlreadyExistsException:
+            case $exception instanceof InvalidLocationCoordinate:
+            case $exception instanceof LocationImageInvalidTypeException:
+            case $exception instanceof LocationImageInvalidSizeException:
                 $this->respond(400, $exception->getMessage(), $exception->getCode());
                 break;
 

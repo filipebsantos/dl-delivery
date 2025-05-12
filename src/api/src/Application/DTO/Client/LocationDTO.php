@@ -2,26 +2,14 @@
 
 namespace DLDelivery\Application\DTO\Client;
 
-use JsonSerializable;
+use DLDelivery\Application\DTO\UploadImageDTO;
 
-class LocationDTO implements JsonSerializable
+class LocationDTO
 {
     public function __construct(
         public readonly string $latitude,
         public readonly string $longitude,
         public readonly int $neighborhoodID,
-        public readonly ?int $id = null,
-        public readonly ?string $housePicture = null
+        public readonly ?UploadImageDTO $housePicture = null
     ){}
-
-    public function jsonSerialize(): mixed
-    {
-        return [
-            'id' => $this->id,
-            'latitude' => $this->latitude,
-            'longitude' => $this->longitude,
-            'neighborhood' => $this->neighborhoodID,
-            'housePicture' => $this->housePicture
-        ];
-    }
 }
