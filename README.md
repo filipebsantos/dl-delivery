@@ -77,7 +77,7 @@ Principais mudanças:
 - [x] Estrutura inicial do projeto
 - [x] Módulo de usuários com autenticação e permissões
 - [x] Cadastro de usuários
-- [ ] Cadastro de clientes com múltiplas localizações
+- [x] Cadastro de clientes com múltiplas localizações
 - [ ] Criação e consulta de rotas
 - [ ] Captura de coordenadas e fotos pelo entregador
 - [ ] Interface web para o atendente
