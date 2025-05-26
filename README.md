@@ -2,6 +2,10 @@
 
 Sistema para auxiliar entregadores e atendentes no cadastro e consulta de localizações de entrega em regiões com endereços imprecisos ou inexistentes.
 
+## Projeto Arquivado
+
+Em virtude do fim da drogaria da minha família, que era o motivo de eu desenvolver essa ferramenta, não estou mais trabalhando nesse projeto. Estou redirecionando meus esforços para outros projetos pessoais.
+
 ---
 
 ## 🚚 Problema que resolve
