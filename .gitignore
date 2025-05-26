@@ -1,3 +1,4 @@
+.gitignore
 .devcontainer
 /docs/C4Model/svg
 /src/.vscode
@@ -5,3 +6,5 @@
 /src/api/database/*.sqlite
 /src/api/logs/*.log
 /src/api/vendor
+/src/api/public/pictures/*
+!/src/api/public/pictures/.keep
